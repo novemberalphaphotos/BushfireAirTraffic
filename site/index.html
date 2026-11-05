@@ -208,7 +208,7 @@ dl.info dd { margin: 0; min-width: 0; overflow-wrap: anywhere; }
 <script>
 "use strict";
 /* ---------- settings you may want to change ---------- */
-const PROXY = "https://adsb-proxy.novemberalphaphotos.workers.dev/";                 // paste your Cloudflare Worker address here (see README), e.g. "https://adsb-proxy.yourname.workers.dev/"
+const PROXY = "";                 // paste your Cloudflare Worker address here (see README), e.g. "https://adsb-proxy.yourname.workers.dev/"
 const REFRESH_SECONDS = 20;       // live feed refresh
 const CHUNK = 100;                // registrations per feed request
 const STALE_AFTER = 120;          // seconds since last position before a marker fades
@@ -258,7 +258,7 @@ let baseGroups = [];
 function drawBases(list) {
   const byBase = new Map();
   for (const a of list) if (a.base) {
-    const k = a.base.name + "|" + a.base.state;
+    const k = `${a.base.name}|${a.base.state}|${a.base.lat.toFixed(4)},${a.base.lon.toFixed(4)}`;
     if (!byBase.has(k)) byBase.set(k, { b: a.base, items: [] });
     byBase.get(k).items.push(a);
   }
