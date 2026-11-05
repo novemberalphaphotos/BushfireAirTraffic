@@ -1,22 +1,20 @@
-name: Update data and watch NAFC call signs
-
-# Rebuilds site/data/aircraft.json from the spreadsheet (resolving the Google Maps pins),
-# checks the NAFC call sign list, and saves the results back to the repository.
-# Cloudflare Pages publishes the site whenever the repository changes.
+name: Update data, watch NAFC call signs and publish site
 
 on:
   push:
     branches: [main]
-    paths: ["data/**", "site/photos/**", "scripts/**", ".github/workflows/**"]
+    paths: ["site/**", "data/**", "scripts/**", ".github/workflows/**"]
   schedule:
     - cron: "17 */2 * * *"   # every 2 hours at 17 past (UTC)
   workflow_dispatch:          # lets you run it by hand from the Actions tab
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 concurrency:
-  group: update
+  group: site
   cancel-in-progress: false
 
 jobs:
@@ -45,3 +43,18 @@ jobs:
           git config user.email "actions@users.noreply.github.com"
           git add site/data data/maps_cache.json
           git diff --cached --quiet || (git commit -m "Update aircraft data and NAFC snapshot" && git pull --rebase && git push)
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  deploy:
+    needs: update
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
