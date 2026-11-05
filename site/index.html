@@ -65,6 +65,7 @@ h1 span { color: var(--accent); }
 main { flex: 1; min-height: 0; display: grid; grid-template-columns: minmax(340px, 460px) 1fr; }
 #side { display: flex; flex-direction: column; min-height: 0; background: var(--panel); border-right: 1px solid var(--line); position: relative; }
 #mapwrap { position: relative; min-height: 0; min-width: 0; }
+#map.darkmap .leaflet-tile-pane { filter: invert(1) hue-rotate(180deg) brightness(.9) contrast(.9); }
 #map { position: absolute; inset: 0; background: var(--panel-2); }
 
 .filters { padding: 10px 12px; display: grid; gap: 8px; border-bottom: 1px solid var(--line); }
@@ -118,7 +119,7 @@ dl.info dd { margin: 0; min-width: 0; overflow-wrap: anywhere; }
 .links { display: flex; gap: 8px; flex-wrap: wrap; }
 
 /* map overlays */
-.feed { position: absolute; left: 10px; bottom: 22px; z-index: 500; background: var(--panel); border: 1px solid var(--line); border-radius: 6px; padding: 6px 10px; font-size: 12px; max-width: min(420px, calc(100% - 20px)); display: flex; gap: 8px; align-items: center; }
+.feed { position: absolute; left: 10px; bottom: 22px; z-index: 500; background: var(--panel); border: 1px solid var(--line); border-radius: 6px; padding: 6px 10px; font-size: 12px; max-width: min(560px, calc(100% - 20px)); overflow-wrap: anywhere; display: flex; gap: 8px; align-items: center; }
 .dot { width: 9px; height: 9px; border-radius: 50%; background: var(--muted); flex: none; }
 .dot.ok { background: var(--live); } .dot.err { background: var(--accent); }
 .maptools { position: absolute; right: 10px; top: 10px; z-index: 500; display: flex; flex-direction: column; gap: 6px; }
@@ -213,6 +214,7 @@ const DROP_AFTER = 900;           // seconds since last position before it is hi
 const PROVIDERS = [               // tried in order; each is a community ADS-B API
   { name: "airplanes.live", url: regs => `https://api.airplanes.live/v2/reg/${regs}` },
   { name: "adsb.lol",       url: regs => `https://api.adsb.lol/v2/reg/${regs}` },
+  { name: "adsb.one",       url: regs => `https://api.adsb.one/v2/reg/${regs}` },
 ];
 
 /* ---------- helpers ---------- */
@@ -238,12 +240,12 @@ $("themeBtn").onclick = () => setTheme(theme() === "dark" ? "light" : "dark");
 const map = L.map("map", { zoomControl: true, preferCanvas: false }).setView([-33.5, 146.5], 5);
 let tiles;
 function applyTiles() {
-  if (tiles) map.removeLayer(tiles);
-  const style = theme() === "dark" ? "dark_all" : "light_all";
-  tiles = L.tileLayer(`https://{s}.basemaps.cartocdn.com/${style}/{z}/{x}/{y}{r}.png`, {
-    subdomains: "abcd", maxZoom: 18,
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>'
-  }).addTo(map);
+  if (!tiles) {
+    tiles = L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      maxZoom: 18, attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+  }
+  map.getContainer().classList.toggle("darkmap", theme() === "dark");
 }
 applyTiles();
 const baseLayer = L.layerGroup().addTo(map);
@@ -326,11 +328,11 @@ $("fitLive").onclick = () => {
 $("fitAll").onclick = () => map.setView([-33.5, 146.5], 5);
 
 /* ---------- live feed ---------- */
-let providerIdx = 0, feedTimer = null, lastOk = 0;
+let providerIdx = 0, feedTimer = null, lastOk = 0, lastError = "";
 function setFeed(kind, text) { $("feedDot").className = "dot " + kind; $("feedText").textContent = text; }
 
 async function fetchChunk(regs) {
-  let lastErr;
+  const errs = [];
   for (let i = 0; i < PROVIDERS.length; i++) {
     const pv = PROVIDERS[(providerIdx + i) % PROVIDERS.length];
     try {
@@ -342,9 +344,9 @@ async function fetchChunk(regs) {
       if (!Array.isArray(j.ac)) throw new Error(`${pv.name}: unexpected reply`);
       providerIdx = (providerIdx + i) % PROVIDERS.length;
       return { name: pv.name, ac: j.ac };
-    } catch (e) { lastErr = e; }
+    } catch (e) { errs.push(`${pv.name}: ${e.message}`); }
   }
-  throw lastErr;
+  throw new Error(errs.join(" | "));
 }
 
 async function pollLive() {
@@ -363,7 +365,7 @@ async function pollLive() {
         if (age > DROP_AFTER) continue;
         next.set(reg, { lat: p.lat, lon: p.lon, track: p.track ?? p.true_heading ?? 0, gs: p.gs, alt: p.alt_baro, hex: p.hex, flight: (p.flight || "").trim(), age, t: Date.now() });
       }
-    } catch (e) { failed++; console.warn("Live feed error", e); }
+    } catch (e) { failed++; lastError = e.message; console.warn("Live feed error", e); }
     if (i + CHUNK < regs.length) await new Promise(r => setTimeout(r, 1100)); // stay under 1 request/second
   }
   const total = Math.ceil(regs.length / CHUNK);
@@ -371,7 +373,7 @@ async function pollLive() {
     live = next; lastOk = Date.now();
     setFeed("ok", `${used}: ${live.size} of ${regs.length} registrations transmitting` + (failed ? ` (${failed} request${failed > 1 ? "s" : ""} failed)` : ""));
   } else {
-    setFeed("err", `Live feed unreachable. Showing ${live.size ? "last known positions" : "bases only"}. Retrying.`);
+    setFeed("err", `Live feed failed (${lastError}). Showing ${live.size ? "last known positions" : "bases only"}. Retrying.`);
   }
   $("sLive").textContent = live.size;
   render(false); drawLive(); if (selected) renderDetail();
