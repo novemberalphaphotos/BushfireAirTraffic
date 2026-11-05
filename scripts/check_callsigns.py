@@ -46,30 +46,73 @@ class TableParser(HTMLParser):
             self._row = None
 
 
-def parse(html):
+def parse_table(html):
     p = TableParser()
     p.feed(html)
     entries, cols = [], None
     for row in p.rows:
         low = [c.lower() for c in row]
-        if "callsign" in " ".join(low).replace(" ", "") and "registration" in low:
-            cols = {name: low.index(name) for name in FIELDS if name in low}
+        if "registration" in low and any("call" in c for c in low):
+            cols = {}
+            for name in FIELDS:
+                for i, c in enumerate(low):
+                    if (name == "callsign" and "call" in c) or c == name:
+                        cols[name] = i
+                        break
             continue
-        if cols and len(row) >= len(cols):
+        if cols and len(row) > max(cols.values()):
             e = {k: row[i] for k, i in cols.items()}
             if e.get("callsign") and e.get("registration"):
-                e["callsign"] = e["callsign"].upper()
-                e["registration"] = e["registration"].upper()
                 entries.append(e)
     return entries
+
+
+REG_RX = re.compile(r"^(?:[A-Z]{1,2}-[A-Z0-9]{2,5}|N\d{1,5}[A-Z]{0,2})$")
+
+
+def parse_text(html):
+    """Fallback for pages that are not a <table>: one cell per line, registration identifies the row."""
+    text = re.sub(r"(?is)<(script|style).*?</\1>", " ", html)
+    text = re.sub(r"(?i)<br\s*/?>|</(td|th|tr|p|div|li|span|dd|dt)>", "\n", text)
+    text = re.sub(r"<[^>]+>", " ", text)
+    text = text.replace("&nbsp;", " ").replace("&amp;", "&")
+    lines = [re.sub(r"\s+", " ", l).strip() for l in text.split("\n")]
+    lines = [l for l in lines if l]
+    entries = []
+    for i, l in enumerate(lines):
+        if REG_RX.match(l.upper()) and i >= 1 and re.search(r"\d", lines[i - 1]) and re.match(r"^[A-Za-z]", lines[i - 1]):
+            rest = lines[i + 1:i + 4] + ["", "", ""]
+            entries.append({"callsign": lines[i - 1], "registration": l, "category": rest[0], "make": rest[1], "model": rest[2]})
+    return entries
+
+
+def parse(html):
+    entries = parse_table(html) or parse_text(html)
+    out = []
+    for e in entries:
+        e["callsign"] = re.sub(r"\s+", " ", e["callsign"]).strip().upper()
+        e["registration"] = e["registration"].strip().upper()
+        if e["callsign"] and REG_RX.match(e["registration"]):
+            out.append(e)
+    return out
+
+
+def describe(html):
+    return (f"{len(html)} bytes, {len(re.findall(r'(?i)<table', html))} tables, {len(re.findall(r'(?i)<tr', html))} rows; "
+            f"starts: {re.sub(chr(10), ' ', html[:200])!r}")
 
 
 def fetch():
     local = os.environ.get("NAFC_HTML_FILE")
     if local:
         return Path(local).read_text(encoding="utf-8")
-    req = urllib.request.Request(URL, headers={"User-Agent": "bushfire-air-tracker/1.0 (personal callsign watcher)"})
+    req = urllib.request.Request(URL, headers={
+        "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36",
+        "Accept": "text/html,application/xhtml+xml",
+        "Accept-Language": "en-AU,en;q=0.9",
+    })
     with urllib.request.urlopen(req, timeout=60) as r:
+        print("NAFC page: HTTP", r.status)
         return r.read().decode("utf-8", "replace")
 
 
@@ -100,6 +143,8 @@ def diff(old, new):
 
 def notify(title, body, high=False):
     topic = os.environ.get("NTFY_TOPIC")
+    if not topic:
+        print("ntfy: NTFY_TOPIC secret is empty, so nothing can be sent. Check the secret name and value.")
     if not topic or os.environ.get("NTFY_DRY_RUN"):
         print(f"--- notification (not sent) ---\n{title}\n{body}\n")
         return
@@ -107,20 +152,29 @@ def notify(title, body, high=False):
     if os.environ.get("SITE_URL"):
         headers["Click"] = os.environ["SITE_URL"]
     req = urllib.request.Request(f"https://ntfy.sh/{topic}", data=body.encode("utf-8"), headers=headers, method="POST")
-    urllib.request.urlopen(req, timeout=30).read()
+    try:
+        with urllib.request.urlopen(req, timeout=30) as r:
+            print(f"ntfy: sent to topic '{topic[:4]}...' (HTTP {r.status})")
+    except Exception as e:
+        print("ntfy: FAILED to send:", e)
 
 
 def main():
+    if os.environ.get("NTFY_TEST"):
+        notify("NAFC watcher test", "If you can read this, notifications from GitHub reach your phone.")
+    html = ""
     try:
-        new = parse(fetch())
+        html = fetch()
+        new = parse(html)
     except Exception as e:
         notify("NAFC watcher error", f"Could not read the call sign list: {e}")
         print("fetch failed:", e); return 1
     old = json.loads(STATE.read_text())["entries"] if STATE.exists() else None
 
     if len(new) < 20 or (old and len(new) < 0.5 * len(old)):
-        notify("NAFC watcher error", f"Parsed only {len(new)} rows (had {len(old or [])}). The page layout may have changed. Nothing was updated.")
-        print("parse looks wrong:", len(new), "rows"); return 1
+        info = describe(html)
+        notify("NAFC watcher error", f"Parsed only {len(new)} rows (had {len(old or [])}). Nothing was updated. Page: {info}"[:900])
+        print("parse looks wrong:", len(new), "rows.", info); return 1
 
     new = sorted({key(e): e for e in new}.values(), key=key)
     if old is None:
