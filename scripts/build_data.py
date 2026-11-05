@@ -5,17 +5,23 @@ Run after editing the spreadsheet or adding photos:
     pip install openpyxl
     python3 scripts/build_data.py
 
+Exact base positions: in the "Base Coordinates" column put a Google Maps link to the exact
+spot (right-click the spot in Google Maps > Share > Copy link), or type "lat, lon" such as
+-33.9244, 150.9883. If the cell is empty the built-in approximate list below is used.
+The newest .xlsx in data/ is the one that is read.
+
 Photos: save a file named after the registration into site/photos/, e.g.
     site/photos/VH-EPH.jpg   (.jpg .jpeg .png .webp all work)
 Several shots per aircraft: VH-EPH.jpg, VH-EPH-2.jpg, VH-EPH-3.jpg ...
 A value in the sheet's "Photo URL" column is used when there is no local file.
 """
-import json, re, sys
+import json, re, sys, urllib.parse, urllib.request
 from pathlib import Path
 import openpyxl
 
 ROOT = Path(__file__).resolve().parent.parent
-XLSX = ROOT / "data" / "2026_Fire_Season.xlsx"
+DATA = ROOT / "data"
+CACHE = DATA / "maps_cache.json"
 OUT = ROOT / "site" / "data" / "aircraft.json"
 PHOTOS = ROOT / "site" / "photos"
 
@@ -122,14 +128,55 @@ def photos_for(rego):
     return found
 
 
+def newest_xlsx():
+    files = sorted(DATA.glob("*.xlsx"), key=lambda p: p.stat().st_mtime, reverse=True)
+    files = [f for f in files if not f.name.startswith("~$")]
+    if not files:
+        sys.exit("No .xlsx file found in data/")
+    return files[0]
+
+
+def in_australia(lat, lon):
+    return -45 <= lat <= -9 and 112 <= lon <= 155
+
+
+COORD_PATTERNS = [
+    r"!3d(-?\d+\.\d+)!4d(-?\d+\.\d+)",                                   # the dropped pin itself
+    r"[?&](?:q|ll|query|destination)=(-?\d+\.\d+)(?:,|%2C)(-?\d+\.\d+)",
+    r"@(-?\d+\.\d+),(-?\d+\.\d+)",                                       # map centre
+    r"center=(-?\d+\.\d+)(?:,|%2C)(-?\d+\.\d+)",
+]
+
+
+def coords_from_text(text):
+    for rx in COORD_PATTERNS:
+        m = re.search(rx, text)
+        if m and in_australia(float(m[1]), float(m[2])):
+            return float(m[1]), float(m[2])
+    return None
+
+
+def resolve_map_link(url):
+    """Follow a Google Maps (short) link and pull the pin coordinates out of it."""
+    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (compatible; bushfire-air-tracker)"})
+    with urllib.request.urlopen(req, timeout=30) as r:
+        final, body = r.geturl(), r.read(600000).decode("utf-8", "ignore")
+    return coords_from_text(urllib.parse.unquote(final)) or coords_from_text(final) or coords_from_text(body)
+
+
 def main():
-    wb = openpyxl.load_workbook(XLSX, data_only=True)
+    xlsx = newest_xlsx()
+    cache = json.loads(CACHE.read_text()) if CACHE.exists() else {}
+    wb = openpyxl.load_workbook(xlsx)
     ws = wb["Aircraft Data"]
-    out, missing, seen = [], set(), set()
-    for r in ws.iter_rows(min_row=2, values_only=True):
-        if not any(r[:7]):
+    out, missing, seen, unresolved = [], set(), set(), []
+    exact = 0
+    fails = 0
+    for row in ws.iter_rows(min_row=2, max_col=7):
+        r = [c.value for c in row]
+        if not any(r):
             continue
-        rego, callsign, typ, op, base, _coords, photo_url = [
+        rego, callsign, typ, op, base, coord_text, photo_url = [
             (str(x).strip() if x is not None else "") for x in r[:7]
         ]
         if not rego:
@@ -157,7 +204,33 @@ def main():
             entry["note"] = note
         if base.lower() not in UNKNOWN:
             b = BASES.get(norm_base(base))
-            if b:
+            pin = None
+            link = row[5].hyperlink.target if row[5].hyperlink and row[5].hyperlink.target else None
+            m = re.match(r"^\s*(-?\d+\.\d+)\s*[, ]\s*(-?\d+\.\d+)\s*$", coord_text)
+            if m and in_australia(float(m[1]), float(m[2])):
+                pin = (float(m[1]), float(m[2]))
+            elif link and "goo" in link:
+                if link not in cache:
+                    if fails >= 3:            # the network is blocked or Google is refusing: stop trying this run
+                        cache[link] = None
+                    else:
+                        try:
+                            cache[link] = resolve_map_link(link)
+                        except Exception as e:
+                            fails += 1
+                            print(f"  could not open {link}: {e}")
+                            cache[link] = None
+                if cache[link]:
+                    pin = tuple(cache[link])
+                else:
+                    unresolved.append((rego, link))
+                    cache.pop(link, None)   # try again next time
+            if pin:
+                exact += 1
+                name = b[2] if b else re.sub(r",?\s*\b(NSW|VIC|QLD|TAS|WA|SA|ACT|NT)\b\.?$", "", base).strip()
+                state = b[3] if b else (re.search(r"\b(NSW|VIC|QLD|TAS|WA|SA|ACT|NT)\b\.?$", base) or [None, ""])[1]
+                entry["base"] = {"name": name, "state": state, "lat": pin[0], "lon": pin[1], "exact": True}
+            elif b:
                 entry["base"] = {"name": b[2], "state": b[3], "lat": b[0], "lon": b[1]}
             else:
                 missing.add(base)
@@ -166,11 +239,14 @@ def main():
 
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps(out, separators=(",", ":"), ensure_ascii=False))
+    CACHE.write_text(json.dumps({k: v for k, v in cache.items() if v}, indent=1))
     based = sum(1 for e in out if e["base"])
-    print(f"{len(out)} aircraft, {based} with a mapped base, "
+    print(f"{xlsx.name}: {len(out)} aircraft, {based} with a mapped base ({exact} from exact pins), "
           f"{sum(1 for e in out if e['photos'])} with photos -> {OUT.relative_to(ROOT)}")
+    if unresolved:
+        print(f"{len(unresolved)} map links could not be read; those aircraft use the approximate base position.")
     if missing:
-        print("Bases with no coordinates (add them to BASES):", sorted(missing))
+        print("Bases with no coordinates (add a map link in the sheet, or add them to BASES):", sorted(missing))
         sys.exit(1)
 
 
