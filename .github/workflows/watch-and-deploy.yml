@@ -7,6 +7,11 @@ on:
   schedule:
     - cron: "17 */2 * * *"   # every 2 hours at 17 past (UTC)
   workflow_dispatch:          # lets you run it by hand from the Actions tab
+    inputs:
+      test_notification:
+        description: "Also send a test notification to your phone"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -35,6 +40,7 @@ jobs:
         env:
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
           SITE_URL: ${{ vars.SITE_URL }}
+          NTFY_TEST: ${{ inputs.test_notification && '1' || '' }}
         run: python3 scripts/check_callsigns.py
 
       - name: Save results
