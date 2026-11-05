@@ -1,0 +1,6206 @@
+{
+ "entries": [
+  {
+   "callsign": "BIRDDOG 100",
+   "registration": "N548CG",
+   "category": "FW - Other",
+   "make": "CESSNA AIRCRAFT COMPANY",
+   "model": "550"
+  },
+  {
+   "callsign": "BIRDDOG 125",
+   "registration": "VH-LMC",
+   "category": "FW - AAS / Recce",
+   "make": "GULFSTREAM AEROSPACE CORP",
+   "model": "695-A"
+  },
+  {
+   "callsign": "BIRDDOG 200",
+   "registration": "VH-VJT",
+   "category": "FW - Other",
+   "make": "CESSNA AIRCRAFT COMPANY",
+   "model": "560"
+  },
+  {
+   "callsign": "BIRDDOG 201",
+   "registration": "VH-VJO",
+   "category": "FW - Other",
+   "make": "CESSNA AIRCRAFT COMPANY",
+   "model": "560"
+  },
+  {
+   "callsign": "BIRDDOG 202",
+   "registration": "VH-NAO",
+   "category": "Unspecified",
+   "make": "HAWKER BEECHCRAFT CORPORATION",
+   "model": "B300C"
+  },
+  {
+   "callsign": "BIRDDOG 372",
+   "registration": "VH-IOK",
+   "category": "FW - AAS / Recce",
+   "make": "CESSNA AIRCRAFT COMPANY",
+   "model": "337G"
+  },
+  {
+   "callsign": "BIRDDOG 373",
+   "registration": "VH-8TY",
+   "category": "FW - AAS / Recce",
+   "make": "CESSNA AIRCRAFT COMPANY",
+   "model": "208B"
+  },
+  {
+   "callsign": "BIRDDOG 375",
+   "registration": "VH-8TL",
+   "category": "FW - AAS / Recce",
+   "make": "CESSNA AIRCRAFT COMPANY",
+   "model": "208B"
+  },
+  {
+   "callsign": "BIRDDOG 376",
+   "registration": "VH-PGA",
+   "category": "Unspecified",
+   "make": "EADS SOCATA",
+   "model": "TBM700"
+  },
+  {
+   "callsign": "BIRDDOG 377",
+   "registration": "VH-ILM",
+   "category": "FW - AAS / Recce",
+   "make": "PARTENAVIA COSTRUZIONI AERONAUTICHE SPA",
+   "model": "P.68C"
+  },
+  {
+   "callsign": "BIRDDOG 378",
+   "registration": "VH-8BD",
+   "category": "FW - AAS / Recce",
+   "make": "TEXTRON AVIATION INC.",
+   "model": "208B"
+  },
+  {
+   "callsign": "BIRDDOG 380",
+   "registration": "VH-IEV",
+   "category": "FW - AAS / Recce",
+   "make": "CESSNA AIRCRAFT COMPANY",
+   "model": "337G"
+  },
+  {
+   "callsign": "BIRDDOG 381",
+   "registration": "VH-MAV",
+   "category": "FW - AAS / Recce",
+   "make": "AERO COMMANDER",
+   "model": "500-S"
+  },
+  {
+   "callsign": "BIRDDOG 384",
+   "registration": "VH-UJR",
+   "category": "FW - AAS / Recce",
+   "make": "AERO COMMANDER",
+   "model": "500-S"
+  },
+  {
+   "callsign": "BIRDDOG 393",
+   "registration": "VH-MGJ",
+   "category": "FW - AAS / Recce",
+   "make": "PILATUS BRITTEN-NORMAN LTD",
+   "model": "BN2B-26"
+  },
+  {
+   "callsign": "BIRDDOG 394",
+   "registration": "VH-OZH",
+   "category": "FW - AAS / Recce",
+   "make": "CESSNA AIRCRAFT COMPANY",
+   "model": "208B"
+  },
+  {
+   "callsign": "BIRDDOG 396",
+   "registration": "VH-TLD",
+   "category": "FW - AAS / Recce",
+   "make": "CESSNA AIRCRAFT COMPANY",
+   "model": "208B"
+  },
+  {
+   "callsign": "BIRDDOG 416",
+   "registration": "VH-PNW",
+   "category": "FW - AAS / Recce",
+   "make": "PARTENAVIA COSTRUZIONI AERONAUTICHE SPA",
+   "model": "P.68C"
+  },
+  {
+   "callsign": "BIRDDOG 444",
+   "registration": "VH-XAS",
+   "category": "FW - AAS / Recce",
+   "make": "AERO COMMANDER",
+   "model": "500-S"
+  },
+  {
+   "callsign": "BIRDDOG 500",
+   "registration": "VH-ODU",
+   "category": "FW - AAS / Recce",
+   "make": "CESSNA AIRCRAFT COMPANY",
+   "model": "208B"
+  },
+  {
+   "callsign": "BIRDDOG 640",
+   "registration": "VH-PWC",
+   "category": "FW - AAS / Recce",
+   "make": "AMERICAN CHAMPION AIRCRAFT CORP",
+   "model": "8GCBC"
+  },
+  {
+   "callsign": "BIRDDOG 642",
+   "registration": "VH-KTG",
+   "category": "FW - AAS / Recce",
+   "make": "AMERICAN CHAMPION AIRCRAFT CORP",
+   "model": "8GCBC"
+  },
+  {
+   "callsign": "BIRDDOG 643",
+   "registration": "VH-BPW",
+   "category": "FW - AAS / Recce",
+   "make": "AMERICAN CHAMPION AIRCRAFT CORP",
+   "model": "8GCBC"
+  },
+  {
+   "callsign": "BIRDDOG 644",
+   "registration": "VH-PWL",
+   "category": "FW - AAS / Recce",
+   "make": "AMERICAN CHAMPION AIRCRAFT CORP",
+   "model": "8GCBC"
+  },
+  {
+   "callsign": "BIRDDOG 645",
+   "registration": "VH-KYH",
+   "category": "FW - AAS / Recce",
+   "make": "AMERICAN CHAMPION AIRCRAFT CORP",
+   "model": "8GCBC"
+  },
+  {
+   "callsign": "BIRDDOG 646",
+   "registration": "VH-VPW",
+   "category": "FW - AAS / Recce",
+   "make": "AMERICAN CHAMPION AIRCRAFT CORP",
+   "model": "8GCBC"
+  },
+  {
+   "callsign": "BIRDDOG 648",
+   "registration": "VH-KUE",
+   "category": "FW - AAS / Recce",
+   "make": "AMERICAN CHAMPION AIRCRAFT CORP",
+   "model": "8GCBC"
+  },
+  {
+   "callsign": "BIRDDOG 681",
+   "registration": "VH-CGX",
+   "category": "Unspecified",
+   "make": "QUEST AIRCRAFT COMPANY, LLC",
+   "model": "KODIAK 100"
+  },
+  {
+   "callsign": "BIRDDOG 682",
+   "registration": "VH-AQL",
+   "category": "FW - AAS / Recce",
+   "make": "GIPPSLAND AERONAUTICS PTY LTD",
+   "model": "GA-8"
+  },
+  {
+   "callsign": "BIRDDOG 684",
+   "registration": "VH-CSA",
+   "category": "FW - AAS / Recce",
+   "make": "CESSNA AIRCRAFT COMPANY",
+   "model": "R182"
+  },
+  {
+   "callsign": "BIRDDOG 685",
+   "registration": "VH-AVP",
+   "category": "FW - AAS / Recce",
+   "make": "GIPPSLAND AERONAUTICS PTY LTD",
+   "model": "GA8"
+  },
+  {
+   "callsign": "BIRDDOG 686",
+   "registration": "VH-MXL",
+   "category": "FW - AAS / Recce",
+   "make": "CESSNA AIRCRAFT COMPANY",
+   "model": "R182"
+  },
+  {
+   "callsign": "BIRDDOG 687",
+   "registration": "VH-82G",
+   "category": "FW - AAS / Recce",
+   "make": "CESSNA AIRCRAFT COMPANY",
+   "model": "182T"
+  },
+  {
+   "callsign": "BIRDDOG 689",
+   "registration": "VH-PSY",
+   "category": "FW - AAS / Recce",
+   "make": "CESSNA AIRCRAFT COMPANY",
+   "model": "208B"
+  },
+  {
+   "callsign": "BIRDDOG 690",
+   "registration": "VH-YKG",
+   "category": "Unspecified",
+   "make": "PILATUS AIRCRAFT LTD",
+   "model": "PC-12/47E"
+  },
+  {
+   "callsign": "BIRDDOG 691",
+   "registration": "VH-TXS",
+   "category": "FW - AAS / Recce",
+   "make": "CESSNA AIRCRAFT COMPANY",
+   "model": "208"
+  },
+  {
+   "callsign": "BIRDDOG 692",
+   "registration": "VH-LWA",
+   "category": "FW - AAS / Recce",
+   "make": "CESSNA AIRCRAFT COMPANY",
+   "model": "208B"
+  },
+  {
+   "callsign": "BOMBER",
+   "registration": "VH-ODA",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR, INC.",
+   "model": "AT-802"
+  },
+  {
+   "callsign": "BOMBER 102",
+   "registration": "N292EA",
+   "category": "FW - Type 1 MEAT",
+   "make": "MCDONNELL DOUGLAS CORP.",
+   "model": "MD-87"
+  },
+  {
+   "callsign": "BOMBER 103",
+   "registration": "N293EA",
+   "category": "FW - Type 1 MEAT",
+   "make": "MCDONNELL DOUGLAS CORP.",
+   "model": "MD-87"
+  },
+  {
+   "callsign": "BOMBER 131",
+   "registration": "N131CG",
+   "category": "FW - Type 1 MEAT",
+   "make": "LOCKHEED AIRCRAFT CORP",
+   "model": "C130Q"
+  },
+  {
+   "callsign": "BOMBER 132",
+   "registration": "N132CG",
+   "category": "FW - Type 1 MEAT",
+   "make": "LOCKHEED AIRCRAFT CORP",
+   "model": "C130H"
+  },
+  {
+   "callsign": "BOMBER 133",
+   "registration": "N140CG",
+   "category": "FW - Type 1 MEAT",
+   "make": "LOCKHEED AIRCRAFT CORP",
+   "model": "C130H"
+  },
+  {
+   "callsign": "BOMBER 136",
+   "registration": "N136CG",
+   "category": "FW - Type 1 MEAT",
+   "make": "LOCKHEED AIRCRAFT CORP",
+   "model": "C130H"
+  },
+  {
+   "callsign": "BOMBER 138",
+   "registration": "N382CG",
+   "category": "FW - Type 1 MEAT",
+   "make": "LOCKHEED AIRCRAFT CORP",
+   "model": "C130H"
+  },
+  {
+   "callsign": "BOMBER 140",
+   "registration": "N130CG",
+   "category": "FW - Type 1 MEAT",
+   "make": "LOCKHEED AIRCRAFT CORP",
+   "model": "C130H"
+  },
+  {
+   "callsign": "BOMBER 141",
+   "registration": "C-FFQE",
+   "category": "FW - Type 1 MEAT",
+   "make": "BOMBARDIER INC",
+   "model": "DHC-8-402"
+  },
+  {
+   "callsign": "BOMBER 164",
+   "registration": "C-GVFK",
+   "category": "FW - Type 1 MEAT",
+   "make": "BRITISH AEROSPACE REGIONAL AIRCRAFT LIMITED",
+   "model": "AVRO 146-RJ85"
+  },
+  {
+   "callsign": "BOMBER 166",
+   "registration": "C-GVFT",
+   "category": "FW - Type 1 MEAT",
+   "make": "BRITISH AEROSPACE REGIONAL AIRCRAFT LIMITED",
+   "model": "AVRO 146-RJ85"
+  },
+  {
+   "callsign": "BOMBER 210",
+   "registration": "N138CG",
+   "category": "FW - Type 1 MEAT",
+   "make": "THE BOEING COMPANY",
+   "model": "737-3H4"
+  },
+  {
+   "callsign": "BOMBER 212",
+   "registration": "VH-OOW",
+   "category": "FW - Type 4 SEAT",
+   "make": "PZL \"WARSZAWA-OKECIE\"",
+   "model": "M-18T"
+  },
+  {
+   "callsign": "BOMBER 218",
+   "registration": "VH-LIH",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR INC",
+   "model": "AT-802"
+  },
+  {
+   "callsign": "BOMBER 219",
+   "registration": "VH-FNA",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR INC",
+   "model": "AT-802A"
+  },
+  {
+   "callsign": "BOMBER 220",
+   "registration": "VH-8T8",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR INC",
+   "model": "AT-802A"
+  },
+  {
+   "callsign": "BOMBER 221",
+   "registration": "VH-FBY",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR INC",
+   "model": "AT-802"
+  },
+  {
+   "callsign": "BOMBER 222",
+   "registration": "VH-FEP",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR INC",
+   "model": "AT-802"
+  },
+  {
+   "callsign": "BOMBER 223",
+   "registration": "VH-CVF",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR INC",
+   "model": "AT-802"
+  },
+  {
+   "callsign": "BOMBER 224",
+   "registration": "VH-8RF",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR INC",
+   "model": "AT-802A"
+  },
+  {
+   "callsign": "BOMBER 225",
+   "registration": "VH-FHA",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR INC",
+   "model": "AT-602"
+  },
+  {
+   "callsign": "BOMBER 227",
+   "registration": "VH-LIS",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR INC",
+   "model": "AT-802"
+  },
+  {
+   "callsign": "BOMBER 228",
+   "registration": "VH-LII",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR INC",
+   "model": "AT-802A"
+  },
+  {
+   "callsign": "BOMBER 229",
+   "registration": "VH-8LK",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR INC",
+   "model": "AT-802A"
+  },
+  {
+   "callsign": "BOMBER 230",
+   "registration": "VH-NIP",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR INC",
+   "model": "AT-802A"
+  },
+  {
+   "callsign": "BOMBER 232",
+   "registration": "VH-KDS",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR INC",
+   "model": "AT-802A"
+  },
+  {
+   "callsign": "BOMBER 233",
+   "registration": "VH-YDS",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR INC",
+   "model": "AT-802"
+  },
+  {
+   "callsign": "BOMBER 241",
+   "registration": "VH-PCD",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR INC",
+   "model": "AT-802A"
+  },
+  {
+   "callsign": "BOMBER 250",
+   "registration": "VH-AC8",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR INC",
+   "model": "AT-802A"
+  },
+  {
+   "callsign": "BOMBER 251",
+   "registration": "VH-WTJ",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR INC",
+   "model": "AT-802"
+  },
+  {
+   "callsign": "BOMBER 252",
+   "registration": "VH-WXF",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR INC",
+   "model": "AT-802"
+  },
+  {
+   "callsign": "BOMBER 253",
+   "registration": "VH-WXH",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR INC",
+   "model": "AT-802"
+  },
+  {
+   "callsign": "BOMBER 254",
+   "registration": "VH-LIC",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR INC",
+   "model": "AT-802"
+  },
+  {
+   "callsign": "BOMBER 256",
+   "registration": "VH-XWH",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR INC",
+   "model": "AT-802"
+  },
+  {
+   "callsign": "BOMBER 261",
+   "registration": "VH-ZED",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR INC",
+   "model": "AT-802A"
+  },
+  {
+   "callsign": "BOMBER 266",
+   "registration": "VH-XAV",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR INC",
+   "model": "AT-802"
+  },
+  {
+   "callsign": "BOMBER 273",
+   "registration": "VH-FFU",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR INC",
+   "model": "AT-802A"
+  },
+  {
+   "callsign": "BOMBER 274",
+   "registration": "VH-EDG",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR INC",
+   "model": "AT-802"
+  },
+  {
+   "callsign": "BOMBER 277",
+   "registration": "VH-XAW",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR INC",
+   "model": "AT-802"
+  },
+  {
+   "callsign": "BOMBER 288",
+   "registration": "VH-XAT",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR INC",
+   "model": "AT-802A"
+  },
+  {
+   "callsign": "BOMBER 299",
+   "registration": "VH-XAY",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR INC",
+   "model": "AT-802"
+  },
+  {
+   "callsign": "BOMBER 350",
+   "registration": "VH-YRY",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR INC",
+   "model": "AT-802"
+  },
+  {
+   "callsign": "BOMBER 351",
+   "registration": "VH-ARA",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR INC",
+   "model": "AT-802"
+  },
+  {
+   "callsign": "BOMBER 352",
+   "registration": "VH-8AM",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR INC",
+   "model": "AT-802"
+  },
+  {
+   "callsign": "BOMBER 353",
+   "registration": "VH-FZX",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR INC",
+   "model": "AT-802A"
+  },
+  {
+   "callsign": "BOMBER 354",
+   "registration": "VH-FZU",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR INC",
+   "model": "AT-802A"
+  },
+  {
+   "callsign": "BOMBER 355",
+   "registration": "VH-8FA",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR, INC.",
+   "model": "AT-802A"
+  },
+  {
+   "callsign": "BOMBER 356",
+   "registration": "VH-SQS",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR INC",
+   "model": "AT-802"
+  },
+  {
+   "callsign": "BOMBER 357",
+   "registration": "VH-BQH",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR INC",
+   "model": "AT-802A"
+  },
+  {
+   "callsign": "BOMBER 358",
+   "registration": "VH-VBV",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR INC",
+   "model": "AT-802"
+  },
+  {
+   "callsign": "BOMBER 359",
+   "registration": "VH-VWF",
+   "category": "FW - Type 4 SEAT",
+   "make": "PZL \"WARSZAWA-OKECIE\"",
+   "model": "M-18T"
+  },
+  {
+   "callsign": "BOMBER 360",
+   "registration": "VH-FBX",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR INC",
+   "model": "AT-802A"
+  },
+  {
+   "callsign": "BOMBER 361",
+   "registration": "VH-FHI",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR INC",
+   "model": "AT-802A"
+  },
+  {
+   "callsign": "BOMBER 362",
+   "registration": "VH-AP8",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR INC",
+   "model": "AT-802"
+  },
+  {
+   "callsign": "BOMBER 363",
+   "registration": "VH-JRN",
+   "category": "FW - Type 4 SEAT",
+   "make": "PZL \"WARSZAWA-OKECIE\"",
+   "model": "M-18T"
+  },
+  {
+   "callsign": "BOMBER 364",
+   "registration": "VH-8PM",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR, INC.",
+   "model": "AT-802"
+  },
+  {
+   "callsign": "BOMBER 391",
+   "registration": "C-FFQF",
+   "category": "FW - Type 1 MEAT",
+   "make": "BOMBARDIER INC",
+   "model": "DHC-8-402"
+  },
+  {
+   "callsign": "BOMBER 400",
+   "registration": "VH-NTV",
+   "category": "Unspecified",
+   "make": "THRUSH AIRCRAFT, INC.",
+   "model": "S2R-H80"
+  },
+  {
+   "callsign": "BOMBER 401",
+   "registration": "VH-LIR",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR INC",
+   "model": "AT-802"
+  },
+  {
+   "callsign": "BOMBER 402",
+   "registration": "VH-MDR",
+   "category": "FW - Type 4 SEAT",
+   "make": "PZL \"WARSZAWA-OKECIE\"",
+   "model": "M-18B"
+  },
+  {
+   "callsign": "BOMBER 404",
+   "registration": "VH-HWQ",
+   "category": "FW - Type 4 SEAT",
+   "make": "THRUSH AIRCRAFT, INC.",
+   "model": "S2R-T660"
+  },
+  {
+   "callsign": "BOMBER 405",
+   "registration": "VH-NHL",
+   "category": "Unspecified",
+   "make": "THRUSH AIRCRAFT, LLC.",
+   "model": "S2R-T660"
+  },
+  {
+   "callsign": "BOMBER 407",
+   "registration": "VH-NFF",
+   "category": "FW - Type 4 SEAT",
+   "make": "AYRES CORPORATION",
+   "model": "S2R-G10"
+  },
+  {
+   "callsign": "BOMBER 409",
+   "registration": "VH-ZIN",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR INC",
+   "model": "AT-802A"
+  },
+  {
+   "callsign": "BOMBER 411",
+   "registration": "VH-FVO",
+   "category": "FW - Type 4 SEAT",
+   "make": "THRUSH AIRCRAFT, INC.",
+   "model": "S2R-T660"
+  },
+  {
+   "callsign": "BOMBER 412",
+   "registration": "VH-FNV",
+   "category": "FW - Type 4 SEAT",
+   "make": "THRUSH AIRCRAFT, INC.",
+   "model": "S2R-T660"
+  },
+  {
+   "callsign": "BOMBER 413",
+   "registration": "VH-NCJ",
+   "category": "FW - Type 4 SEAT",
+   "make": "AYRES CORPORATION",
+   "model": "S2R-T34"
+  },
+  {
+   "callsign": "BOMBER 414",
+   "registration": "VH-OKW",
+   "category": "FW - Type 4 SEAT",
+   "make": "AYRES CORPORATION",
+   "model": "S2R-T34"
+  },
+  {
+   "callsign": "BOMBER 415",
+   "registration": "VH-NFS",
+   "category": "FW - Type 4 SEAT",
+   "make": "AYRES CORPORATION",
+   "model": "S2R-G1"
+  },
+  {
+   "callsign": "BOMBER 416",
+   "registration": "VH-A8O",
+   "category": "FW - Type 4 SEAT",
+   "make": "THRUSH AIRCRAFT, INC.",
+   "model": "S2R-T660"
+  },
+  {
+   "callsign": "BOMBER 420",
+   "registration": "VH-8WU",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR INC",
+   "model": "AT-802"
+  },
+  {
+   "callsign": "BOMBER 424",
+   "registration": "VH-SDJ",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR INC",
+   "model": "AT-802"
+  },
+  {
+   "callsign": "BOMBER 425",
+   "registration": "VH-ZRO",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR INC",
+   "model": "AT-802A"
+  },
+  {
+   "callsign": "BOMBER 426",
+   "registration": "VH-NFY",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR INC",
+   "model": "AT-802A"
+  },
+  {
+   "callsign": "BOMBER 427",
+   "registration": "VH-BQE",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR INC",
+   "model": "AT-802A"
+  },
+  {
+   "callsign": "BOMBER 428",
+   "registration": "VH-LHW",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR INC",
+   "model": "AT-802A"
+  },
+  {
+   "callsign": "BOMBER 429",
+   "registration": "VH-NFD",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR INC",
+   "model": "AT-802A"
+  },
+  {
+   "callsign": "BOMBER 432",
+   "registration": "VH-RKR",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR INC",
+   "model": "AT-802"
+  },
+  {
+   "callsign": "BOMBER 433",
+   "registration": "VH-DBQ",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR INC",
+   "model": "AT-802"
+  },
+  {
+   "callsign": "BOMBER 434",
+   "registration": "VH-OUY",
+   "category": "FW - Type 4 SEAT",
+   "make": "THRUSH AIRCRAFT, INC.",
+   "model": "S2R-T660"
+  },
+  {
+   "callsign": "BOMBER 435",
+   "registration": "VH-FZV",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR INC",
+   "model": "AT-802A"
+  },
+  {
+   "callsign": "BOMBER 436",
+   "registration": "VH-JQW",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR INC",
+   "model": "AT-802A"
+  },
+  {
+   "callsign": "BOMBER 437",
+   "registration": "VH-FFM",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR INC",
+   "model": "AT-802"
+  },
+  {
+   "callsign": "BOMBER 438",
+   "registration": "VH-FFN",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR INC",
+   "model": "AT-802A"
+  },
+  {
+   "callsign": "BOMBER 439",
+   "registration": "VH-FFS",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR INC",
+   "model": "AT-802A"
+  },
+  {
+   "callsign": "BOMBER 455",
+   "registration": "VH-XAJ",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR INC",
+   "model": "AT-802A"
+  },
+  {
+   "callsign": "BOMBER 477",
+   "registration": "VH-8O2",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR, INC.",
+   "model": "AT-802A"
+  },
+  {
+   "callsign": "BOMBER 580",
+   "registration": "VH-8FR",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR, INC.",
+   "model": "AT-802"
+  },
+  {
+   "callsign": "BOMBER 581",
+   "registration": "VH-OUF",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR INC",
+   "model": "AT-802A"
+  },
+  {
+   "callsign": "BOMBER 582",
+   "registration": "VH-OUG",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR, INC.",
+   "model": "AT-802A"
+  },
+  {
+   "callsign": "BOMBER 583",
+   "registration": "VH-ODW",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR INC",
+   "model": "AT-802"
+  },
+  {
+   "callsign": "BOMBER 584",
+   "registration": "VH-ODZ",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR INC",
+   "model": "AT-802A"
+  },
+  {
+   "callsign": "BOMBER 585",
+   "registration": "VH-ODV",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR INC",
+   "model": "AT-802A"
+  },
+  {
+   "callsign": "BOMBER 586",
+   "registration": "VH-8OK",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR INC",
+   "model": "AT-802"
+  },
+  {
+   "callsign": "BOMBER 587",
+   "registration": "VH-8XO",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR INC",
+   "model": "AT-802A"
+  },
+  {
+   "callsign": "BOMBER 588",
+   "registration": "VH-XPB",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR INC",
+   "model": "AT-802A"
+  },
+  {
+   "callsign": "BOMBER 589",
+   "registration": "VH-OUC",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR INC",
+   "model": "AT-802A"
+  },
+  {
+   "callsign": "BOMBER 590",
+   "registration": "VH-OUE",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR INC",
+   "model": "AT-802A"
+  },
+  {
+   "callsign": "BOMBER 591",
+   "registration": "VH-OUB",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR INC",
+   "model": "AT-802A"
+  },
+  {
+   "callsign": "BOMBER 592",
+   "registration": "VH-OUN",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR INC",
+   "model": "AT-802A"
+  },
+  {
+   "callsign": "BOMBER 593",
+   "registration": "VH-8SM",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR INC",
+   "model": "AT-802A"
+  },
+  {
+   "callsign": "BOMBER 594",
+   "registration": "VH-ODH",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR INC",
+   "model": "AT-802"
+  },
+  {
+   "callsign": "BOMBER 595",
+   "registration": "VH-OUM",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR INC",
+   "model": "AT-802A"
+  },
+  {
+   "callsign": "BOMBER 597",
+   "registration": "VH-OUJ",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR INC",
+   "model": "AT-802A"
+  },
+  {
+   "callsign": "BOMBER 598",
+   "registration": "VH-ODP",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR INC",
+   "model": "AT-802A"
+  },
+  {
+   "callsign": "BOMBER 601",
+   "registration": "VH-DUQ",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR INC",
+   "model": "AT-802"
+  },
+  {
+   "callsign": "BOMBER 602",
+   "registration": "VH-FGO",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR INC",
+   "model": "AT-802A"
+  },
+  {
+   "callsign": "BOMBER 603",
+   "registration": "VH-PEK",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR, INC.",
+   "model": "AT-802A"
+  },
+  {
+   "callsign": "BOMBER 604",
+   "registration": "VH-DUN",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR INC",
+   "model": "AT-802A"
+  },
+  {
+   "callsign": "BOMBER 605",
+   "registration": "VH-FED",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR, INC.",
+   "model": "AT-802"
+  },
+  {
+   "callsign": "BOMBER 606",
+   "registration": "VH-FCO",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR INC",
+   "model": "AT-802A"
+  },
+  {
+   "callsign": "BOMBER 607",
+   "registration": "VH-DUJ",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR INC",
+   "model": "AT-802"
+  },
+  {
+   "callsign": "BOMBER 608",
+   "registration": "VH-DUA",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR INC",
+   "model": "AT-802"
+  },
+  {
+   "callsign": "BOMBER 610",
+   "registration": "VH-JID",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR INC",
+   "model": "AT-802"
+  },
+  {
+   "callsign": "BOMBER 611",
+   "registration": "VH-RIM",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR, INC.",
+   "model": "AT-802A"
+  },
+  {
+   "callsign": "BOMBER 612",
+   "registration": "VH-NID",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR INC",
+   "model": "AT-802A"
+  },
+  {
+   "callsign": "BOMBER 614",
+   "registration": "VH-8DA",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR, INC.",
+   "model": "AT-802A"
+  },
+  {
+   "callsign": "BOMBER 615",
+   "registration": "VH-8DB",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR, INC.",
+   "model": "AT-802A"
+  },
+  {
+   "callsign": "BOMBER 616",
+   "registration": "VH-NEV",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR INC",
+   "model": "AT-802"
+  },
+  {
+   "callsign": "BOMBER 626",
+   "registration": "N470NA",
+   "category": "FW - Type 1 MEAT",
+   "make": "BRITISH AEROSPACE PLC",
+   "model": "BAE 146-200A"
+  },
+  {
+   "callsign": "BOMBER 716",
+   "registration": "VH-IWU",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR INC",
+   "model": "AT-802A"
+  },
+  {
+   "callsign": "BOMBER 717",
+   "registration": "VH-NWU",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR INC",
+   "model": "AT-802A"
+  },
+  {
+   "callsign": "BOMBER 718",
+   "registration": "VH-AWU",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR INC",
+   "model": "AT-802"
+  },
+  {
+   "callsign": "BOMBER 733",
+   "registration": "VH-DUW",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR INC",
+   "model": "AT-802A"
+  },
+  {
+   "callsign": "BOMBER 750",
+   "registration": "VH-8FB",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR INC",
+   "model": "AT-802A"
+  },
+  {
+   "callsign": "BOMBER 751",
+   "registration": "VH-RFM",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR INC",
+   "model": "AT-802A"
+  },
+  {
+   "callsign": "BOMBER 799",
+   "registration": "VH-AKZ",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR, INC.",
+   "model": "AT-802A"
+  },
+  {
+   "callsign": "BOMBER 833",
+   "registration": "VH-CKS",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR INC",
+   "model": "AT-802"
+  },
+  {
+   "callsign": "BOMBER 853",
+   "registration": "VH-WHY",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR, INC.",
+   "model": "AT-802A"
+  },
+  {
+   "callsign": "BOMBER 858",
+   "registration": "VH-FZO",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR INC",
+   "model": "AT-802A"
+  },
+  {
+   "callsign": "BOMBER 883",
+   "registration": "VH-8KB",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR, INC.",
+   "model": "AT-802A"
+  },
+  {
+   "callsign": "BOMBER 884",
+   "registration": "VH-8MP",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR INC",
+   "model": "AT-802"
+  },
+  {
+   "callsign": "BOMBER 885",
+   "registration": "VH-ZBI",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR INC",
+   "model": "AT-802"
+  },
+  {
+   "callsign": "BOMBER 88?",
+   "registration": "VH-ODQ",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR INC",
+   "model": "AT-802"
+  },
+  {
+   "callsign": "DPE-(F/W-185)",
+   "registration": "ZK-DPE",
+   "category": "FW - AAS / Recce",
+   "make": "CESSNA AIRCRAFT COMPANY",
+   "model": "185"
+  },
+  {
+   "callsign": "ELK-(F/W 300)PAX",
+   "registration": "ZK-ELK",
+   "category": "Unspecified",
+   "make": "PIPER AIRCRAFT CORPORATION",
+   "model": "PA32-300"
+  },
+  {
+   "callsign": "ENERGY 31",
+   "registration": "VH-YGL",
+   "category": "Unspecified",
+   "make": "BELL TEXTRON CANADA LIMITED",
+   "model": "407"
+  },
+  {
+   "callsign": "ENT-(F/W PAX)",
+   "registration": "ZK-ENT",
+   "category": "FW - AAS / Recce",
+   "make": "CESSNA AIRCRAFT COMPANY",
+   "model": "206H"
+  },
+  {
+   "callsign": "FB",
+   "registration": "VH-HQO",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS 350 BA"
+  },
+  {
+   "callsign": "FDN-(F/W) AIR AMB",
+   "registration": "ZK-FDN",
+   "category": "FW - Other",
+   "make": "BEECH AIRCRAFT CORP",
+   "model": "C90"
+  },
+  {
+   "callsign": "FDR-(F/W) AIR AMB",
+   "registration": "ZK-FDR",
+   "category": "FW - Other",
+   "make": "BEECH AIRCRAFT CORP",
+   "model": "200C"
+  },
+  {
+   "callsign": "FDS-(F/W) AIR AMB",
+   "registration": "ZK-FDS",
+   "category": "FW - Other",
+   "make": "BEECH AIRCRAFT CORP",
+   "model": "200C"
+  },
+  {
+   "callsign": "FIREBIRD",
+   "registration": "VH-SGK",
+   "category": "RW - Type 3 Light",
+   "make": "AEROSPATIALE INDUSTRIES",
+   "model": "AS.350BA"
+  },
+  {
+   "callsign": "FIREBIRD 100",
+   "registration": "VH-YJB",
+   "category": "RW - Type 3 Light",
+   "make": "AIRBUS HELICOPTERS",
+   "model": "AS 350 B3E"
+  },
+  {
+   "callsign": "FIREBIRD 207",
+   "registration": "VH-ONT",
+   "category": "RW - Type 3 Light",
+   "make": "BELL HELICOPTER CO",
+   "model": "206B (III)"
+  },
+  {
+   "callsign": "FIREBIRD 212",
+   "registration": "VH-IQB",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS 350 B2"
+  },
+  {
+   "callsign": "FIREBIRD 217",
+   "registration": "VH-NFO",
+   "category": "RW - Type 3 Light",
+   "make": "AEROSPATIALE INDUSTRIES",
+   "model": "AS.350B2"
+  },
+  {
+   "callsign": "FIREBIRD 218",
+   "registration": "VH-PIW",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER FRANCE",
+   "model": "AS.350B2"
+  },
+  {
+   "callsign": "FIREBIRD 219",
+   "registration": "VH-THV",
+   "category": "RW - Type 3 Light",
+   "make": "AEROSPATIALE INDUSTRIES",
+   "model": "AS.350B2"
+  },
+  {
+   "callsign": "FIREBIRD 220",
+   "registration": "VH-UTJ",
+   "category": "RW - Type 3 Light",
+   "make": "BELL HELICOPTER TEXTRON",
+   "model": "206L-3"
+  },
+  {
+   "callsign": "FIREBIRD 221",
+   "registration": "VH-ONS",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS 350 B2"
+  },
+  {
+   "callsign": "FIREBIRD 224",
+   "registration": "VH-AGL",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS 350 B2"
+  },
+  {
+   "callsign": "FIREBIRD 225",
+   "registration": "VH-MDE",
+   "category": "RW - Type 3 Light",
+   "make": "MCDONNELL DOUGLAS HELICOPTER COMPANY",
+   "model": "369E"
+  },
+  {
+   "callsign": "FIREBIRD 226",
+   "registration": "VH-IHC",
+   "category": "RW - Type 3 Light",
+   "make": "BELL HELICOPTER CO",
+   "model": "206L-1"
+  },
+  {
+   "callsign": "FIREBIRD 227",
+   "registration": "VH-TSV",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS 350 BA"
+  },
+  {
+   "callsign": "FIREBIRD 228",
+   "registration": "VH-IBF",
+   "category": "Unspecified",
+   "make": "BELL HELICOPTER TEXTRON CANADA LIMITED",
+   "model": "407"
+  },
+  {
+   "callsign": "FIREBIRD 229",
+   "registration": "VH-8HK",
+   "category": "RW - Type 3 Light",
+   "make": "AMERICAN EUROCOPTER",
+   "model": "AS 350 B3"
+  },
+  {
+   "callsign": "FIREBIRD 230",
+   "registration": "VH-CHO",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER FRANCE",
+   "model": "AS.350B2"
+  },
+  {
+   "callsign": "FIREBIRD 231",
+   "registration": "VH-BLR",
+   "category": "RW - Type 3 Light",
+   "make": "BELL HELICOPTER CO",
+   "model": "206B (II)"
+  },
+  {
+   "callsign": "FIREBIRD 233",
+   "registration": "VH-ONR",
+   "category": "RW - Type 3 Light",
+   "make": "BELL HELICOPTER CO",
+   "model": "206L-3"
+  },
+  {
+   "callsign": "FIREBIRD 234",
+   "registration": "VH-ENX",
+   "category": "RW - Type 3 Light",
+   "make": "AEROSPATIALE INDUSTRIES",
+   "model": "AS350 FX2"
+  },
+  {
+   "callsign": "FIREBIRD 235",
+   "registration": "VH-FIP",
+   "category": "RW - Type 3 Light",
+   "make": "BELL HELICOPTER CO",
+   "model": "206B (III)"
+  },
+  {
+   "callsign": "FIREBIRD 237",
+   "registration": "VH-SKU",
+   "category": "RW - Type 3 Light",
+   "make": "BELL HELICOPTER TEXTRON CANADA LIMITED",
+   "model": "206L-4"
+  },
+  {
+   "callsign": "FIREBIRD 239",
+   "registration": "VH-T4W",
+   "category": "Unspecified",
+   "make": "EUROCOPTER",
+   "model": "AS-350B3"
+  },
+  {
+   "callsign": "FIREBIRD 240",
+   "registration": "VH-MJI",
+   "category": "RW - Type 3 Light",
+   "make": "BELL HELICOPTER TEXTRON CANADA LTD",
+   "model": "429"
+  },
+  {
+   "callsign": "FIREBIRD 242",
+   "registration": "VH-UTM",
+   "category": "RW - Type 3 Light",
+   "make": "AEROSPATIALE INDUSTRIES",
+   "model": "AS.350BA"
+  },
+  {
+   "callsign": "FIREBIRD 243",
+   "registration": "VH-VTN",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS.350B3"
+  },
+  {
+   "callsign": "FIREBIRD 244",
+   "registration": "VH-XDB",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS 350 B2"
+  },
+  {
+   "callsign": "FIREBIRD 245",
+   "registration": "VH-DVM",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS 350 B3"
+  },
+  {
+   "callsign": "FIREBIRD 249",
+   "registration": "VH-UAZ",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS.350B3"
+  },
+  {
+   "callsign": "FIREBIRD 250",
+   "registration": "VH-EKE",
+   "category": "Unspecified",
+   "make": "EUROCOPTER FRANCE",
+   "model": "AS 350 BA"
+  },
+  {
+   "callsign": "FIREBIRD 251",
+   "registration": "VH-RKI",
+   "category": "Unspecified",
+   "make": "BELL HELICOPTER TEXTRON CANADA LIMITED",
+   "model": "206L-3"
+  },
+  {
+   "callsign": "FIREBIRD 252",
+   "registration": "VH-JMW",
+   "category": "RW - Type 3 Light",
+   "make": "AEROSPATIALE INDUSTRIES",
+   "model": "AS 350 B2"
+  },
+  {
+   "callsign": "FIREBIRD 253",
+   "registration": "VH-TVG",
+   "category": "RW - Type 3 Light",
+   "make": "AEROSPATIALE INDUSTRIES",
+   "model": "AS.350B2"
+  },
+  {
+   "callsign": "FIREBIRD 254",
+   "registration": "VH-THY",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS 350 B3"
+  },
+  {
+   "callsign": "FIREBIRD 255",
+   "registration": "VH-UAI",
+   "category": "RW - Type 3 Light",
+   "make": "BELL HELICOPTER CO",
+   "model": "206L-3"
+  },
+  {
+   "callsign": "FIREBIRD 256",
+   "registration": "C-GDSQ",
+   "category": "RW - Type 3 Light",
+   "make": "AIRBUS HELICOPTERS",
+   "model": "AS 350 B2"
+  },
+  {
+   "callsign": "FIREBIRD 257",
+   "registration": "VH-DMX",
+   "category": "RW - Type 3 Light",
+   "make": "BELL HELICOPTER TEXTRON CANADA LIMITED",
+   "model": "427"
+  },
+  {
+   "callsign": "FIREBIRD 258",
+   "registration": "VH-LZH",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS.350B2"
+  },
+  {
+   "callsign": "FIREBIRD 260",
+   "registration": "VH-ZHM",
+   "category": "RW - Type 3 Light",
+   "make": "AEROSPATIALE INDUSTRIES",
+   "model": "AS350 SD2"
+  },
+  {
+   "callsign": "FIREBIRD 261",
+   "registration": "VH-BBY",
+   "category": "RW - Type 3 Light",
+   "make": "BELL HELICOPTER TEXTRON",
+   "model": "206B"
+  },
+  {
+   "callsign": "FIREBIRD 264",
+   "registration": "VH-HKB",
+   "category": "RW - Type 3 Light",
+   "make": "BELL HELICOPTER CO",
+   "model": "206B (II)"
+  },
+  {
+   "callsign": "FIREBIRD 269",
+   "registration": "VH-JAK",
+   "category": "RW - Type 3 Light",
+   "make": "BELL HELICOPTER CO",
+   "model": "206B (III)"
+  },
+  {
+   "callsign": "FIREBIRD 270",
+   "registration": "VH-HVK",
+   "category": "RW - Type 3 Light",
+   "make": "AEROSPATIALE INDUSTRIES",
+   "model": "AS350 FX2"
+  },
+  {
+   "callsign": "FIREBIRD 271",
+   "registration": "VH-ENC",
+   "category": "RW - Type 3 Light",
+   "make": "AEROSPATIALE INDUSTRIES",
+   "model": "AS350 FX2"
+  },
+  {
+   "callsign": "FIREBIRD 272",
+   "registration": "VH-JVS",
+   "category": "RW - Type 3 Light",
+   "make": "AEROSPATIALE INDUSTRIES",
+   "model": "AS 350 B2"
+  },
+  {
+   "callsign": "FIREBIRD 273",
+   "registration": "VH-YOS",
+   "category": "RW - Type 3 Light",
+   "make": "AIRBUS HELICOPTERS",
+   "model": "AS 350 B3E"
+  },
+  {
+   "callsign": "FIREBIRD 274",
+   "registration": "VH-ZBB",
+   "category": "RW - Type 3 Light",
+   "make": "BELL HELICOPTER TEXTRON",
+   "model": "206B"
+  },
+  {
+   "callsign": "FIREBIRD 275",
+   "registration": "VH-PCO",
+   "category": "RW - Type 3 Light",
+   "make": "AIRBUS HELICOPTERS",
+   "model": "AS 350 B3"
+  },
+  {
+   "callsign": "FIREBIRD 276",
+   "registration": "VH-LEE",
+   "category": "RW - Type 3 Light",
+   "make": "BELL HELICOPTER TEXTRON CANADA LTD",
+   "model": "206L-3"
+  },
+  {
+   "callsign": "FIREBIRD 277",
+   "registration": "VH-ONM",
+   "category": "RW - Type 3 Light",
+   "make": "BELL HELICOPTER TEXTRON",
+   "model": "206B"
+  },
+  {
+   "callsign": "FIREBIRD 278",
+   "registration": "VH-OZC",
+   "category": "Unspecified",
+   "make": "BELL HELICOPTER TEXTRON CANADA LIMITED",
+   "model": "206L-3"
+  },
+  {
+   "callsign": "FIREBIRD 279",
+   "registration": "VH-RDA",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS 350 B2"
+  },
+  {
+   "callsign": "FIREBIRD 281",
+   "registration": "VH-NHT",
+   "category": "RW - Type 3 Light",
+   "make": "BELL HELICOPTER CO",
+   "model": "206L-3"
+  },
+  {
+   "callsign": "FIREBIRD 283",
+   "registration": "VH-XGC",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER FRANCE",
+   "model": "AS.350B3"
+  },
+  {
+   "callsign": "FIREBIRD 285",
+   "registration": "VH-EGJ",
+   "category": "RW - Type 3 Light",
+   "make": "AEROSPATIALE INDUSTRIES",
+   "model": "AS.350BA"
+  },
+  {
+   "callsign": "FIREBIRD 287",
+   "registration": "VH-BUK",
+   "category": "RW - Type 3 Light",
+   "make": "AEROSPATIALE INDUSTRIES",
+   "model": "AS.350BA"
+  },
+  {
+   "callsign": "FIREBIRD 288",
+   "registration": "VH-ICM",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS.350B2"
+  },
+  {
+   "callsign": "FIREBIRD 289",
+   "registration": "VH-JFN",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER FRANCE",
+   "model": "AS.350B2"
+  },
+  {
+   "callsign": "FIREBIRD 290",
+   "registration": "VH-YAS",
+   "category": "RW - Type 3 Light",
+   "make": "AIRBUS HELICOPTERS",
+   "model": "AS 350 B2"
+  },
+  {
+   "callsign": "FIREBIRD 291",
+   "registration": "VH-YAM",
+   "category": "RW - Type 3 Light",
+   "make": "BELL HELICOPTER CO",
+   "model": "206B (II)"
+  },
+  {
+   "callsign": "FIREBIRD 292",
+   "registration": "VH-VTY",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS 350 B2"
+  },
+  {
+   "callsign": "FIREBIRD 293",
+   "registration": "VH-DKG",
+   "category": "RW - Type 3 Light",
+   "make": "BELL HELICOPTER CO",
+   "model": "407"
+  },
+  {
+   "callsign": "FIREBIRD 294",
+   "registration": "VH-ICY",
+   "category": "RW - Type 3 Light",
+   "make": "AEROSPATIALE",
+   "model": "AS 350 B2"
+  },
+  {
+   "callsign": "FIREBIRD 295",
+   "registration": "VH-FHS",
+   "category": "RW - Type 3 Light",
+   "make": "BELL HELICOPTER TEXTRON CANADA LIMITED",
+   "model": "206L-4"
+  },
+  {
+   "callsign": "FIREBIRD 296",
+   "registration": "VH-ZMH",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER FRANCE",
+   "model": "AS.350B3"
+  },
+  {
+   "callsign": "FIREBIRD 297",
+   "registration": "VH-ANC",
+   "category": "RW - Type 3 Light",
+   "make": "BELL HELICOPTER TEXTRON CANADA LTD",
+   "model": "206L-3"
+  },
+  {
+   "callsign": "FIREBIRD 298",
+   "registration": "VH-RBT",
+   "category": "RW - Type 3 Light",
+   "make": "AIRBUS HELICOPTERS",
+   "model": "AS 350 B3"
+  },
+  {
+   "callsign": "FIREBIRD 299",
+   "registration": "VH-NYC",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS350B2"
+  },
+  {
+   "callsign": "FIREBIRD 300",
+   "registration": "VH-XXW",
+   "category": "RW - Type 3 Light",
+   "make": "AIRBUS HELICOPTERS",
+   "model": "AS 350 B3E"
+  },
+  {
+   "callsign": "FIREBIRD 302",
+   "registration": "VH-LSR",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS.350B2"
+  },
+  {
+   "callsign": "FIREBIRD 303",
+   "registration": "VH-PXX",
+   "category": "RW - Type 3 Light",
+   "make": "AIRBUS HELICOPTERS",
+   "model": "AS 350 B3"
+  },
+  {
+   "callsign": "FIREBIRD 304",
+   "registration": "VH-YXX",
+   "category": "RW - Type 3 Light",
+   "make": "AIRBUS HELICOPTERS",
+   "model": "AS 350 B3"
+  },
+  {
+   "callsign": "FIREBIRD 305",
+   "registration": "VH-AWK",
+   "category": "RW - Type 3 Light",
+   "make": "AEROSPATIALE INDUSTRIES",
+   "model": "AS.350BA"
+  },
+  {
+   "callsign": "FIREBIRD 306",
+   "registration": "VH-XXM",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER FRANCE",
+   "model": "AS.350B2"
+  },
+  {
+   "callsign": "FIREBIRD 307",
+   "registration": "VH-EB3",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS 350 B3"
+  },
+  {
+   "callsign": "FIREBIRD 308",
+   "registration": "VH-UJB",
+   "category": "Unspecified",
+   "make": "AIRBUS HELICOPTERS DEUTSCHLAND GMBH",
+   "model": "EC135 P3"
+  },
+  {
+   "callsign": "FIREBIRD 309",
+   "registration": "VH-ZXX",
+   "category": "RW - Type 3 Light",
+   "make": "AIRBUS HELICOPTERS",
+   "model": "AS 350 B3E"
+  },
+  {
+   "callsign": "FIREBIRD 310",
+   "registration": "VH-SCO",
+   "category": "RW - Type 3 Light",
+   "make": "AEROSPATIALE INDUSTRIES",
+   "model": "AS350 FX2"
+  },
+  {
+   "callsign": "FIREBIRD 311",
+   "registration": "VH-UAS",
+   "category": "RW - Type 3 Light",
+   "make": "AEROSPATIALE INDUSTRIES",
+   "model": "AS 350 B2"
+  },
+  {
+   "callsign": "FIREBIRD 312",
+   "registration": "VH-TMY",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS.350B3"
+  },
+  {
+   "callsign": "FIREBIRD 313",
+   "registration": "VH-LEY",
+   "category": "RW - Type 3 Light",
+   "make": "AEROSPATIALE INDUSTRIES",
+   "model": "AS.350B2"
+  },
+  {
+   "callsign": "FIREBIRD 314",
+   "registration": "VH-JSU",
+   "category": "RW - Type 3 Light",
+   "make": "BELL HELICOPTER TEXTRON",
+   "model": "206L-3"
+  },
+  {
+   "callsign": "FIREBIRD 315",
+   "registration": "VH-HVY",
+   "category": "RW - Type 3 Light",
+   "make": "AEROSPATIALE INDUSTRIES",
+   "model": "AS350 FX2"
+  },
+  {
+   "callsign": "FIREBIRD 316",
+   "registration": "VH-NDO",
+   "category": "RW - Type 3 Light",
+   "make": "AEROSPATIALE INDUSTRIES",
+   "model": "AS350 FX2"
+  },
+  {
+   "callsign": "FIREBIRD 317",
+   "registration": "VH-PHE",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS 350 B2"
+  },
+  {
+   "callsign": "FIREBIRD 318",
+   "registration": "VH-PHN",
+   "category": "RW - Type 3 Light",
+   "make": "AEROSPATIALE INDUSTRIES",
+   "model": "AS 355 F2"
+  },
+  {
+   "callsign": "FIREBIRD 320",
+   "registration": "VH-XAB",
+   "category": "RW - Type 3 Light",
+   "make": "BELL HELICOPTER CO",
+   "model": "206L-1"
+  },
+  {
+   "callsign": "FIREBIRD 323",
+   "registration": "VH-WVV",
+   "category": "RW - Type 3 Light",
+   "make": "AIRBUS HELICOPTERS",
+   "model": "EC 130 T2"
+  },
+  {
+   "callsign": "FIREBIRD 324",
+   "registration": "VH-8JB",
+   "category": "Unspecified",
+   "make": "AIRBUS HELICOPTERS DEUTSCHLAND GMBH",
+   "model": "MBB-BK117 D-3"
+  },
+  {
+   "callsign": "FIREBIRD 325",
+   "registration": "VH-UHD",
+   "category": "RW - Type 3 Light",
+   "make": "AMERICAN EUROCOPTER",
+   "model": "AS350B3"
+  },
+  {
+   "callsign": "FIREBIRD 326",
+   "registration": "VH-ELC",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS.350B3"
+  },
+  {
+   "callsign": "FIREBIRD 327",
+   "registration": "VH-ZHS",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS.350B3"
+  },
+  {
+   "callsign": "FIREBIRD 328",
+   "registration": "VH-YHQ",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS 350 B3"
+  },
+  {
+   "callsign": "FIREBIRD 401",
+   "registration": "VH-JZB",
+   "category": "RW - Type 3 Light",
+   "make": "AGUSTA, SPA, CONSTRUZIONI AERONAUTICHE",
+   "model": "206B"
+  },
+  {
+   "callsign": "FIREBIRD 404",
+   "registration": "VH-EHY",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "EC130B4"
+  },
+  {
+   "callsign": "FIREBIRD 407",
+   "registration": "VH-KZD",
+   "category": "RW - Type 3 Light",
+   "make": "AIRBUS HELICOPTERS",
+   "model": "AS 350 B3E"
+  },
+  {
+   "callsign": "FIREBIRD 408",
+   "registration": "VH-WMW",
+   "category": "RW - Type 3 Light",
+   "make": "AEROSPATIALE INDUSTRIES",
+   "model": "AS.350BA"
+  },
+  {
+   "callsign": "FIREBIRD 409",
+   "registration": "VH-YQK",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS 350 B3"
+  },
+  {
+   "callsign": "FIREBIRD 410",
+   "registration": "VH-MIX",
+   "category": "RW - Type 3 Light",
+   "make": "AMERICAN EUROCOPTER",
+   "model": "AS 350 B3"
+  },
+  {
+   "callsign": "FIREBIRD 411",
+   "registration": "VH-KMI",
+   "category": "RW - Type 3 Light",
+   "make": "AIRBUS HELICOPTERS",
+   "model": "AS 350 B3E"
+  },
+  {
+   "callsign": "FIREBIRD 415",
+   "registration": "VH-XCO",
+   "category": "RW - Type 3 Light",
+   "make": "AEROSPATIALE",
+   "model": "AS 350 B2"
+  },
+  {
+   "callsign": "FIREBIRD 418",
+   "registration": "VH-BAM",
+   "category": "RW - Type 3 Light",
+   "make": "BELL HELICOPTER TEXTRON",
+   "model": "206L-3"
+  },
+  {
+   "callsign": "FIREBIRD 420",
+   "registration": "VH-PLI",
+   "category": "RW - Type 3 Light",
+   "make": "BELL HELICOPTER TEXTRON",
+   "model": "206L-3"
+  },
+  {
+   "callsign": "FIREBIRD 422",
+   "registration": "VH-AYP",
+   "category": "RW - Type 3 Light",
+   "make": "BELL HELICOPTER CO",
+   "model": "206B (III)"
+  },
+  {
+   "callsign": "FIREBIRD 426",
+   "registration": "VH-XFN",
+   "category": "Unspecified",
+   "make": "BELL HELICOPTER TEXTRON CANADA LIMITED",
+   "model": "407"
+  },
+  {
+   "callsign": "FIREBIRD 427",
+   "registration": "VH-WCF",
+   "category": "RW - Type 3 Light",
+   "make": "BELL HELICOPTER CO",
+   "model": "206B"
+  },
+  {
+   "callsign": "FIREBIRD 429",
+   "registration": "VH-VWH",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS 350 B2"
+  },
+  {
+   "callsign": "FIREBIRD 431",
+   "registration": "VH-VKU",
+   "category": "RW - Type 3 Light",
+   "make": "AIRBUS HELICOPTERS",
+   "model": "AS 350 B3"
+  },
+  {
+   "callsign": "FIREBIRD 436",
+   "registration": "VH-AJU",
+   "category": "RW - Type 3 Light",
+   "make": "BELL HELICOPTER CO",
+   "model": "206B"
+  },
+  {
+   "callsign": "FIREBIRD 437",
+   "registration": "VH-JMM",
+   "category": "Unspecified",
+   "make": "BELL HELICOPTER TEXTRON CANADA LIMITED",
+   "model": "206L-3"
+  },
+  {
+   "callsign": "FIREBIRD 438",
+   "registration": "VH-VTO",
+   "category": "RW - Type 3 Light",
+   "make": "BELL HELICOPTER TEXTRON CANADA LTD",
+   "model": "206L-3"
+  },
+  {
+   "callsign": "FIREBIRD 440",
+   "registration": "VH-HEH",
+   "category": "RW - Type 3 Light",
+   "make": "BELL HELICOPTER TEXTRON CANADA LIMITED",
+   "model": "206L-4"
+  },
+  {
+   "callsign": "FIREBIRD 441",
+   "registration": "VH-NAU",
+   "category": "RW - Type 3 Light",
+   "make": "BELL HELICOPTER CO",
+   "model": "206L-4"
+  },
+  {
+   "callsign": "FIREBIRD 442",
+   "registration": "VH-VHU",
+   "category": "RW - Type 3 Light",
+   "make": "BELL HELICOPTER TEXTRON CANADA LTD",
+   "model": "407"
+  },
+  {
+   "callsign": "FIREBIRD 444",
+   "registration": "VH-HZQ",
+   "category": "Unspecified",
+   "make": "BELL HELICOPTER TEXTRON CANADA LIMITED",
+   "model": "206L-3"
+  },
+  {
+   "callsign": "FIREBIRD 445",
+   "registration": "VH-JEK",
+   "category": "Unspecified",
+   "make": "BELL TEXTRON CANADA LIMITED",
+   "model": "407"
+  },
+  {
+   "callsign": "FIREBIRD 446",
+   "registration": "VH-JIW",
+   "category": "Unspecified",
+   "make": "BELL TEXTRON CANADA LIMITED",
+   "model": "407"
+  },
+  {
+   "callsign": "FIREBIRD 447",
+   "registration": "VH-JUF",
+   "category": "Unspecified",
+   "make": "BELL TEXTRON CANADA LIMITED",
+   "model": "407"
+  },
+  {
+   "callsign": "FIREBIRD 448",
+   "registration": "VH-YUG",
+   "category": "RW - Type 3 Light",
+   "make": "AEROSPATIALE INDUSTRIES",
+   "model": "AS355F1"
+  },
+  {
+   "callsign": "FIREBIRD 450",
+   "registration": "VH-YUR",
+   "category": "RW - Type 3 Light",
+   "make": "AEROSPATIALE INDUSTRIES",
+   "model": "AS.355F1"
+  },
+  {
+   "callsign": "FIREBIRD 451",
+   "registration": "VH-JEV",
+   "category": "Unspecified",
+   "make": "BELL TEXTRON CANADA LIMITED",
+   "model": "407"
+  },
+  {
+   "callsign": "FIREBIRD 453",
+   "registration": "VH-HHF",
+   "category": "RW - Type 3 Light",
+   "make": "BELL HELICOPTER CO",
+   "model": "206B (III)"
+  },
+  {
+   "callsign": "FIREBIRD 454",
+   "registration": "VH-DIC",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS 350 B2"
+  },
+  {
+   "callsign": "FIREBIRD 455",
+   "registration": "VH-EGD",
+   "category": "RW - Type 3 Light",
+   "make": "BELL HELICOPTER CO",
+   "model": "206L-4"
+  },
+  {
+   "callsign": "FIREBIRD 456",
+   "registration": "VH-XWX",
+   "category": "RW - Type 3 Light",
+   "make": "BELL HELICOPTER CO",
+   "model": "206B"
+  },
+  {
+   "callsign": "FIREBIRD 457",
+   "registration": "VH-EGI",
+   "category": "RW - Type 3 Light",
+   "make": "AEROSPATIALE INDUSTRIES",
+   "model": "AS350 SD1"
+  },
+  {
+   "callsign": "FIREBIRD 458",
+   "registration": "VH-NYZ",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS 350 B3"
+  },
+  {
+   "callsign": "FIREBIRD 459",
+   "registration": "VH-VPE",
+   "category": "Unspecified",
+   "make": "BELL TEXTRON CANADA LIMITED",
+   "model": "407"
+  },
+  {
+   "callsign": "FIREBIRD 460",
+   "registration": "VH-RLR",
+   "category": "RW - Type 3 Light",
+   "make": "AEROSPATIALE INDUSTRIES",
+   "model": "AS.355F1"
+  },
+  {
+   "callsign": "FIREBIRD 461",
+   "registration": "VH-YBO",
+   "category": "RW - Type 3 Light",
+   "make": "BELL HELICOPTER CO",
+   "model": "206L-1"
+  },
+  {
+   "callsign": "FIREBIRD 464",
+   "registration": "VH-YEU",
+   "category": "RW - Type 3 Light",
+   "make": "AEROSPATIALE INDUSTRIES",
+   "model": "AS355F1"
+  },
+  {
+   "callsign": "FIREBIRD 465",
+   "registration": "VH-LGG",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS.350B2"
+  },
+  {
+   "callsign": "FIREBIRD 468",
+   "registration": "VH-PGV",
+   "category": "Unspecified",
+   "make": "BELL HELICOPTER TEXTRON CANADA LIMITED",
+   "model": "206L-3"
+  },
+  {
+   "callsign": "FIREBIRD 471",
+   "registration": "VH-PIH",
+   "category": "RW - Type 3 Light",
+   "make": "AEROSPATIALE INDUSTRIES",
+   "model": "AS.350D"
+  },
+  {
+   "callsign": "FIREBIRD 472",
+   "registration": "VH-NDL",
+   "category": "RW - Type 3 Light",
+   "make": "BELL HELICOPTER CO",
+   "model": "206B"
+  },
+  {
+   "callsign": "FIREBIRD 474",
+   "registration": "VH-HRU",
+   "category": "RW - Type 3 Light",
+   "make": "AEROSPATIALE INDUSTRIES",
+   "model": "AS.355F1"
+  },
+  {
+   "callsign": "FIREBIRD 475",
+   "registration": "N365JL",
+   "category": "RW - Type 2 Medium",
+   "make": "EUROCOPTER FRANCE",
+   "model": "AS.365N2"
+  },
+  {
+   "callsign": "FIREBIRD 481",
+   "registration": "VH-8BU",
+   "category": "Unspecified",
+   "make": "BELL HELICOPTER TEXTRON CANADA LIMITED",
+   "model": "407"
+  },
+  {
+   "callsign": "FIREBIRD 482",
+   "registration": "VH-PUM",
+   "category": "Unspecified",
+   "make": "BELL HELICOPTER TEXTRON CANADA LIMITED",
+   "model": "407"
+  },
+  {
+   "callsign": "FIREBIRD 484",
+   "registration": "VH-LEC",
+   "category": "RW - Type 3 Light",
+   "make": "BELL HELICOPTER CO",
+   "model": "407"
+  },
+  {
+   "callsign": "FIREBIRD 485",
+   "registration": "VH-LLB",
+   "category": "RW - Type 3 Light",
+   "make": "BELL HELICOPTER TEXTRON CANADA LIMITED",
+   "model": "206L-4"
+  },
+  {
+   "callsign": "FIREBIRD 487",
+   "registration": "VH-LFD",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS.350B2"
+  },
+  {
+   "callsign": "FIREBIRD 488",
+   "registration": "VH-LDH",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS 350 B3"
+  },
+  {
+   "callsign": "FIREBIRD 489",
+   "registration": "VH-8BH",
+   "category": "RW - Type 3 Light",
+   "make": "BELL HELICOPTER TEXTRON CANADA LIMITED",
+   "model": "206L-4"
+  },
+  {
+   "callsign": "FIREBIRD 490",
+   "registration": "VH-KEL",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS 350 B3"
+  },
+  {
+   "callsign": "FIREBIRD 491",
+   "registration": "VH-DTS",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS 350 B3"
+  },
+  {
+   "callsign": "FIREBIRD 492",
+   "registration": "VH-DMF",
+   "category": "Unspecified",
+   "make": "BELL HELICOPTER TEXTRON CANADA LIMITED",
+   "model": "407"
+  },
+  {
+   "callsign": "FIREBIRD 493",
+   "registration": "VH-NVH",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER DEUTSCHLAND GMBH",
+   "model": "BO105 CBS-5"
+  },
+  {
+   "callsign": "FIREBIRD 494",
+   "registration": "VH-NVI",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER DEUTSCHLAND GMBH",
+   "model": "BO105 CBS-5"
+  },
+  {
+   "callsign": "FIREBIRD 495",
+   "registration": "VH-SQH",
+   "category": "RW - Type 3 Light",
+   "make": "AIRBUS HELICOPTERS",
+   "model": "AS 350 B3"
+  },
+  {
+   "callsign": "FIREBIRD 496",
+   "registration": "VH-VOT",
+   "category": "RW - Type 3 Light",
+   "make": "BELL HELICOPTER CO",
+   "model": "407"
+  },
+  {
+   "callsign": "FIREBIRD 497",
+   "registration": "VH-KHQ",
+   "category": "RW - Type 3 Light",
+   "make": "BELL HELICOPTER CO",
+   "model": "206L-3"
+  },
+  {
+   "callsign": "FIREBIRD 498",
+   "registration": "VH-JZH",
+   "category": "RW - Type 3 Light",
+   "make": "BELL HELICOPTER CO",
+   "model": "206B"
+  },
+  {
+   "callsign": "FIREBIRD 499",
+   "registration": "VH-AH5",
+   "category": "RW - Type 3 Light",
+   "make": "AIRBUS HELICOPTERS",
+   "model": "AS 350 B3"
+  },
+  {
+   "callsign": "FIREBIRD 501",
+   "registration": "VH-HQL",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "EC 130 B4"
+  },
+  {
+   "callsign": "FIREBIRD 502",
+   "registration": "VH-HCZ",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER DEUTSCHLAND GMBH",
+   "model": "EC135 P2+"
+  },
+  {
+   "callsign": "FIREBIRD 503",
+   "registration": "VH-HBB",
+   "category": "RW - Type 3 Light",
+   "make": "AIRBUS HELICOPTERS",
+   "model": "AS 350 B3"
+  },
+  {
+   "callsign": "FIREBIRD 504",
+   "registration": "VH-HRG",
+   "category": "RW - Type 3 Light",
+   "make": "AIRBUS HELICOPTERS",
+   "model": "AS 350 B3"
+  },
+  {
+   "callsign": "FIREBIRD 505",
+   "registration": "VH-VLU",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS 350 B2"
+  },
+  {
+   "callsign": "FIREBIRD 506",
+   "registration": "VH-UAK",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS 350 B3"
+  },
+  {
+   "callsign": "FIREBIRD 507",
+   "registration": "VH-AB3",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS 350 B3"
+  },
+  {
+   "callsign": "FIREBIRD 508",
+   "registration": "VH-SHD",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS.350B2"
+  },
+  {
+   "callsign": "FIREBIRD 509",
+   "registration": "VH-FXF",
+   "category": "Unspecified",
+   "make": "BELL HELICOPTER TEXTRON CANADA LIMITED",
+   "model": "206L-3"
+  },
+  {
+   "callsign": "FIREBIRD 510",
+   "registration": "VH-FMF",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER FRANCE",
+   "model": "AS.350BA"
+  },
+  {
+   "callsign": "FIREBIRD 512",
+   "registration": "VH-UVA",
+   "category": "RW - Type 3 Light",
+   "make": "AEROSPATIALE INDUSTRIES",
+   "model": "AS.350BA"
+  },
+  {
+   "callsign": "FIREBIRD 517",
+   "registration": "VH-XIP",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS 350 BA"
+  },
+  {
+   "callsign": "FIREBIRD 620",
+   "registration": "VH-EGU",
+   "category": "RW - Type 3 Light",
+   "make": "AIRBUS HELICOPTERS",
+   "model": "AS 350 B2"
+  },
+  {
+   "callsign": "FIREBIRD 622",
+   "registration": "VH-HFY",
+   "category": "Unspecified",
+   "make": "EUROCOPTER",
+   "model": "AS-350B3"
+  },
+  {
+   "callsign": "FIREBIRD 623",
+   "registration": "VH-YUQ",
+   "category": "RW - Type 3 Light",
+   "make": "AEROSPATIALE INDUSTRIES",
+   "model": "AS.355F1"
+  },
+  {
+   "callsign": "FIREBIRD 624",
+   "registration": "VH-JRI",
+   "category": "RW - Type 3 Light",
+   "make": "BELL HELICOPTER CO",
+   "model": "206B (III)"
+  },
+  {
+   "callsign": "FIREBIRD 625",
+   "registration": "VH-JTQ",
+   "category": "RW - Type 3 Light",
+   "make": "AEROSPATIALE INDUSTRIES",
+   "model": "AS.350BA"
+  },
+  {
+   "callsign": "FIREBIRD 626",
+   "registration": "VH-FBQ",
+   "category": "RW - Type 3 Light",
+   "make": "AEROSPATIALE INDUSTRIES",
+   "model": "AS.350B2"
+  },
+  {
+   "callsign": "FIREBIRD 627",
+   "registration": "VH-8SJ",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS 350 B3"
+  },
+  {
+   "callsign": "FIREBIRD 628",
+   "registration": "VH-VVX",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS 350 B2"
+  },
+  {
+   "callsign": "FIREBIRD 629",
+   "registration": "VH-BBW",
+   "category": "Unspecified",
+   "make": "EUROCOPTER FRANCE",
+   "model": "AS 350 B2"
+  },
+  {
+   "callsign": "FIREBIRD 630",
+   "registration": "VH-LVM",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS 350 B2"
+  },
+  {
+   "callsign": "FIREBIRD 631",
+   "registration": "VH-ZJP",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER FRANCE",
+   "model": "AS.350B2"
+  },
+  {
+   "callsign": "FIREBIRD 632",
+   "registration": "VH-CKT",
+   "category": "RW - Type 3 Light",
+   "make": "BELL HELICOPTER CO",
+   "model": "206L-3"
+  },
+  {
+   "callsign": "FIREBIRD 633",
+   "registration": "VH-OAE",
+   "category": "RW - Type 3 Light",
+   "make": "BELL HELICOPTER TEXTRON",
+   "model": "206L-1"
+  },
+  {
+   "callsign": "FIREBIRD 634",
+   "registration": "VH-ZBQ",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS 350 B3"
+  },
+  {
+   "callsign": "FIREBIRD 635",
+   "registration": "VH-DKU",
+   "category": "Unspecified",
+   "make": "BELL HELICOPTER TEXTRON CANADA LIMITED",
+   "model": "407"
+  },
+  {
+   "callsign": "FIREBIRD 661",
+   "registration": "N365JA",
+   "category": "RW - Type 2 Medium",
+   "make": "EUROCOPTER FRANCE",
+   "model": "AS.365N3"
+  },
+  {
+   "callsign": "FIREBIRD 662",
+   "registration": "N97MD",
+   "category": "RW - Type 2 Medium",
+   "make": "EUROCOPTER FRANCE",
+   "model": "AS.365N3"
+  },
+  {
+   "callsign": "FIREBIRD 663",
+   "registration": "N82MD",
+   "category": "RW - Type 2 Medium",
+   "make": "EUROCOPTER FRANCE",
+   "model": "AS.365N3"
+  },
+  {
+   "callsign": "FIREBIRD 700",
+   "registration": "VH-8XX",
+   "category": "RW - Type 3 Light",
+   "make": "AIRBUS HELICOPTERS",
+   "model": "AS 350 B3E"
+  },
+  {
+   "callsign": "FIREBIRD 701",
+   "registration": "VH-HRD",
+   "category": "RW - Type 3 Light",
+   "make": "AEROSPATIALE INDUSTRIES",
+   "model": "AS.350B2"
+  },
+  {
+   "callsign": "FIREBIRD 704",
+   "registration": "VH-UUF",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS.350B3"
+  },
+  {
+   "callsign": "FIREBIRD 715",
+   "registration": "VH-ZAT",
+   "category": "RW - Type 3 Light",
+   "make": "AIRBUS HELICOPTERS",
+   "model": "AS 350 B3"
+  },
+  {
+   "callsign": "FIREBIRD 717",
+   "registration": "VH-DKT",
+   "category": "RW - Type 3 Light",
+   "make": "AIRBUS HELICOPTERS",
+   "model": "AS 350 B2"
+  },
+  {
+   "callsign": "FIREBIRD 719",
+   "registration": "VH-ZST",
+   "category": "RW - Type 3 Light",
+   "make": "AIRBUS HELICOPTERS",
+   "model": "AS 350 B2"
+  },
+  {
+   "callsign": "FIREBIRD 721",
+   "registration": "VH-NFL",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS 350 B3"
+  },
+  {
+   "callsign": "FIREBIRD 725",
+   "registration": "VH-UUH",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS.350B3"
+  },
+  {
+   "callsign": "FIREBIRD 726",
+   "registration": "VH-UUG",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS.350B3"
+  },
+  {
+   "callsign": "FIREBIRD 729",
+   "registration": "VH-UUI",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS.350B3"
+  },
+  {
+   "callsign": "FIREBIRD 732",
+   "registration": "VH-SRB",
+   "category": "RW - Type 3 Light",
+   "make": "AEROSPATIALE INDUSTRIES",
+   "model": "AS.350B2"
+  },
+  {
+   "callsign": "FIREBIRD 734",
+   "registration": "VH-ULT",
+   "category": "RW - Type 3 Light",
+   "make": "AIRBUS HELICOPTERS",
+   "model": "AS 350 B3E"
+  },
+  {
+   "callsign": "FIREBIRD 735",
+   "registration": "VH-UWT",
+   "category": "RW - Type 3 Light",
+   "make": "AIRBUS HELICOPTERS",
+   "model": "AS 350 B3E"
+  },
+  {
+   "callsign": "FIREBIRD 745",
+   "registration": "VH-ZGT",
+   "category": "RW - Type 3 Light",
+   "make": "AIRBUS HELICOPTERS",
+   "model": "AS 350 B3E"
+  },
+  {
+   "callsign": "FIREBIRD 788",
+   "registration": "VH-T2C",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS 350 B3"
+  },
+  {
+   "callsign": "FIREBIRD 807",
+   "registration": "VH-NDY",
+   "category": "RW - Type 3 Light",
+   "make": "BELL HELICOPTER CO",
+   "model": "206B"
+  },
+  {
+   "callsign": "FIREBIRD 831",
+   "registration": "VH-UHL",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS 350 B3"
+  },
+  {
+   "callsign": "FIREBIRD 832",
+   "registration": "VH-ZUY",
+   "category": "RW - Type 3 Light",
+   "make": "BELL HELICOPTER TEXTRON",
+   "model": "206L-3"
+  },
+  {
+   "callsign": "FIREBIRD 833",
+   "registration": "VH-UCL",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS 350 B2"
+  },
+  {
+   "callsign": "FIREBIRD 834",
+   "registration": "VH-OCS",
+   "category": "Unspecified",
+   "make": "EUROCOPTER",
+   "model": "350 B2"
+  },
+  {
+   "callsign": "FIREBIRD 837",
+   "registration": "VH-SWH",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS 350 BA"
+  },
+  {
+   "callsign": "FIREBIRD 856",
+   "registration": "VH-MHW",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER FRANCE",
+   "model": "AS.350B2"
+  },
+  {
+   "callsign": "FIREBIRD 861",
+   "registration": "VH-CWQ",
+   "category": "Unspecified",
+   "make": "BELL HELICOPTER TEXTRON CANADA LIMITED",
+   "model": "206L-3"
+  },
+  {
+   "callsign": "FIREBIRD 870",
+   "registration": "VH-JRU",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS350B2"
+  },
+  {
+   "callsign": "FIRESCAN 398",
+   "registration": "VH-8MI",
+   "category": "Unspecified",
+   "make": "PILATUS AIRCRAFT LTD",
+   "model": "PC-12/47E"
+  },
+  {
+   "callsign": "FIRESCAN 399",
+   "registration": "VH-8MF",
+   "category": "Unspecified",
+   "make": "PILATUS AIRCRAFT LTD.",
+   "model": "PC-12/47E"
+  },
+  {
+   "callsign": "FIRESCAN 600",
+   "registration": "VH-WJA",
+   "category": "Unspecified",
+   "make": "PILATUS AIRCRAFT LTD",
+   "model": "PC-12/47E"
+  },
+  {
+   "callsign": "FIRESPOTTER 211",
+   "registration": "VH-EIP",
+   "category": "FW - AAS / Recce",
+   "make": "CESSNA AIRCRAFT COMPANY",
+   "model": "182N"
+  },
+  {
+   "callsign": "FIRESPOTTER 217",
+   "registration": "VH-BOY",
+   "category": "FW - AAS / Recce",
+   "make": "CESSNA AIRCRAFT COMPANY",
+   "model": "172RG"
+  },
+  {
+   "callsign": "FIRESPOTTER 218",
+   "registration": "VH-LFX",
+   "category": "FW - Other",
+   "make": "PIPER AIRCRAFT CORP",
+   "model": "PA-32-300"
+  },
+  {
+   "callsign": "FIRESPOTTER 222",
+   "registration": "VH-PGN",
+   "category": "FW - AAS / Recce",
+   "make": "PARTENAVIA COSTRUZIONI AERONAUTICHE SPA",
+   "model": "P.68 OBSERVER"
+  },
+  {
+   "callsign": "FIRESPOTTER 240",
+   "registration": "VH-UPT",
+   "category": "FW - AAS / Recce",
+   "make": "CESSNA AIRCRAFT COMPANY",
+   "model": "182S"
+  },
+  {
+   "callsign": "FIRESPOTTER 250",
+   "registration": "VH-TAW",
+   "category": "FW - AAS / Recce",
+   "make": "CESSNA AIRCRAFT COMPANY",
+   "model": "206H"
+  },
+  {
+   "callsign": "FIRESPOTTER 255",
+   "registration": "VH-LYQ",
+   "category": "FW - AAS / Recce",
+   "make": "CESSNA AIRCRAFT COMPANY",
+   "model": "182P"
+  },
+  {
+   "callsign": "FIRESPOTTER 265",
+   "registration": "VH-BXO",
+   "category": "FW - AAS / Recce",
+   "make": "CESSNA AIRCRAFT COMPANY",
+   "model": "182T"
+  },
+  {
+   "callsign": "FIRESPOTTER 268",
+   "registration": "VH-BMX",
+   "category": "FW - AAS / Recce",
+   "make": "CESSNA AIRCRAFT COMPANY",
+   "model": "182T"
+  },
+  {
+   "callsign": "FIRESPOTTER 274",
+   "registration": "VH-FLW",
+   "category": "FW - AAS / Recce",
+   "make": "CESSNA AIRCRAFT COMPANY",
+   "model": "172N"
+  },
+  {
+   "callsign": "FIRESPOTTER 279",
+   "registration": "VH-KON",
+   "category": "FW - AAS / Recce",
+   "make": "CESSNA AIRCRAFT COMPANY",
+   "model": "182K"
+  },
+  {
+   "callsign": "FIRESPOTTER 290",
+   "registration": "VH-HXI",
+   "category": "FW - AAS / Recce",
+   "make": "CESSNA AIRCRAFT COMPANY",
+   "model": "182P"
+  },
+  {
+   "callsign": "FIRESPOTTER 297",
+   "registration": "VH-MJZ",
+   "category": "FW - AAS / Recce",
+   "make": "CESSNA AIRCRAFT COMPANY",
+   "model": "182Q"
+  },
+  {
+   "callsign": "FIRESPOTTER 385",
+   "registration": "VH-YEF",
+   "category": "FW - AAS / Recce",
+   "make": "CESSNA AIRCRAFT COMPANY",
+   "model": "210L"
+  },
+  {
+   "callsign": "FIRESPOTTER 388",
+   "registration": "VH-HWV",
+   "category": "FW - AAS / Recce",
+   "make": "CESSNA AIRCRAFT COMPANY",
+   "model": "R182"
+  },
+  {
+   "callsign": "FIRESPOTTER 395",
+   "registration": "VH-TSX",
+   "category": "FW - AAS / Recce",
+   "make": "CESSNA AIRCRAFT COMPANY",
+   "model": "R182"
+  },
+  {
+   "callsign": "FIRESPOTTER 397",
+   "registration": "VH-JGU",
+   "category": "FW - AAS / Recce",
+   "make": "CESSNA AIRCRAFT COMPANY",
+   "model": "210R"
+  },
+  {
+   "callsign": "FIRESPOTTER 404",
+   "registration": "VH-YME",
+   "category": "FW - AAS / Recce",
+   "make": "CESSNA AIRCRAFT COMPANY",
+   "model": "185A"
+  },
+  {
+   "callsign": "FIRESPOTTER 407",
+   "registration": "VH-CWL",
+   "category": "FW - AAS / Recce",
+   "make": "CESSNA AIRCRAFT COMPANY",
+   "model": "210-5"
+  },
+  {
+   "callsign": "FIRESPOTTER 410",
+   "registration": "VH-JFT",
+   "category": "Unspecified",
+   "make": "CESSNA AIRCRAFT COMPANY",
+   "model": "210J"
+  },
+  {
+   "callsign": "FIRESPOTTER 415",
+   "registration": "VH-8FV",
+   "category": "Unspecified",
+   "make": "QUEST AIRCRAFT COMPANY, LLC",
+   "model": "KODIAK 100"
+  },
+  {
+   "callsign": "FIRESPOTTER 416",
+   "registration": "VH-HRN",
+   "category": "FW - AAS / Recce",
+   "make": "CESSNA AIRCRAFT COMPANY",
+   "model": "210L"
+  },
+  {
+   "callsign": "FIRESPOTTER 422",
+   "registration": "VH-NPZ",
+   "category": "Unspecified",
+   "make": "TEXTRON AVIATION INC.",
+   "model": "208"
+  },
+  {
+   "callsign": "FIRESPOTTER 436",
+   "registration": "VH-LWH",
+   "category": "FW - AAS / Recce",
+   "make": "CESSNA AIRCRAFT COMPANY",
+   "model": "210H"
+  },
+  {
+   "callsign": "FIRESPOTTER 466",
+   "registration": "VH-IQZ",
+   "category": "FW - AAS / Recce",
+   "make": "CESSNA AIRCRAFT COMPANY",
+   "model": "210L"
+  },
+  {
+   "callsign": "FIRESPOTTER 506",
+   "registration": "VH-LMG",
+   "category": "FW - AAS / Recce",
+   "make": "CESSNA AIRCRAFT COMPANY",
+   "model": "182N"
+  },
+  {
+   "callsign": "FIRESPOTTER 555",
+   "registration": "VH-OUH",
+   "category": "FW - AAS / Recce",
+   "make": "TEXTRON AVIATION INC.",
+   "model": "208B"
+  },
+  {
+   "callsign": "FIRESPOTTER 651",
+   "registration": "VH-SZO",
+   "category": "FW - AAS / Recce",
+   "make": "CESSNA AIRCRAFT COMPANY",
+   "model": "210L"
+  },
+  {
+   "callsign": "FIRESPOTTER 893",
+   "registration": "VH-UJD",
+   "category": "FW - AAS / Recce",
+   "make": "CESSNA AIRCRAFT COMPANY",
+   "model": "206H"
+  },
+  {
+   "callsign": "FIRESPOTTER 899",
+   "registration": "VH-FJK",
+   "category": "FW - AAS / Recce",
+   "make": "CESSNA AIRCRAFT COMPANY",
+   "model": "206H"
+  },
+  {
+   "callsign": "FORMERLY BOMBER 358 - DO NOT USE",
+   "registration": "VH-LIM",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR INC",
+   "model": "AT-802"
+  },
+  {
+   "callsign": "FSR-(F/W)",
+   "registration": "ZK-FSR",
+   "category": "FW - AAS / Recce",
+   "make": "GIPPSLAND AERONAUTICS PTY. LTD.",
+   "model": "GA8"
+  },
+  {
+   "callsign": "GUARDIAN 1",
+   "registration": "VH-XIA",
+   "category": "Unspecified",
+   "make": "AGUSTAWESTLAND S.P.A.",
+   "model": "AW139"
+  },
+  {
+   "callsign": "GUARDIAN 2",
+   "registration": "VH-XIB",
+   "category": "Unspecified",
+   "make": "LEONARDO S.P.A. HELICOPTERS",
+   "model": "AW139"
+  },
+  {
+   "callsign": "GUARDIAN 3",
+   "registration": "VH-XIU",
+   "category": "Unspecified",
+   "make": "LEONARDO S.P.A. HELICOPTERS",
+   "model": "AW139"
+  },
+  {
+   "callsign": "GUARDIAN 4",
+   "registration": "VH-XNR",
+   "category": "Unspecified",
+   "make": "AGUSTA, SPA, CONSTRUZIONI AERONAUTICHE",
+   "model": "A109SP"
+  },
+  {
+   "callsign": "GUARDIAN 5",
+   "registration": "VH-XCK",
+   "category": "RW - Type 2 Medium",
+   "make": "BELL HELICOPTER CO",
+   "model": "412EP"
+  },
+  {
+   "callsign": "GUARDIAN 50",
+   "registration": "VH-XGB",
+   "category": "RW - Type 2 Medium",
+   "make": "BELL HELICOPTER TEXTRON CANADA LIMITED",
+   "model": "412EP"
+  },
+  {
+   "callsign": "HAA-(B2)",
+   "registration": "ZK-HAA",
+   "category": "RW - Type 3 Light",
+   "make": "AIRBUS HELICOPTERS",
+   "model": "AS 350 B2"
+  },
+  {
+   "callsign": "HAC-(500)",
+   "registration": "ZK-HAC",
+   "category": "RW - Type 3 Light",
+   "make": "MCDONNELL DOUGLAS HELICOPTER COMPANY",
+   "model": "369E"
+  },
+  {
+   "callsign": "HAE-(B2)",
+   "registration": "ZK-HAE",
+   "category": "RW - Type 3 Light",
+   "make": "AIRBUS HELICOPTERS",
+   "model": "AS 350 B2"
+  },
+  {
+   "callsign": "HAH-(B3)",
+   "registration": "ZK-HAH",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS 350 B3"
+  },
+  {
+   "callsign": "HAL-(JR)",
+   "registration": "ZK-HAL",
+   "category": "RW - Type 3 Light",
+   "make": "BELL HELICOPTER TEXTRON",
+   "model": "206B"
+  },
+  {
+   "callsign": "HAN-(B2)",
+   "registration": "ZK-HAN",
+   "category": "RW - Type 3 Light",
+   "make": "AIRBUS HELICOPTERS",
+   "model": "AS 350 B2"
+  },
+  {
+   "callsign": "HAS-(500)",
+   "registration": "ZK-HAS",
+   "category": "RW - Type 3 Light",
+   "make": "MCDONNELL DOUGLAS HELICOPTER COMPANY",
+   "model": "MD530F"
+  },
+  {
+   "callsign": "HBB-(B3)",
+   "registration": "ZK-HBB",
+   "category": "RW - Type 3 Light",
+   "make": "AIRBUS HELICOPTERS",
+   "model": "AS 350 B3E"
+  },
+  {
+   "callsign": "HBC-(B2)",
+   "registration": "ZK-HBC",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS 350 B2"
+  },
+  {
+   "callsign": "HBE-(EC130)",
+   "registration": "ZK-HBE",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "EC 130 B4"
+  },
+  {
+   "callsign": "HBJ-(JR)",
+   "registration": "ZK-HBJ",
+   "category": "RW - Type 3 Light",
+   "make": "BELL HELICOPTER CO",
+   "model": "206B"
+  },
+  {
+   "callsign": "HBK-(BK)",
+   "registration": "ZK-HBK",
+   "category": "RW - Type 2 Medium",
+   "make": "KAWASAKI HEAVY INDUSTRIES",
+   "model": "BK117 B-2"
+  },
+  {
+   "callsign": "HBN-(B2)",
+   "registration": "ZK-HBN",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS 350 B2"
+  },
+  {
+   "callsign": "HBT-(B2)",
+   "registration": "ZK-HBT",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS 350 B2"
+  },
+  {
+   "callsign": "HBZ-(130)",
+   "registration": "ZK-HBZ",
+   "category": "RW - Type 3 Light",
+   "make": "AIRBUS HELICOPTERS",
+   "model": "EC 130 T2"
+  },
+  {
+   "callsign": "HCD-(500)",
+   "registration": "ZK-HCD",
+   "category": "RW - Type 3 Light",
+   "make": "MCDONNELL DOUGLAS HELICOPTER COMPANY",
+   "model": "369E"
+  },
+  {
+   "callsign": "HCG-(B3)",
+   "registration": "ZK-HCG",
+   "category": "RW - Type 3 Light",
+   "make": "AIRBUS HELICOPTERS",
+   "model": "AS 350 B3E"
+  },
+  {
+   "callsign": "HCP-(B3)",
+   "registration": "ZK-HCP",
+   "category": "RW - Type 3 Light",
+   "make": "AIRBUS HELICOPTERS",
+   "model": "AS 350 B3E"
+  },
+  {
+   "callsign": "HCQ-(B3)",
+   "registration": "ZK-HCQ",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS 350 B3"
+  },
+  {
+   "callsign": "HDB-(BA)",
+   "registration": "ZK-HDB",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS 350 BA"
+  },
+  {
+   "callsign": "HDD-(B3)",
+   "registration": "ZK-HDD",
+   "category": "RW - Type 3 Light",
+   "make": "AIRBUS HELICOPTERS",
+   "model": "AS 350 B3E"
+  },
+  {
+   "callsign": "HDL-(B2)",
+   "registration": "ZK-HDL",
+   "category": "RW - Type 3 Light",
+   "make": "AIRBUS HELICOPTERS",
+   "model": "AS 350 B2"
+  },
+  {
+   "callsign": "HDN-(520N)",
+   "registration": "ZK-HDN",
+   "category": "RW - Type 3 Light",
+   "make": "MCDONNELL DOUGLAS HELICOPTER COMPANY",
+   "model": "520N"
+  },
+  {
+   "callsign": "HDU-(JR)",
+   "registration": "ZK-HDU",
+   "category": "RW - Type 3 Light",
+   "make": "BELL HELICOPTER CO",
+   "model": "206B"
+  },
+  {
+   "callsign": "HDW-(520N)",
+   "registration": "ZK-HDW",
+   "category": "Unspecified",
+   "make": "MD HELICOPTERS, INC.",
+   "model": "500N"
+  },
+  {
+   "callsign": "HDX-(BA)",
+   "registration": "ZK-HDX",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS 350 BA"
+  },
+  {
+   "callsign": "HEE-(B3)",
+   "registration": "ZK-HEE",
+   "category": "RW - Type 3 Light",
+   "make": "AIRBUS HELICOPTERS",
+   "model": "AS 350 B3"
+  },
+  {
+   "callsign": "HELITAK 101",
+   "registration": "VH-EPH",
+   "category": "RW - Type 2 Medium",
+   "make": "BELL HELICOPTER CO",
+   "model": "412EP"
+  },
+  {
+   "callsign": "HELITAK 102",
+   "registration": "VH-KBX",
+   "category": "RW - Type 2 Medium",
+   "make": "BELL HELICOPTER CO",
+   "model": "412EP"
+  },
+  {
+   "callsign": "HELITAK 201",
+   "registration": "VH-VQB",
+   "category": "RW - Type 2 Medium",
+   "make": "BELL HELICOPTER TEXTRON CANADA LIMITED",
+   "model": "412EP"
+  },
+  {
+   "callsign": "HELITAK 202",
+   "registration": "VH-VBR",
+   "category": "RW - Type 2 Medium",
+   "make": "BELL HELICOPTER TEXTRON CANADA LIMITED",
+   "model": "412EP"
+  },
+  {
+   "callsign": "HELITAK 203",
+   "registration": "VH-VJD",
+   "category": "RW - Type 2 Medium",
+   "make": "BELL HELICOPTER TEXTRON CANADA LIMITED",
+   "model": "412EP"
+  },
+  {
+   "callsign": "HELITAK 204",
+   "registration": "VH-VJF",
+   "category": "RW - Type 2 Medium",
+   "make": "BELL HELICOPTER TEXTRON CANADA LIMITED",
+   "model": "412EP"
+  },
+  {
+   "callsign": "HELITAK 205",
+   "registration": "VH-NPV",
+   "category": "RW - Type 2 Medium",
+   "make": "BELL HELICOPTER TEXTRON CANADA LIMITED",
+   "model": "412EP"
+  },
+  {
+   "callsign": "HELITAK 206",
+   "registration": "VH-UCH",
+   "category": "RW - Type 2 Medium",
+   "make": "BELL HELICOPTER TEXTRON CANADA LIMITED",
+   "model": "412EP"
+  },
+  {
+   "callsign": "HELITAK 211",
+   "registration": "N47CU",
+   "category": "RW - Type 1 Heavy",
+   "make": "UNICAL - BOEING",
+   "model": "CH-47D"
+  },
+  {
+   "callsign": "HELITAK 212",
+   "registration": "VH-NBN",
+   "category": "RW - Type 2 Medium",
+   "make": "BELL HELICOPTER CO",
+   "model": "212"
+  },
+  {
+   "callsign": "HELITAK 215",
+   "registration": "C-FXEC",
+   "category": "RW - Type 1 Heavy",
+   "make": "SIKORSKY AIRCRAFT",
+   "model": "S61N"
+  },
+  {
+   "callsign": "HELITAK 220",
+   "registration": "VH-UAX",
+   "category": "RW - Type 2 Medium",
+   "make": "KAWASAKI HEAVY INDUSTRIES",
+   "model": "BK117 B-2"
+  },
+  {
+   "callsign": "HELITAK 221",
+   "registration": "VH-86L",
+   "category": "RW - Type 1 Heavy",
+   "make": "PICKERING AVIATION, INC.",
+   "model": "UH-60L"
+  },
+  {
+   "callsign": "HELITAK 222",
+   "registration": "VH-L6O",
+   "category": "RW - Type 1 Heavy",
+   "make": "PICKERING AVIATION, INC.",
+   "model": "UH-60L"
+  },
+  {
+   "callsign": "HELITAK 223",
+   "registration": "VH-OXE",
+   "category": "RW - Type 2 Medium",
+   "make": "OAS PARTS LLC",
+   "model": "UH-1H"
+  },
+  {
+   "callsign": "HELITAK 224",
+   "registration": "VH-TKD",
+   "category": "RW - Type 2 Medium",
+   "make": "KAWASAKI HEAVY INDUSTRIES, LTD.",
+   "model": "BK117 B-2"
+  },
+  {
+   "callsign": "HELITAK 225",
+   "registration": "VH-FHB",
+   "category": "RW - Type 2 Medium",
+   "make": "KAWASAKI HEAVY INDUSTRIES",
+   "model": "BK117 B-2"
+  },
+  {
+   "callsign": "HELITAK 226",
+   "registration": "VH-FHF",
+   "category": "RW - Type 2 Medium",
+   "make": "KAWASAKI HEAVY INDUSTRIES",
+   "model": "BK117 B-2"
+  },
+  {
+   "callsign": "HELITAK 227",
+   "registration": "VH-FHD",
+   "category": "RW - Type 2 Medium",
+   "make": "KAWASAKI HEAVY INDUSTRIES",
+   "model": "BK117 B-2"
+  },
+  {
+   "callsign": "HELITAK 231",
+   "registration": "VH-JJY",
+   "category": "RW - Type 2 Medium",
+   "make": "BELL HELICOPTER CO",
+   "model": "212"
+  },
+  {
+   "callsign": "HELITAK 237",
+   "registration": "N711BF",
+   "category": "RW - Type 1 Heavy",
+   "make": "SIKORSKY AIRCRAFT CORPORATION",
+   "model": "UH-60L"
+  },
+  {
+   "callsign": "HELITAK 251",
+   "registration": "C-GIUP",
+   "category": "RW - Type 2 Medium",
+   "make": "BELL HELICOPTER CO",
+   "model": "212"
+  },
+  {
+   "callsign": "HELITAK 252",
+   "registration": "C-FPSZ",
+   "category": "RW - Type 2 Medium",
+   "make": "BELL HELICOPTER CO",
+   "model": "205 A1++"
+  },
+  {
+   "callsign": "HELITAK 253",
+   "registration": "C-GRUV",
+   "category": "RW - Type 2 Medium",
+   "make": "BELL HELICOPTER CO",
+   "model": "205 A1"
+  },
+  {
+   "callsign": "HELITAK 254",
+   "registration": "C-GLFT",
+   "category": "RW - Type 2 Medium",
+   "make": "BELL HELICOPTER CO",
+   "model": "212"
+  },
+  {
+   "callsign": "HELITAK 257",
+   "registration": "VH-FHZ",
+   "category": "RW - Type 2 Medium",
+   "make": "KAWASAKI HEAVY INDUSTRIES, LTD.",
+   "model": "BK117 B-2"
+  },
+  {
+   "callsign": "HELITAK 258",
+   "registration": "VH-OXU",
+   "category": "RW - Type 2 Medium",
+   "make": "OAS PARTS LLC",
+   "model": "UH-1H"
+  },
+  {
+   "callsign": "HELITAK 263",
+   "registration": "VH-CPO",
+   "category": "RW - Type 2 Medium",
+   "make": "GARLICK HELICOPTERS INC",
+   "model": "UH-1H"
+  },
+  {
+   "callsign": "HELITAK 267",
+   "registration": "VH-UAN",
+   "category": "RW - Type 2 Medium",
+   "make": "KAWASAKI HEAVY INDUSTRIES",
+   "model": "BK117 B-2"
+  },
+  {
+   "callsign": "HELITAK 270",
+   "registration": "VH-NSC",
+   "category": "RW - Type 2 Medium",
+   "make": "BELL HELICOPTER CO",
+   "model": "412 SP"
+  },
+  {
+   "callsign": "HELITAK 271",
+   "registration": "VH-HUE",
+   "category": "RW - Type 2 Medium",
+   "make": "BELL HELICOPTER CO",
+   "model": "205 A1"
+  },
+  {
+   "callsign": "HELITAK 272",
+   "registration": "VH-LUE",
+   "category": "RW - Type 2 Medium",
+   "make": "WILLIAMS HELICOPTER CORPORATION",
+   "model": "UH-1H"
+  },
+  {
+   "callsign": "HELITAK 274",
+   "registration": "C-FWTQ",
+   "category": "RW - Type 2 Medium",
+   "make": "BELL HELICOPTER CO",
+   "model": "412EP"
+  },
+  {
+   "callsign": "HELITAK 275",
+   "registration": "C-FWTY",
+   "category": "RW - Type 2 Medium",
+   "make": "BELL HELICOPTER CO",
+   "model": "412 SP"
+  },
+  {
+   "callsign": "HELITAK 276",
+   "registration": "VH-NVS",
+   "category": "RW - Type 2 Medium",
+   "make": "BELL HELICOPTER CO",
+   "model": "412 SP"
+  },
+  {
+   "callsign": "HELITAK 277",
+   "registration": "VH-LSV",
+   "category": "RW - Type 2 Medium",
+   "make": "AGUSTA, SPA, CONSTRUZIONI AERONAUTICHE",
+   "model": "AB412"
+  },
+  {
+   "callsign": "HELITAK 279",
+   "registration": "N948CH",
+   "category": "RW - Type 1 Heavy",
+   "make": "TANDEM ROTOR",
+   "model": "CH47D"
+  },
+  {
+   "callsign": "HELITAK 280",
+   "registration": "N620TJ",
+   "category": "RW - Type 1 Heavy",
+   "make": "SIKORSKY AIRCRAFT",
+   "model": "UH-60A"
+  },
+  {
+   "callsign": "HELITAK 281",
+   "registration": "VH-DHY",
+   "category": "RW - Type 2 Medium",
+   "make": "GARLICK HELICOPTERS INC",
+   "model": "UH-1B"
+  },
+  {
+   "callsign": "HELITAK 282",
+   "registration": "VH-RSL",
+   "category": "RW - Type 2 Medium",
+   "make": "GARLICK HELICOPTERS INC",
+   "model": "UH-1H"
+  },
+  {
+   "callsign": "HELITAK 284",
+   "registration": "VH-82E",
+   "category": "RW - Type 2 Medium",
+   "make": "BELL HELICOPTER CO",
+   "model": "412 SP"
+  },
+  {
+   "callsign": "HELITAK 285",
+   "registration": "ZK-HKU",
+   "category": "RW - Type 1 Heavy",
+   "make": "SIKORSKY AIRCRAFT",
+   "model": "EH-60A"
+  },
+  {
+   "callsign": "HELITAK 291",
+   "registration": "P2-CHI",
+   "category": "RW - Type 1 Heavy",
+   "make": "BOEING - VERTOL",
+   "model": "234UT"
+  },
+  {
+   "callsign": "HELITAK 294",
+   "registration": "VH-TNG",
+   "category": "RW - Type 2 Medium",
+   "make": "EUROCOPTER DEUTSCLAND GMBH",
+   "model": "MBB-BK 117 C-2"
+  },
+  {
+   "callsign": "HELITAK 296",
+   "registration": "VH-UEC",
+   "category": "RW - Type 2 Medium",
+   "make": "BELL HELICOPTER CO",
+   "model": "212"
+  },
+  {
+   "callsign": "HELITAK 297",
+   "registration": "VH-VRC",
+   "category": "RW - Type 2 Medium",
+   "make": "BELL HELICOPTER CO",
+   "model": "204B"
+  },
+  {
+   "callsign": "HELITAK 330",
+   "registration": "VH-JQR",
+   "category": "RW - Type 2 Medium",
+   "make": "BELL HELICOPTER TEXTRON CANADA LIMITED",
+   "model": "412EP"
+  },
+  {
+   "callsign": "HELITAK 331",
+   "registration": "VH-KAC",
+   "category": "RW - Type 2 Medium",
+   "make": "BELL HELICOPTER CO",
+   "model": "412"
+  },
+  {
+   "callsign": "HELITAK 332",
+   "registration": "VH-KHF",
+   "category": "RW - Type 2 Medium",
+   "make": "BELL HELICOPTER CO",
+   "model": "412EP"
+  },
+  {
+   "callsign": "HELITAK 333",
+   "registration": "VH-KHW",
+   "category": "RW - Type 2 Medium",
+   "make": "BELL HELICOPTER CO",
+   "model": "412EP"
+  },
+  {
+   "callsign": "HELITAK 334",
+   "registration": "VH-ESB",
+   "category": "RW - Type 2 Medium",
+   "make": "BELL HELICOPTER CO",
+   "model": "412EP"
+  },
+  {
+   "callsign": "HELITAK 335",
+   "registration": "N217PJ",
+   "category": "RW - Type 2 Medium",
+   "make": "BELL HELICOPTER CO",
+   "model": "214B-1"
+  },
+  {
+   "callsign": "HELITAK 336",
+   "registration": "VH-EJL",
+   "category": "RW - Type 2 Medium",
+   "make": "BELL HELICOPTER CO",
+   "model": "204B"
+  },
+  {
+   "callsign": "HELITAK 337",
+   "registration": "VH-JWV",
+   "category": "RW - Type 2 Medium",
+   "make": "BELL HELICOPTER CO",
+   "model": "212"
+  },
+  {
+   "callsign": "HELITAK 338",
+   "registration": "VH-JJR",
+   "category": "RW - Type 2 Medium",
+   "make": "BELL HELICOPTER CO",
+   "model": "212"
+  },
+  {
+   "callsign": "HELITAK 339",
+   "registration": "VH-SZV",
+   "category": "RW - Type 2 Medium",
+   "make": "BELL HELICOPTER CO",
+   "model": "214B-1"
+  },
+  {
+   "callsign": "HELITAK 340",
+   "registration": "N823H",
+   "category": "RW - Type 1 Heavy",
+   "make": "BELL HELICOPTER TEXTRON",
+   "model": "214ST"
+  },
+  {
+   "callsign": "HELITAK 341",
+   "registration": "N825H",
+   "category": "RW - Type 1 Heavy",
+   "make": "BELL HELICOPTER TEXTRON",
+   "model": "214ST"
+  },
+  {
+   "callsign": "HELITAK 342",
+   "registration": "N655HX",
+   "category": "RW - Type 1 Heavy",
+   "make": "SIKORSKY AIRCRAFT",
+   "model": "S64E"
+  },
+  {
+   "callsign": "HELITAK 343",
+   "registration": "N8787L",
+   "category": "RW - Type 1 Heavy",
+   "make": "SIKORSKY AIRCRAFT CORPORATION",
+   "model": "UH-60L"
+  },
+  {
+   "callsign": "HELITAK 344",
+   "registration": "N61AA",
+   "category": "RW - Type 1 Heavy",
+   "make": "SIKORSKY AIRCRAFT",
+   "model": "EH-60A"
+  },
+  {
+   "callsign": "HELITAK 345",
+   "registration": "N4875A",
+   "category": "RW - Type 1 Heavy",
+   "make": "SIKORSKY AIRCRAFT CORPORATION",
+   "model": "UH-60L"
+  },
+  {
+   "callsign": "HELITAK 346",
+   "registration": "N260UH",
+   "category": "RW - Type 1 Heavy",
+   "make": "SIKORSKY AIRCRAFT",
+   "model": "UH-60A"
+  },
+  {
+   "callsign": "HELITAK 347",
+   "registration": "N745H",
+   "category": "RW - Type 1 Heavy",
+   "make": "BELL HELICOPTER TEXTRON",
+   "model": "214ST"
+  },
+  {
+   "callsign": "HELITAK 348",
+   "registration": "N660UH",
+   "category": "RW - Type 1 Heavy",
+   "make": "SIKORSKY AIRCRAFT CORPORATION",
+   "model": "UH-60L"
+  },
+  {
+   "callsign": "HELITAK 349",
+   "registration": "N60CU",
+   "category": "RW - Type 1 Heavy",
+   "make": "SIKORSKY AIRCRAFT CORPORATION",
+   "model": "UH-60A"
+  },
+  {
+   "callsign": "HELITAK 365",
+   "registration": "VH-KHO",
+   "category": "RW - Type 2 Medium",
+   "make": "BELL HELICOPTER CO",
+   "model": "212"
+  },
+  {
+   "callsign": "HELITAK 366",
+   "registration": "VH-NSY",
+   "category": "RW - Type 2 Medium",
+   "make": "BELL HELICOPTER CO",
+   "model": "212"
+  },
+  {
+   "callsign": "HELITAK 367",
+   "registration": "VH-NNN",
+   "category": "RW - Type 2 Medium",
+   "make": "BELL HELICOPTER CO",
+   "model": "212"
+  },
+  {
+   "callsign": "HELITAK 368",
+   "registration": "C-FPUM",
+   "category": "RW - Type 1 Heavy",
+   "make": "EUROCOPTER",
+   "model": "AS 332 L1"
+  },
+  {
+   "callsign": "HELITAK 369",
+   "registration": "C-FIZA",
+   "category": "RW - Type 1 Heavy",
+   "make": "SIKORSKY AIRCRAFT",
+   "model": "S61N"
+  },
+  {
+   "callsign": "HELITAK 370",
+   "registration": "VH-KHY",
+   "category": "RW - Type 2 Medium",
+   "make": "BELL HELICOPTER CO",
+   "model": "212"
+  },
+  {
+   "callsign": "HELITAK 371",
+   "registration": "VH-XCN",
+   "category": "RW - Type 2 Medium",
+   "make": "BELL HELICOPTER CO",
+   "model": "412"
+  },
+  {
+   "callsign": "HELITAK 382",
+   "registration": "N274TH",
+   "category": "RW - Type 1 Heavy",
+   "make": "SIKORSKY AIRCRAFT",
+   "model": "UH-60A"
+  },
+  {
+   "callsign": "HELITAK 383",
+   "registration": "N261BE",
+   "category": "RW - Type 1 Heavy",
+   "make": "SIKORSKY AIRCRAFT CORPORATION",
+   "model": "UH-60L"
+  },
+  {
+   "callsign": "HELITAK 386",
+   "registration": "VH-8RK",
+   "category": "RW - Type 1 Heavy",
+   "make": "SIKORSKY AIRCRAFT CORPORATION",
+   "model": "UH-60L"
+  },
+  {
+   "callsign": "HELITAK 387",
+   "registration": "N125FH",
+   "category": "RW - Type 1 Heavy",
+   "make": "SIKORSKY AIRCRAFT",
+   "model": "UH-60A"
+  },
+  {
+   "callsign": "HELITAK 404",
+   "registration": "P2-MLJ",
+   "category": "RW - Type 2 Medium",
+   "make": "BELL HELICOPTER CO",
+   "model": "214B-1"
+  },
+  {
+   "callsign": "HELITAK 416",
+   "registration": "N725HT",
+   "category": "RW - Type 1 Heavy",
+   "make": "BELL HELICOPTER TEXTRON",
+   "model": "214ST"
+  },
+  {
+   "callsign": "HELITAK 417",
+   "registration": "VH-SUH",
+   "category": "RW - Type 2 Medium",
+   "make": "BELL HELICOPTER CO",
+   "model": "214B-1"
+  },
+  {
+   "callsign": "HELITAK 418",
+   "registration": "VH-SMI",
+   "category": "RW - Type 2 Medium",
+   "make": "BELL HELICOPTER CO",
+   "model": "214B-1"
+  },
+  {
+   "callsign": "HELITAK 419",
+   "registration": "VH-XRH",
+   "category": "RW - Type 2 Medium",
+   "make": "AGUSTAWESTLAND PHILADELPHIA CORPORATION",
+   "model": "AW119MKII"
+  },
+  {
+   "callsign": "HELITAK 419",
+   "registration": "VH-XRH - COPY",
+   "category": "Unspecified",
+   "make": "AGUSTA S.P.A.",
+   "model": "A119"
+  },
+  {
+   "callsign": "HELITAK 420",
+   "registration": "VH-WOC",
+   "category": "Unspecified",
+   "make": "BELL HELICOPTER CO",
+   "model": "205A-1"
+  },
+  {
+   "callsign": "HELITAK 421",
+   "registration": "VH-ZVP",
+   "category": "RW - Type 2 Medium",
+   "make": "BELL HELICOPTER TEXTRON CANADA LTD",
+   "model": "412EP"
+  },
+  {
+   "callsign": "HELITAK 423",
+   "registration": "VH-UHE",
+   "category": "RW - Type 2 Medium",
+   "make": "BELL HELICOPTER CO",
+   "model": "UH-1H"
+  },
+  {
+   "callsign": "HELITAK 424",
+   "registration": "VH-SUF",
+   "category": "RW - Type 2 Medium",
+   "make": "BELL HELICOPTER CO",
+   "model": "214B-1"
+  },
+  {
+   "callsign": "HELITAK 426",
+   "registration": "N214AU",
+   "category": "RW - Type 1 Heavy",
+   "make": "BELL HELICOPTER TEXTRON",
+   "model": "214ST"
+  },
+  {
+   "callsign": "HELITAK 427",
+   "registration": "N746H",
+   "category": "RW - Type 1 Heavy",
+   "make": "BELL HELICOPTER TEXTRON",
+   "model": "214ST"
+  },
+  {
+   "callsign": "HELITAK 428",
+   "registration": "N787SR",
+   "category": "RW - Type 1 Heavy",
+   "make": "BELL HELICOPTER TEXTRON",
+   "model": "214ST"
+  },
+  {
+   "callsign": "HELITAK 429",
+   "registration": "N724HT",
+   "category": "RW - Type 1 Heavy",
+   "make": "BELL HELICOPTER TEXTRON",
+   "model": "214ST"
+  },
+  {
+   "callsign": "HELITAK 430",
+   "registration": "VH-SEK",
+   "category": "RW - Type 2 Medium",
+   "make": "BELL HELICOPTER CO",
+   "model": "214B-1"
+  },
+  {
+   "callsign": "HELITAK 431",
+   "registration": "N391AL",
+   "category": "RW - Type 1 Heavy",
+   "make": "BELL HELICOPTER TEXTRON",
+   "model": "214ST"
+  },
+  {
+   "callsign": "HELITAK 432",
+   "registration": "VH-T53",
+   "category": "RW - Type 2 Medium",
+   "make": "BELL HELICOPTER TEXTRON",
+   "model": "212"
+  },
+  {
+   "callsign": "HELITAK 435",
+   "registration": "N726HT",
+   "category": "RW - Type 1 Heavy",
+   "make": "BELL HELICOPTER TEXTRON",
+   "model": "214ST"
+  },
+  {
+   "callsign": "HELITAK 450",
+   "registration": "VH-NEN",
+   "category": "RW - Type 2 Medium",
+   "make": "BELL HELICOPTER CO",
+   "model": "212"
+  },
+  {
+   "callsign": "HELITAK 460",
+   "registration": "N166DP",
+   "category": "RW - Type 1 Heavy",
+   "make": "SIKORSKY AIRCRAFT CORPORATION",
+   "model": "UH-60A"
+  },
+  {
+   "callsign": "HELITAK 462",
+   "registration": "VH-PPH",
+   "category": "RW - Type 2 Medium",
+   "make": "BELL HELICOPTER CO",
+   "model": "412"
+  },
+  {
+   "callsign": "HELITAK 477",
+   "registration": "VH-HGM",
+   "category": "Unspecified",
+   "make": "AIRBUS HELICOPTERS",
+   "model": "EC 225 LP"
+  },
+  {
+   "callsign": "HELITAK 482",
+   "registration": "VH-IYS",
+   "category": "RW - Type 2 Medium",
+   "make": "EUROCOPTER FRANCE",
+   "model": "AS.365N2"
+  },
+  {
+   "callsign": "HELITAK 483",
+   "registration": "VH-8BM",
+   "category": "RW - Type 2 Medium",
+   "make": "BELL HELICOPTER CO",
+   "model": "212"
+  },
+  {
+   "callsign": "HELITAK 498",
+   "registration": "VH-A26",
+   "category": "RW - Type 2 Medium",
+   "make": "AGUSTA AEROSPACE CORPORATION",
+   "model": "AW119 MKII"
+  },
+  {
+   "callsign": "HELITAK 513",
+   "registration": "VH-UHR",
+   "category": "RW - Type 1 Heavy",
+   "make": "PICKERING AVIATION, INC.",
+   "model": "UH-60A"
+  },
+  {
+   "callsign": "HELITAK 514",
+   "registration": "VH-UHG",
+   "category": "RW - Type 1 Heavy",
+   "make": "PICKERING AVIATION, INC.",
+   "model": "UH-60A"
+  },
+  {
+   "callsign": "HELITAK 515",
+   "registration": "VH-8UH",
+   "category": "RW - Type 1 Heavy",
+   "make": "PICKERING AVIATION, INC.",
+   "model": "UH-60A"
+  },
+  {
+   "callsign": "HELITAK 516",
+   "registration": "VH-UHS",
+   "category": "RW - Type 1 Heavy",
+   "make": "PICKERING AVIATION, INC.",
+   "model": "UH-60A"
+  },
+  {
+   "callsign": "HELITAK 517",
+   "registration": "VH-L6H",
+   "category": "RW - Type 1 Heavy",
+   "make": "PICKERING AVIATION, INC.",
+   "model": "UH-60L"
+  },
+  {
+   "callsign": "HELITAK 518",
+   "registration": "VH-8HL",
+   "category": "RW - Type 1 Heavy",
+   "make": "PICKERING AVIATION, INC.",
+   "model": "UH-60L"
+  },
+  {
+   "callsign": "HELITAK 519",
+   "registration": "VH-8UL",
+   "category": "RW - Type 1 Heavy",
+   "make": "PICKERING AVIATION, INC.",
+   "model": "UH-60L"
+  },
+  {
+   "callsign": "HELITAK 520",
+   "registration": "VH-L6T",
+   "category": "RW - Type 1 Heavy",
+   "make": "PICKERING AVIATION, INC.",
+   "model": "UH-60L"
+  },
+  {
+   "callsign": "HELITAK 668",
+   "registration": "N560UH",
+   "category": "RW - Type 1 Heavy",
+   "make": "SIKORSKY AIRCRAFT CORPORATION",
+   "model": "UH-60L"
+  },
+  {
+   "callsign": "HELITAK 671",
+   "registration": "N214LJ",
+   "category": "RW - Type 2 Medium",
+   "make": "BELL HELICOPTER CO",
+   "model": "214B-1"
+  },
+  {
+   "callsign": "HELITAK 672",
+   "registration": "N254SM",
+   "category": "RW - Type 2 Medium",
+   "make": "BELL HELICOPTER CO",
+   "model": "214B-1"
+  },
+  {
+   "callsign": "HELITAK 673",
+   "registration": "N214HM",
+   "category": "RW - Type 2 Medium",
+   "make": "BELL HELICOPTER CO",
+   "model": "214B-1"
+  },
+  {
+   "callsign": "HELITAK 674",
+   "registration": "N49732",
+   "category": "RW - Type 2 Medium",
+   "make": "BELL HELICOPTER CO",
+   "model": "214B-1"
+  },
+  {
+   "callsign": "HELITAK 676",
+   "registration": "N1073W",
+   "category": "RW - Type 2 Medium",
+   "make": "BELL HELICOPTER CO",
+   "model": "214B-1"
+  },
+  {
+   "callsign": "HELITAK 677",
+   "registration": "N234PH",
+   "category": "RW - Type 2 Medium",
+   "make": "BELL HELICOPTER CO",
+   "model": "214B-1"
+  },
+  {
+   "callsign": "HELITAK 678",
+   "registration": "N460UH",
+   "category": "RW - Type 1 Heavy",
+   "make": "SIKORSKY AIRCRAFT",
+   "model": "UH-60A"
+  },
+  {
+   "callsign": "HELITAK 679",
+   "registration": "N360UH",
+   "category": "RW - Type 1 Heavy",
+   "make": "SIKORSKY AIRCRAFT",
+   "model": "UH-60A"
+  },
+  {
+   "callsign": "HELITAK 747",
+   "registration": "VH-NVN",
+   "category": "RW - Type 2 Medium",
+   "make": "BELL HELICOPTER TEXTRON",
+   "model": "212"
+  },
+  {
+   "callsign": "HELITAK 752",
+   "registration": "VH-X6I",
+   "category": "RW - Type 3 Light",
+   "make": "AGUSTA AEROSPACE CORPORATION",
+   "model": "A119"
+  },
+  {
+   "callsign": "HELITAK 757",
+   "registration": "VH-ZGK",
+   "category": "RW - Type 2 Medium",
+   "make": "BELL HELICOPTER CO",
+   "model": "212"
+  },
+  {
+   "callsign": "HELITAK 767",
+   "registration": "VH-ZRP",
+   "category": "RW - Type 2 Medium",
+   "make": "BELL HELICOPTER CO",
+   "model": "212"
+  },
+  {
+   "callsign": "HELITAK 777",
+   "registration": "N137WZ",
+   "category": "RW - Type 1 Heavy",
+   "make": "SIKORSKY AIRCRAFT CORPORATION",
+   "model": "UH-60L"
+  },
+  {
+   "callsign": "HELITAK TBA",
+   "registration": "VH-L6R",
+   "category": "RW - Type 1 Heavy",
+   "make": "PICKERING AVIATION, INC.",
+   "model": "UH-60L"
+  },
+  {
+   "callsign": "HEN-(B3)",
+   "registration": "ZK-HEN",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS 350 B3"
+  },
+  {
+   "callsign": "HEV-(BK)",
+   "registration": "ZK-HEV",
+   "category": "RW - Type 2 Medium",
+   "make": "KAWASAKI HEAVY INDUSTRIES",
+   "model": "BK117 B-2"
+  },
+  {
+   "callsign": "HFA-(B2)",
+   "registration": "ZK-HFA",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS 350 B2"
+  },
+  {
+   "callsign": "HFF-(B2)",
+   "registration": "ZK-HFF",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS 350 B2"
+  },
+  {
+   "callsign": "HFH-(B2)",
+   "registration": "ZK-HFH",
+   "category": "RW - Type 3 Light",
+   "make": "AIRBUS HELICOPTERS",
+   "model": "AS 350 B2"
+  },
+  {
+   "callsign": "HFJ-(520N)",
+   "registration": "ZK-HFJ",
+   "category": "RW - Type 3 Light",
+   "make": "MCDONNELL DOUGLAS HELICOPTER COMPANY",
+   "model": "520N"
+  },
+  {
+   "callsign": "HFK-(B2)",
+   "registration": "ZK-HFK",
+   "category": "RW - Type 3 Light",
+   "make": "AIRBUS HELICOPTERS",
+   "model": "AS 350 B2"
+  },
+  {
+   "callsign": "HFT-(500)",
+   "registration": "ZK-HFT",
+   "category": "RW - Type 3 Light",
+   "make": "MCDONNELL DOUGLAS HELICOPTER COMPANY",
+   "model": "369E"
+  },
+  {
+   "callsign": "HGJ-(B3)",
+   "registration": "ZK-HGJ",
+   "category": "RW - Type 3 Light",
+   "make": "AIRBUS HELICOPTERS",
+   "model": "AS 350 B3"
+  },
+  {
+   "callsign": "HGO-(BA)",
+   "registration": "ZK-HGO",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS 350 BA"
+  },
+  {
+   "callsign": "HGU-(BK)",
+   "registration": "ZK-HGU",
+   "category": "RW - Type 2 Medium",
+   "make": "MESSERSCHMITT-BOLKOW-BLOHM GMBH",
+   "model": "MBB BK 117 B-2"
+  },
+  {
+   "callsign": "HGV-(B2)",
+   "registration": "ZK-HGV",
+   "category": "RW - Type 3 Light",
+   "make": "AIRBUS HELICOPTERS",
+   "model": "AS 350 B2"
+  },
+  {
+   "callsign": "HGW-(BK)",
+   "registration": "ZK-HGW",
+   "category": "RW - Type 2 Medium",
+   "make": "KAWASAKI HEAVY INDUSTRIES",
+   "model": "BK117 B-2"
+  },
+  {
+   "callsign": "HHA-(UH-1)-NO PAX",
+   "registration": "ZK-HHA",
+   "category": "RW - Type 2 Medium",
+   "make": "BELL HELICOPTER CO",
+   "model": "UH-1B"
+  },
+  {
+   "callsign": "HHB-(UH-1)-NO PAX",
+   "registration": "ZK-HHB",
+   "category": "RW - Type 2 Medium",
+   "make": "BELL HELICOPTER CO",
+   "model": "UH-1B"
+  },
+  {
+   "callsign": "HHC-(JR)",
+   "registration": "ZK-HHC",
+   "category": "RW - Type 3 Light",
+   "make": "BELL HELICOPTER TEXTRON",
+   "model": "206B"
+  },
+  {
+   "callsign": "HHF-(UH-1)-NO PAX",
+   "registration": "ZK-HHF",
+   "category": "RW - Type 2 Medium",
+   "make": "BELL HELICOPTER CO",
+   "model": "UH-1B"
+  },
+  {
+   "callsign": "HHG-(500)",
+   "registration": "ZK-HHG",
+   "category": "RW - Type 3 Light",
+   "make": "MCDONNELL DOUGLAS HELICOPTER COMPANY",
+   "model": "369D"
+  },
+  {
+   "callsign": "HIA-(500)",
+   "registration": "ZK-HIA",
+   "category": "RW - Type 3 Light",
+   "make": "HUGHES HELICOPTERS",
+   "model": "369D"
+  },
+  {
+   "callsign": "HIB-(500)",
+   "registration": "ZK-HIB",
+   "category": "RW - Type 3 Light",
+   "make": "MCDONNELL DOUGLAS HELICOPTER COMPANY",
+   "model": "369E"
+  },
+  {
+   "callsign": "HIE-(B3)",
+   "registration": "ZK-HIE",
+   "category": "RW - Type 3 Light",
+   "make": "AIRBUS HELICOPTERS",
+   "model": "AS 350 B3E"
+  },
+  {
+   "callsign": "HIN-(B3)",
+   "registration": "ZK-HIN",
+   "category": "RW - Type 3 Light",
+   "make": "AIRBUS HELICOPTERS",
+   "model": "AS 350 B3E"
+  },
+  {
+   "callsign": "HIU-(B2)",
+   "registration": "ZK-HIU",
+   "category": "Unspecified",
+   "make": "AIRBUS HELICOPTERS INC.",
+   "model": "AS350B2"
+  },
+  {
+   "callsign": "HJC-(BK)",
+   "registration": "ZK-HJC",
+   "category": "RW - Type 2 Medium",
+   "make": "KAWASAKI HEAVY INDUSTRIES",
+   "model": "BK117 B-2"
+  },
+  {
+   "callsign": "HJI-(JR)",
+   "registration": "ZK-HJI",
+   "category": "RW - Type 3 Light",
+   "make": "BELL HELICOPTER CO",
+   "model": "206B (III)"
+  },
+  {
+   "callsign": "HJK-(BK)",
+   "registration": "ZK-HJK",
+   "category": "RW - Type 2 Medium",
+   "make": "KAWASAKI HEAVY INDUSTRIES",
+   "model": "BK117 B-2"
+  },
+  {
+   "callsign": "HJO-(500)",
+   "registration": "ZK-HJO",
+   "category": "RW - Type 3 Light",
+   "make": "MCDONNELL DOUGLAS HELICOPTER COMPANY",
+   "model": "369D"
+  },
+  {
+   "callsign": "HJS-(500)",
+   "registration": "ZK-HJS",
+   "category": "RW - Type 3 Light",
+   "make": "MCDONNELL DOUGLAS HELICOPTER COMPANY",
+   "model": "369E"
+  },
+  {
+   "callsign": "HJX-(UH-1) NO PAX",
+   "registration": "ZK-HJX",
+   "category": "RW - Type 2 Medium",
+   "make": "BELL HELICOPTER CO",
+   "model": "UH-1H"
+  },
+  {
+   "callsign": "HJZ-(B2)",
+   "registration": "ZK-HJZ",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS 350 B2"
+  },
+  {
+   "callsign": "HKA-(B2)",
+   "registration": "ZK-HKA",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS 350 B2"
+  },
+  {
+   "callsign": "HKC-(B3)",
+   "registration": "ZK-HKC",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS 350 B3"
+  },
+  {
+   "callsign": "HKE-(LR)",
+   "registration": "ZK-HKE",
+   "category": "RW - Type 3 Light",
+   "make": "BELL HELICOPTER CO",
+   "model": "206L-1"
+  },
+  {
+   "callsign": "HKG-(JR)",
+   "registration": "ZK-HKG",
+   "category": "RW - Type 3 Light",
+   "make": "BELL HELICOPTER CO",
+   "model": "206B"
+  },
+  {
+   "callsign": "HKL-(B2)",
+   "registration": "ZK-HKL",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS 350 B2"
+  },
+  {
+   "callsign": "HKR-(JR)",
+   "registration": "ZK-HKR",
+   "category": "RW - Type 3 Light",
+   "make": "BELL HELICOPTER CO",
+   "model": "206B"
+  },
+  {
+   "callsign": "HKS-(500)",
+   "registration": "ZK-HKS",
+   "category": "RW - Type 3 Light",
+   "make": "MCDONNELL DOUGLAS HELICOPTER COMPANY",
+   "model": "369D"
+  },
+  {
+   "callsign": "HKT-(B3)",
+   "registration": "ZK-HKT",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS 350 B3"
+  },
+  {
+   "callsign": "HKW-(EC130)",
+   "registration": "ZK-HKW",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "EC 130 B4"
+  },
+  {
+   "callsign": "HLS-(B2)",
+   "registration": "ZK-HLS",
+   "category": "RW - Type 3 Light",
+   "make": "AIRBUS HELICOPTERS",
+   "model": "AS 350 B2"
+  },
+  {
+   "callsign": "HMG-(B2)",
+   "registration": "ZK-HMG",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS 350 B2"
+  },
+  {
+   "callsign": "HMM-(B3)",
+   "registration": "ZK-HMM",
+   "category": "RW - Type 3 Light",
+   "make": "AIRBUS HELICOPTERS",
+   "model": "AS 350 B3E"
+  },
+  {
+   "callsign": "HMR-(BK)",
+   "registration": "ZK-HMR",
+   "category": "RW - Type 2 Medium",
+   "make": "MESSERSCHMITT-BOLKOW-BLOHM GMBH",
+   "model": "MBB BK 117 B-2"
+  },
+  {
+   "callsign": "HNC-(B2)",
+   "registration": "ZK-HNC",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS 350 B2"
+  },
+  {
+   "callsign": "HNE-(500)",
+   "registration": "ZK-HNE",
+   "category": "RW - Type 3 Light",
+   "make": "MCDONNELL DOUGLAS HELICOPTER COMPANY",
+   "model": "369E"
+  },
+  {
+   "callsign": "HNL-(B2)",
+   "registration": "ZK-HNL",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS 350 B2"
+  },
+  {
+   "callsign": "HNQ-(B2)",
+   "registration": "ZK-HNQ",
+   "category": "RW - Type 3 Light",
+   "make": "AIRBUS HELICOPTERS",
+   "model": "AS 350 B2"
+  },
+  {
+   "callsign": "HNT-(500)",
+   "registration": "ZK-HNT",
+   "category": "RW - Type 3 Light",
+   "make": "HUGHES HELICOPTERS",
+   "model": "369D"
+  },
+  {
+   "callsign": "HNU-(B2)",
+   "registration": "ZK-HNU",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS 350 B2"
+  },
+  {
+   "callsign": "HNV-(520N)",
+   "registration": "ZK-HNV",
+   "category": "RW - Type 3 Light",
+   "make": "MCDONNELL DOUGLAS HELICOPTER COMPANY",
+   "model": "520N"
+  },
+  {
+   "callsign": "HNX-(B2)",
+   "registration": "ZK-HNX",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS 350 B2"
+  },
+  {
+   "callsign": "HOC-(JR)",
+   "registration": "ZK-HOC",
+   "category": "RW - Type 3 Light",
+   "make": "BELL HELICOPTER CO",
+   "model": "206B (III)"
+  },
+  {
+   "callsign": "HOI-(B2-NO PAX))",
+   "registration": "ZK-HOI",
+   "category": "RW - Type 3 Light",
+   "make": "AIRBUS HELICOPTERS",
+   "model": "AS 350 B2"
+  },
+  {
+   "callsign": "HOL-(500)",
+   "registration": "ZK-HOL",
+   "category": "RW - Type 3 Light",
+   "make": "MCDONNELL DOUGLAS HELICOPTER COMPANY",
+   "model": "MD530F"
+  },
+  {
+   "callsign": "HOT-(500)",
+   "registration": "ZK-HOT",
+   "category": "RW - Type 3 Light",
+   "make": "MCDONNELL DOUGLAS HELICOPTER COMPANY",
+   "model": "369D"
+  },
+  {
+   "callsign": "HPE-(B2)",
+   "registration": "ZK-HPE",
+   "category": "RW - Type 3 Light",
+   "make": "AIRBUS HELICOPTERS",
+   "model": "AS 350 B2"
+  },
+  {
+   "callsign": "HPM-(EC120)",
+   "registration": "ZK-HPM",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "EC 120 B"
+  },
+  {
+   "callsign": "HPS-(B2)",
+   "registration": "ZK-HPS",
+   "category": "RW - Type 3 Light",
+   "make": "AIRBUS HELICOPTERS",
+   "model": "AS 350 B2"
+  },
+  {
+   "callsign": "HQD-(B2) NO PAX",
+   "registration": "ZK-HQD",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS 350 B2"
+  },
+  {
+   "callsign": "HQL-(500)",
+   "registration": "ZK-HQL",
+   "category": "Unspecified",
+   "make": "HUGHES HELICOPTERS",
+   "model": "369HS"
+  },
+  {
+   "callsign": "HQQ-(B3)",
+   "registration": "ZK-HQQ",
+   "category": "RW - Type 3 Light",
+   "make": "AIRBUS HELICOPTERS",
+   "model": "AS 350 B3E"
+  },
+  {
+   "callsign": "HQT-(BA)",
+   "registration": "ZK-HQT",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS 350 BA"
+  },
+  {
+   "callsign": "HRA-(500)",
+   "registration": "ZK-HRA",
+   "category": "RW - Type 3 Light",
+   "make": "HUGHES HELICOPTERS",
+   "model": "369FF"
+  },
+  {
+   "callsign": "HRB-(B3)",
+   "registration": "ZK-HRB",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS 350 B3"
+  },
+  {
+   "callsign": "HRF- (500)",
+   "registration": "ZK-HRF",
+   "category": "RW - Type 3 Light",
+   "make": "HUGHES HELICOPTERS",
+   "model": "369D"
+  },
+  {
+   "callsign": "HRI-(500)",
+   "registration": "ZK-HRI",
+   "category": "RW - Type 3 Light",
+   "make": "MCDONNELL DOUGLAS HELICOPTER COMPANY",
+   "model": "369D"
+  },
+  {
+   "callsign": "HRK-(B2)",
+   "registration": "ZK-HRK",
+   "category": "RW - Type 3 Light",
+   "make": "AIRBUS HELICOPTERS",
+   "model": "AS 350 B2"
+  },
+  {
+   "callsign": "HRM-(B2)",
+   "registration": "ZK-HRM",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS 350 B2"
+  },
+  {
+   "callsign": "HRS-(JR)",
+   "registration": "ZK-HRS",
+   "category": "RW - Type 3 Light",
+   "make": "BELL HELICOPTER CO",
+   "model": "206B (III)"
+  },
+  {
+   "callsign": "HRV-(B2)",
+   "registration": "ZK-HRV",
+   "category": "RW - Type 3 Light",
+   "make": "AIRBUS HELICOPTERS",
+   "model": "AS 350 B2"
+  },
+  {
+   "callsign": "HSB-(520N)",
+   "registration": "ZK-HSB",
+   "category": "RW - Type 3 Light",
+   "make": "MCDONNELL DOUGLAS HELICOPTER COMPANY",
+   "model": "520N"
+  },
+  {
+   "callsign": "HSC-(500)",
+   "registration": "ZK-HSC",
+   "category": "RW - Type 3 Light",
+   "make": "MCDONNELL DOUGLAS HELICOPTER COMPANY",
+   "model": "369E"
+  },
+  {
+   "callsign": "HSD-(500)",
+   "registration": "ZK-HSD",
+   "category": "RW - Type 3 Light",
+   "make": "MCDONNELL DOUGLAS HELICOPTER COMPANY",
+   "model": "369D"
+  },
+  {
+   "callsign": "HSF-(B3)",
+   "registration": "ZK-HSF",
+   "category": "RW - Type 3 Light",
+   "make": "AIRBUS HELICOPTERS",
+   "model": "AS 350 B3E"
+  },
+  {
+   "callsign": "HSG-(500)",
+   "registration": "ZK-HSG",
+   "category": "RW - Type 3 Light",
+   "make": "HUGHES HELICOPTERS",
+   "model": "369D"
+  },
+  {
+   "callsign": "HSM-(B2)",
+   "registration": "ZK-HSM",
+   "category": "RW - Type 3 Light",
+   "make": "AIRBUS HELICOPTERS",
+   "model": "AS 350 B2"
+  },
+  {
+   "callsign": "HSN-(B2)",
+   "registration": "ZK-HSN",
+   "category": "RW - Type 3 Light",
+   "make": "AIRBUS HELICOPTERS",
+   "model": "AS 350 B2"
+  },
+  {
+   "callsign": "HSQ-(500)",
+   "registration": "ZK-HSQ",
+   "category": "RW - Type 3 Light",
+   "make": "MCDONNELL DOUGLAS HELICOPTER COMPANY",
+   "model": "369E"
+  },
+  {
+   "callsign": "HSS-(B3)",
+   "registration": "ZK-HSS",
+   "category": "RW - Type 3 Light",
+   "make": "AIRBUS HELICOPTERS",
+   "model": "AS 350 B3"
+  },
+  {
+   "callsign": "HT 787",
+   "registration": "N2FH",
+   "category": "RW - Type 1 Heavy",
+   "make": "SIKORSKY AIRCRAFT",
+   "model": "S70C"
+  },
+  {
+   "callsign": "HTH-(B2)",
+   "registration": "ZK-HTH",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS 350 B2"
+  },
+  {
+   "callsign": "HTK-(LR)",
+   "registration": "ZK-HTK",
+   "category": "RW - Type 3 Light",
+   "make": "BELL HELICOPTER CO",
+   "model": "206L-1"
+  },
+  {
+   "callsign": "HTM-(JR)",
+   "registration": "ZK-HTM",
+   "category": "RW - Type 3 Light",
+   "make": "BELL HELICOPTER TEXTRON",
+   "model": "206B"
+  },
+  {
+   "callsign": "HTO-(JR)",
+   "registration": "ZK-HTO",
+   "category": "RW - Type 3 Light",
+   "make": "BELL HELICOPTER TEXTRON",
+   "model": "206B"
+  },
+  {
+   "callsign": "HTV-(EC120)",
+   "registration": "ZK-HTV",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "EC120B"
+  },
+  {
+   "callsign": "HTW-(B3)",
+   "registration": "ZK-HTW",
+   "category": "RW - Type 3 Light",
+   "make": "AIRBUS HELICOPTERS",
+   "model": "AS 350 B3"
+  },
+  {
+   "callsign": "HTX-(JR) NO PAX",
+   "registration": "ZK-HTX",
+   "category": "RW - Type 3 Light",
+   "make": "BELL HELICOPTER CO",
+   "model": "206B"
+  },
+  {
+   "callsign": "HTZ-(500)",
+   "registration": "ZK-HTZ",
+   "category": "RW - Type 3 Light",
+   "make": "MCDONNELL DOUGLAS HELICOPTER COMPANY",
+   "model": "369E"
+  },
+  {
+   "callsign": "HUK-(B2)",
+   "registration": "ZK-HUK",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS 350 B2"
+  },
+  {
+   "callsign": "HUL-(520N)",
+   "registration": "ZK-HUL",
+   "category": "RW - Type 3 Light",
+   "make": "MCDONNELL DOUGLAS HELICOPTER COMPANY",
+   "model": "520N"
+  },
+  {
+   "callsign": "HUQ-(355)",
+   "registration": "ZK-HUQ",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS.355F2"
+  },
+  {
+   "callsign": "HUS-(B3)",
+   "registration": "ZK-HUS",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS 350 B3"
+  },
+  {
+   "callsign": "HUZ-(500)",
+   "registration": "ZK-HUZ",
+   "category": "RW - Type 3 Light",
+   "make": "HUGHES HELICOPTERS",
+   "model": "369D"
+  },
+  {
+   "callsign": "HVA-(B3)",
+   "registration": "ZK-HVA",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS 350 B3"
+  },
+  {
+   "callsign": "HVH-(600N)",
+   "registration": "ZK-HVH",
+   "category": "RW - Type 3 Light",
+   "make": "MCDONNELL DOUGLAS HELICOPTER SYSTEMS",
+   "model": "600N"
+  },
+  {
+   "callsign": "HVI-(600N)",
+   "registration": "ZK-HVI",
+   "category": "RW - Type 3 Light",
+   "make": "MCDONNELL DOUGLAS HELICOPTER SYSTEMS",
+   "model": "600N"
+  },
+  {
+   "callsign": "HVR-(LR)",
+   "registration": "ZK-HVR",
+   "category": "RW - Type 3 Light",
+   "make": "BELL HELICOPTER CO",
+   "model": "206L-1"
+  },
+  {
+   "callsign": "HVW-(600N)",
+   "registration": "ZK-HVW",
+   "category": "RW - Type 3 Light",
+   "make": "MCDONNELL DOUGLAS HELICOPTER SYSTEMS",
+   "model": "600N"
+  },
+  {
+   "callsign": "HWB-(500)",
+   "registration": "ZK-HWB",
+   "category": "RW - Type 3 Light",
+   "make": "HUGHES HELICOPTERS",
+   "model": "369E"
+  },
+  {
+   "callsign": "HWD-(B3)",
+   "registration": "ZK-HWD",
+   "category": "RW - Type 3 Light",
+   "make": "AIRBUS HELICOPTERS",
+   "model": "AS 350 B3E"
+  },
+  {
+   "callsign": "HWH-(520N)-NO PAX",
+   "registration": "ZK-HWH",
+   "category": "RW - Type 3 Light",
+   "make": "MCDONNELL DOUGLAS HELICOPTER COMPANY",
+   "model": "520N"
+  },
+  {
+   "callsign": "HWI-(JR)",
+   "registration": "ZK-HWI",
+   "category": "RW - Type 3 Light",
+   "make": "BELL HELICOPTER CO",
+   "model": "206B (III)"
+  },
+  {
+   "callsign": "HWL-(LR)",
+   "registration": "ZK-HWL",
+   "category": "RW - Type 3 Light",
+   "make": "BELL HELICOPTER CO",
+   "model": "206L-3"
+  },
+  {
+   "callsign": "HWN-(JR)",
+   "registration": "ZK-HWN",
+   "category": "RW - Type 3 Light",
+   "make": "BELL HELICOPTER CO",
+   "model": "206B (III)"
+  },
+  {
+   "callsign": "HWQ-(JR)",
+   "registration": "ZK-HWQ",
+   "category": "RW - Type 3 Light",
+   "make": "BELL HELICOPTER CO",
+   "model": "206B (III)"
+  },
+  {
+   "callsign": "HWW-(B3)",
+   "registration": "ZK-HWW",
+   "category": "RW - Type 3 Light",
+   "make": "AIRBUS HELICOPTERS",
+   "model": "AS 350 B3E"
+  },
+  {
+   "callsign": "HXC-(120)",
+   "registration": "ZK-HXC",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "EC 120 B"
+  },
+  {
+   "callsign": "HXL(UH-1)-NO PAX",
+   "registration": "ZK-HXL",
+   "category": "Unspecified",
+   "make": "BELL HELICOPTER COMPANY",
+   "model": "UH-1H"
+  },
+  {
+   "callsign": "HXW-(429)",
+   "registration": "ZK-HXW",
+   "category": "Unspecified",
+   "make": "BELL HELICOPTER TEXTRON CANADA LIMITED",
+   "model": "429"
+  },
+  {
+   "callsign": "HYA-(B2)",
+   "registration": "ZK-HYA",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS 350 B2"
+  },
+  {
+   "callsign": "HYK-(500)",
+   "registration": "ZK-HYK",
+   "category": "RW - Type 3 Light",
+   "make": "HUGHES HELICOPTERS",
+   "model": "369E"
+  },
+  {
+   "callsign": "HYM-(B2)",
+   "registration": "ZK-HYM",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS 350 B2"
+  },
+  {
+   "callsign": "HYW-(B2)",
+   "registration": "ZK-HYW",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS 350 B2"
+  },
+  {
+   "callsign": "HYY_(B3)",
+   "registration": "ZK-HYY",
+   "category": "RW - Type 3 Light",
+   "make": "AIRBUS HELICOPTERS",
+   "model": "AS 350 B3E"
+  },
+  {
+   "callsign": "HZD-(FX2)",
+   "registration": "ZK-HZD",
+   "category": "RW - Type 3 Light",
+   "make": "AEROSPATIALE INDUSTRIES",
+   "model": "AS350 FX2"
+  },
+  {
+   "callsign": "HZE-(JR)",
+   "registration": "ZK-HZE",
+   "category": "RW - Type 3 Light",
+   "make": "BELL HELICOPTER CO",
+   "model": "206B (III)"
+  },
+  {
+   "callsign": "HZG-(520N)",
+   "registration": "ZK-HZG",
+   "category": "RW - Type 3 Light",
+   "make": "MCDONNELL DOUGLAS HELICOPTER COMPANY",
+   "model": "520N"
+  },
+  {
+   "callsign": "HZH-(500)",
+   "registration": "ZK-HZH",
+   "category": "RW - Type 3 Light",
+   "make": "HUGHES HELICOPTERS",
+   "model": "369E"
+  },
+  {
+   "callsign": "HZK-(500)",
+   "registration": "ZK-HZK",
+   "category": "RW - Type 3 Light",
+   "make": "HUGHES HELICOPTERS",
+   "model": "369D"
+  },
+  {
+   "callsign": "HZP-(500)",
+   "registration": "ZK-HZP",
+   "category": "RW - Type 3 Light",
+   "make": "MCDONNELL DOUGLAS HELICOPTER COMPANY",
+   "model": "369E"
+  },
+  {
+   "callsign": "HZX-(UH-1) NO PAX",
+   "registration": "ZK-HZX",
+   "category": "RW - Type 2 Medium",
+   "make": "BELL HELICOPTER CO",
+   "model": "UH-1H"
+  },
+  {
+   "callsign": "HZY-(500)",
+   "registration": "ZK-HZY",
+   "category": "RW - Type 3 Light",
+   "make": "HUGHES HELICOPTERS",
+   "model": "369D"
+  },
+  {
+   "callsign": "HZZ-(355 TW)",
+   "registration": "ZK-HZZ",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER FRANCE",
+   "model": "AS.355N"
+  },
+  {
+   "callsign": "IAE-(B3)",
+   "registration": "ZK-IAE",
+   "category": "RW - Type 3 Light",
+   "make": "AIRBUS HELICOPTERS",
+   "model": "AS 350 B3E"
+  },
+  {
+   "callsign": "IAG-(B2)",
+   "registration": "ZK-IAG",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS 350 B2"
+  },
+  {
+   "callsign": "IAS-(B3)",
+   "registration": "ZK-IAS",
+   "category": "RW - Type 3 Light",
+   "make": "AIRBUS HELICOPTERS",
+   "model": "AS 350 B3E"
+  },
+  {
+   "callsign": "IBC-(B2)",
+   "registration": "ZK-IBC",
+   "category": "RW - Type 3 Light",
+   "make": "AIRBUS HELICOPTERS",
+   "model": "AS 350 B2"
+  },
+  {
+   "callsign": "IBG-(EC130)",
+   "registration": "ZK-IBG",
+   "category": "RW - Type 3 Light",
+   "make": "AIRBUS HELICOPTERS",
+   "model": "EC 130 T2"
+  },
+  {
+   "callsign": "IBI-(S76) H-PAX",
+   "registration": "ZK-IBI",
+   "category": "Unspecified",
+   "make": "SIKORSKY AIRCRAFT CORPORATION",
+   "model": "S76C"
+  },
+  {
+   "callsign": "IBK-(BK)",
+   "registration": "ZK-IBK",
+   "category": "RW - Type 2 Medium",
+   "make": "KAWASAKI HEAVY INDUSTRIES",
+   "model": "BK117 B-2"
+  },
+  {
+   "callsign": "IBQ-(BA)",
+   "registration": "ZK-IBQ",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS 350 BA"
+  },
+  {
+   "callsign": "IBR-(B3)",
+   "registration": "ZK-IBR",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS 350 B3"
+  },
+  {
+   "callsign": "IBU-(JR)",
+   "registration": "ZK-IBU",
+   "category": "RW - Type 3 Light",
+   "make": "BELL HELICOPTER CO",
+   "model": "206B (III)"
+  },
+  {
+   "callsign": "IBV-(B2)",
+   "registration": "ZK-IBV",
+   "category": "RW - Type 3 Light",
+   "make": "AIRBUS HELICOPTERS",
+   "model": "AS 350 B2"
+  },
+  {
+   "callsign": "IBW-(B3)",
+   "registration": "ZK-IBW",
+   "category": "RW - Type 3 Light",
+   "make": "AIRBUS HELICOPTERS",
+   "model": "AS 350 B3"
+  },
+  {
+   "callsign": "ICD-(B2)",
+   "registration": "ZK-ICD",
+   "category": "RW - Type 3 Light",
+   "make": "AIRBUS HELICOPTERS",
+   "model": "AS 350 B2"
+  },
+  {
+   "callsign": "ICH-(EC130)",
+   "registration": "ZK-ICH",
+   "category": "RW - Type 3 Light",
+   "make": "AIRBUS HELICOPTERS",
+   "model": "EC 130 T2"
+  },
+  {
+   "callsign": "ICY-(BK)",
+   "registration": "ZK-ICY",
+   "category": "RW - Type 2 Medium",
+   "make": "MESSERSCHMITT-BOLKOW-BLOHM GMBH",
+   "model": "MBB BK 117 B-2"
+  },
+  {
+   "callsign": "ICZ-(B2)",
+   "registration": "ZK-ICZ",
+   "category": "RW - Type 3 Light",
+   "make": "AIRBUS HELICOPTERS",
+   "model": "AS 350 B2"
+  },
+  {
+   "callsign": "IDA-(B3)",
+   "registration": "ZK-IDA",
+   "category": "RW - Type 3 Light",
+   "make": "AIRBUS HELICOPTERS",
+   "model": "AS 350 B3E"
+  },
+  {
+   "callsign": "IDB-(B2)",
+   "registration": "ZK-IDB",
+   "category": "RW - Type 3 Light",
+   "make": "AIRBUS HELICOPTERS",
+   "model": "AS 350 B2"
+  },
+  {
+   "callsign": "IDE-(B3)",
+   "registration": "ZK-IDE",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS 350 B3"
+  },
+  {
+   "callsign": "IDF-(B3)",
+   "registration": "ZK-IDF",
+   "category": "RW - Type 3 Light",
+   "make": "AIRBUS HELICOPTERS",
+   "model": "AS 350 B3E"
+  },
+  {
+   "callsign": "IDG-(JR)",
+   "registration": "ZK-IDG",
+   "category": "RW - Type 3 Light",
+   "make": "BELL HELICOPTER CO",
+   "model": "206B (III)"
+  },
+  {
+   "callsign": "IDI-(B2)",
+   "registration": "ZK-IDI",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS 350 B2"
+  },
+  {
+   "callsign": "IDJ-(B2)",
+   "registration": "ZK-IDJ",
+   "category": "RW - Type 3 Light",
+   "make": "AEROSPATIALE",
+   "model": "AS 350 B2"
+  },
+  {
+   "callsign": "IDK-(FX2)",
+   "registration": "ZK-IDK",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS 350 B2"
+  },
+  {
+   "callsign": "IDL-(520N)",
+   "registration": "ZK-IDL",
+   "category": "RW - Type 3 Light",
+   "make": "MCDONNELL DOUGLAS HELICOPTER COMPANY",
+   "model": "520N"
+  },
+  {
+   "callsign": "IDM-(B2)",
+   "registration": "ZK-IDM",
+   "category": "RW - Type 3 Light",
+   "make": "AIRBUS HELICOPTERS",
+   "model": "AS 350 B2"
+  },
+  {
+   "callsign": "IDN-(B2)",
+   "registration": "ZK-IDN",
+   "category": "RW - Type 3 Light",
+   "make": "AIRBUS HELICOPTERS",
+   "model": "AS 350 B2"
+  },
+  {
+   "callsign": "IDQ-(B3)",
+   "registration": "ZK-IDQ",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS 350 B3"
+  },
+  {
+   "callsign": "IDS-(500)",
+   "registration": "ZK-IDS",
+   "category": "RW - Type 3 Light",
+   "make": "HUGHES HELICOPTERS",
+   "model": "369E"
+  },
+  {
+   "callsign": "IDT-(BK)",
+   "registration": "ZK-IDT",
+   "category": "RW - Type 2 Medium",
+   "make": "AIRBUS HELICOPTERS",
+   "model": "EC145"
+  },
+  {
+   "callsign": "IDX-(B2)",
+   "registration": "ZK-IDX",
+   "category": "RW - Type 3 Light",
+   "make": "AIRBUS HELICOPTERS",
+   "model": "AS 350 B2"
+  },
+  {
+   "callsign": "IEB-(B2)",
+   "registration": "ZK-IEB",
+   "category": "RW - Type 3 Light",
+   "make": "AIRBUS HELICOPTERS",
+   "model": "AS 350 B2"
+  },
+  {
+   "callsign": "IEG-(520N)",
+   "registration": "ZK-IEG",
+   "category": "RW - Type 3 Light",
+   "make": "MCDONNELL DOUGLAS HELICOPTER COMPANY",
+   "model": "520N"
+  },
+  {
+   "callsign": "IEJ-(355)",
+   "registration": "ZK-IEJ",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS355NP"
+  },
+  {
+   "callsign": "IEK-(520N)",
+   "registration": "ZK-IEK",
+   "category": "RW - Type 3 Light",
+   "make": "MCDONNELL DOUGLAS HELICOPTER COMPANY",
+   "model": "520N"
+  },
+  {
+   "callsign": "IEN-(520N)",
+   "registration": "ZK-IEN",
+   "category": "RW - Type 3 Light",
+   "make": "MCDONNELL DOUGLAS HELICOPTER COMPANY",
+   "model": "520N"
+  },
+  {
+   "callsign": "IEQ-(FX2)",
+   "registration": "ZK-IEQ",
+   "category": "RW - Type 3 Light",
+   "make": "AEROSPATIALE INDUSTRIES",
+   "model": "AS350 FX2"
+  },
+  {
+   "callsign": "IER-(B2)",
+   "registration": "ZK-IER",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS 350 B2"
+  },
+  {
+   "callsign": "IES-(530N)",
+   "registration": "ZK-IES",
+   "category": "RW - Type 3 Light",
+   "make": "MCDONNELL DOUGLAS HELICOPTER COMPANY",
+   "model": "520N"
+  },
+  {
+   "callsign": "IET-(520N)",
+   "registration": "ZK-IET",
+   "category": "RW - Type 3 Light",
+   "make": "MCDONNELL DOUGLAS HELICOPTER COMPANY",
+   "model": "520N"
+  },
+  {
+   "callsign": "IEV-(FX2)",
+   "registration": "ZK-IEV",
+   "category": "RW - Type 3 Light",
+   "make": "AEROSPATIALE INDUSTRIES",
+   "model": "AS350 FX2"
+  },
+  {
+   "callsign": "IEY-(FX2)",
+   "registration": "ZK-IEY",
+   "category": "RW - Type 3 Light",
+   "make": "AEROSPATIALE INDUSTRIES",
+   "model": "AS350 FX2"
+  },
+  {
+   "callsign": "IFI-(B2)",
+   "registration": "ZK-IFI",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS 350 B2"
+  },
+  {
+   "callsign": "IFS-(500)",
+   "registration": "ZK-IFS",
+   "category": "RW - Type 3 Light",
+   "make": "HUGHES HELICOPTERS",
+   "model": "369E"
+  },
+  {
+   "callsign": "IFX-(BA)",
+   "registration": "ZK-IFX",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS 350 BA"
+  },
+  {
+   "callsign": "IFY-(BK)",
+   "registration": "ZK-IFY",
+   "category": "RW - Type 2 Medium",
+   "make": "KAWASAKI HEAVY INDUSTRIES, LTD.",
+   "model": "BK117 B-2"
+  },
+  {
+   "callsign": "IGF-(EC130)",
+   "registration": "ZK-IGF",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "EC130B4"
+  },
+  {
+   "callsign": "IGG-(BK)",
+   "registration": "ZK-IGG",
+   "category": "RW - Type 2 Medium",
+   "make": "EUROCOPTER DEUTSCLAND GMBH",
+   "model": "MBB-BK 117 C-2"
+  },
+  {
+   "callsign": "IGI-(H145)",
+   "registration": "ZK-IGI",
+   "category": "RW - Type 2 Medium",
+   "make": "AIRBUS HELICOPTERS",
+   "model": "EC145"
+  },
+  {
+   "callsign": "IGO-(BA-PAX ONLY)",
+   "registration": "ZK-IGO",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS 350 BA"
+  },
+  {
+   "callsign": "IGS-(BK)",
+   "registration": "ZK-IGS",
+   "category": "RW - Type 2 Medium",
+   "make": "KAWASAKI HEAVY INDUSTRIES, LTD.",
+   "model": "BK117 B-2"
+  },
+  {
+   "callsign": "IGW-(EC130)",
+   "registration": "ZK-IGW",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "EC 130 B4"
+  },
+  {
+   "callsign": "IGY-(B3)",
+   "registration": "ZK-IGY",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS 350 B3"
+  },
+  {
+   "callsign": "IHH-(500)",
+   "registration": "ZK-IHH",
+   "category": "RW - Type 3 Light",
+   "make": "MCDONNELL DOUGLAS HELICOPTER COMPANY",
+   "model": "369E"
+  },
+  {
+   "callsign": "IHL-(B3)",
+   "registration": "ZK-IHL",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS 350 B3"
+  },
+  {
+   "callsign": "IHO-(B3)",
+   "registration": "ZK-IHO",
+   "category": "RW - Type 3 Light",
+   "make": "AIRBUS HELICOPTERS",
+   "model": "AS 350 B3E"
+  },
+  {
+   "callsign": "IHQ-(B2)",
+   "registration": "ZK-IHQ",
+   "category": "RW - Type 3 Light",
+   "make": "AIRBUS HELICOPTERS",
+   "model": "AS 350 B2"
+  },
+  {
+   "callsign": "IHS-(B3)",
+   "registration": "ZK-IHS",
+   "category": "RW - Type 3 Light",
+   "make": "AIRBUS HELICOPTERS",
+   "model": "AS 350 B3E"
+  },
+  {
+   "callsign": "IHW(B3)",
+   "registration": "ZK-IHW",
+   "category": "RW - Type 3 Light",
+   "make": "AIRBUS HELICOPTERS",
+   "model": "AS 350 B3E"
+  },
+  {
+   "callsign": "IHY-(B2)",
+   "registration": "ZK-IHY",
+   "category": "RW - Type 3 Light",
+   "make": "AIRBUS HELICOPTERS",
+   "model": "AS 350 B2"
+  },
+  {
+   "callsign": "IIE-(500)-NO PAX",
+   "registration": "ZK-IIE",
+   "category": "RW - Type 3 Light",
+   "make": "MCDONNELL DOUGLAS HELICOPTER COMPANY",
+   "model": "369E"
+  },
+  {
+   "callsign": "IIK-(JR)",
+   "registration": "ZK-IIK",
+   "category": "RW - Type 3 Light",
+   "make": "BELL HELICOPTER CO",
+   "model": "206B"
+  },
+  {
+   "callsign": "IJD-(600N)",
+   "registration": "ZK-IJD",
+   "category": "RW - Type 3 Light",
+   "make": "MCDONNELL DOUGLAS HELICOPTER SYSTEMS",
+   "model": "600N"
+  },
+  {
+   "callsign": "IJG-(BA)",
+   "registration": "ZK-IJG",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS 350 BA"
+  },
+  {
+   "callsign": "IJH-(LR)",
+   "registration": "ZK-IJH",
+   "category": "RW - Type 3 Light",
+   "make": "BELL HELICOPTER CO",
+   "model": "206L-3"
+  },
+  {
+   "callsign": "IKA-(B3)",
+   "registration": "ZK-IKA",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS 350 B3"
+  },
+  {
+   "callsign": "IKL-(500)",
+   "registration": "ZK-IKL",
+   "category": "RW - Type 3 Light",
+   "make": "HUGHES HELICOPTERS",
+   "model": "369D"
+  },
+  {
+   "callsign": "IKW-(B3)",
+   "registration": "ZK-IKW",
+   "category": "RW - Type 3 Light",
+   "make": "AIRBUS HELICOPTERS",
+   "model": "AS 350 B3E"
+  },
+  {
+   "callsign": "ILA-(B2)",
+   "registration": "ZK-ILA",
+   "category": "RW - Type 3 Light",
+   "make": "AIRBUS HELICOPTERS",
+   "model": "AS 350 B2"
+  },
+  {
+   "callsign": "ILF_(B2)",
+   "registration": "ZK-ILF",
+   "category": "RW - Type 3 Light",
+   "make": "AIRBUS HELICOPTERS",
+   "model": "AS 350 B2"
+  },
+  {
+   "callsign": "ILL-(B3)",
+   "registration": "ZK-ILL",
+   "category": "RW - Type 3 Light",
+   "make": "AIRBUS HELICOPTERS",
+   "model": "AS 350 B3E"
+  },
+  {
+   "callsign": "ILM-(LR)",
+   "registration": "ZK-ILM",
+   "category": "RW - Type 3 Light",
+   "make": "BELL HELICOPTER CO",
+   "model": "206L-3"
+  },
+  {
+   "callsign": "ILN-(B2)",
+   "registration": "ZK-ILN",
+   "category": "RW - Type 3 Light",
+   "make": "AIRBUS HELICOPTERS",
+   "model": "AS 350 B2"
+  },
+  {
+   "callsign": "ILT-(B3)",
+   "registration": "ZK-ILT",
+   "category": "RW - Type 3 Light",
+   "make": "AIRBUS HELICOPTERS",
+   "model": "AS 350 B3"
+  },
+  {
+   "callsign": "ILV-(UH-1)-NO PAX",
+   "registration": "ZK-ILV",
+   "category": "Unspecified",
+   "make": "BELL HELICOPTER COMPANY",
+   "model": "UH-1H"
+  },
+  {
+   "callsign": "IME-(BK)",
+   "registration": "ZK-IME",
+   "category": "RW - Type 2 Medium",
+   "make": "KAWASAKI HEAVY INDUSTRIES",
+   "model": "BK117 B-2"
+  },
+  {
+   "callsign": "IMK-(BA)",
+   "registration": "ZK-IMK",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS 350 BA"
+  },
+  {
+   "callsign": "IML-(520N)",
+   "registration": "ZK-IML",
+   "category": "Unspecified",
+   "make": "MD HELICOPTERS, INC.",
+   "model": "500N"
+  },
+  {
+   "callsign": "IMN-(BK)",
+   "registration": "ZK-IMN",
+   "category": "RW - Type 2 Medium",
+   "make": "KAWASAKI HEAVY INDUSTRIES, LTD.",
+   "model": "BK117 B-2"
+  },
+  {
+   "callsign": "IMW-(EC130)",
+   "registration": "ZK-IMW",
+   "category": "RW - Type 3 Light",
+   "make": "AIRBUS HELICOPTERS",
+   "model": "EC 130 T2"
+  },
+  {
+   "callsign": "IMX-(BK)",
+   "registration": "ZK-IMX",
+   "category": "RW - Type 2 Medium",
+   "make": "KAWASAKI HEAVY INDUSTRIES, LTD.",
+   "model": "BK117 C-1"
+  },
+  {
+   "callsign": "IMY-(B3)",
+   "registration": "ZK-IMY",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS 350 B3"
+  },
+  {
+   "callsign": "INB-(B3)",
+   "registration": "ZK-INB",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS 350 B3"
+  },
+  {
+   "callsign": "INE-(B3)",
+   "registration": "ZK-INE",
+   "category": "RW - Type 3 Light",
+   "make": "AIRBUS HELICOPTERS",
+   "model": "AS 350 B3"
+  },
+  {
+   "callsign": "INF-(B3)",
+   "registration": "ZK-INF",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS 350 B3"
+  },
+  {
+   "callsign": "INH-(LR)-NO PAX",
+   "registration": "ZK-INH",
+   "category": "RW - Type 3 Light",
+   "make": "BELL HELICOPTER CO",
+   "model": "206L-1"
+  },
+  {
+   "callsign": "INT-(B3)",
+   "registration": "ZK-INT",
+   "category": "RW - Type 3 Light",
+   "make": "AIRBUS HELICOPTERS",
+   "model": "AS 350 B3E"
+  },
+  {
+   "callsign": "INZ-(500)",
+   "registration": "ZK-INZ",
+   "category": "RW - Type 3 Light",
+   "make": "MCDONNELL DOUGLAS HELICOPTER COMPANY",
+   "model": "369E"
+  },
+  {
+   "callsign": "IOI-(JR)",
+   "registration": "ZK-IOI",
+   "category": "RW - Type 3 Light",
+   "make": "BELL HELICOPTER CO",
+   "model": "206B (III)"
+  },
+  {
+   "callsign": "IOJ-(B3)",
+   "registration": "ZK-IOJ",
+   "category": "RW - Type 3 Light",
+   "make": "AIRBUS HELICOPTERS",
+   "model": "AS 350 B3E"
+  },
+  {
+   "callsign": "IOM-(B3)",
+   "registration": "ZK-IOM",
+   "category": "RW - Type 3 Light",
+   "make": "AIRBUS HELICOPTERS",
+   "model": "AS 350 B3E"
+  },
+  {
+   "callsign": "IOR-(FX2)",
+   "registration": "ZK-IOR",
+   "category": "RW - Type 3 Light",
+   "make": "AEROSPATIALE INDUSTRIES",
+   "model": "AS350 FX2"
+  },
+  {
+   "callsign": "IOX-(B3)",
+   "registration": "ZK-IOX",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS 350 B3"
+  },
+  {
+   "callsign": "IPE-(B2)",
+   "registration": "ZK-IPE",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS 350 B2"
+  },
+  {
+   "callsign": "IPG-(B2)",
+   "registration": "ZK-IPG",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS 350 B2"
+  },
+  {
+   "callsign": "IPH-(500)",
+   "registration": "ZK-IPH",
+   "category": "RW - Type 3 Light",
+   "make": "MCDONNELL DOUGLAS HELICOPTER COMPANY",
+   "model": "369D"
+  },
+  {
+   "callsign": "IPR-(520N)",
+   "registration": "ZK-IPR",
+   "category": "Unspecified",
+   "make": "MD HELICOPTERS, INC.",
+   "model": "500N"
+  },
+  {
+   "callsign": "IPW-(500)",
+   "registration": "ZK-IPW",
+   "category": "RW - Type 3 Light",
+   "make": "HUGHES HELICOPTERS",
+   "model": "369D"
+  },
+  {
+   "callsign": "IQG-(B2)",
+   "registration": "ZK-IQG",
+   "category": "RW - Type 3 Light",
+   "make": "AIRBUS HELICOPTERS",
+   "model": "AS 350 B2"
+  },
+  {
+   "callsign": "IQT-(EC120)",
+   "registration": "ZK-IQT",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "EC 120 B"
+  },
+  {
+   "callsign": "IRA-(500)",
+   "registration": "ZK-IRA",
+   "category": "RW - Type 3 Light",
+   "make": "HUGHES HELICOPTERS",
+   "model": "369D"
+  },
+  {
+   "callsign": "IRD-(BK)",
+   "registration": "ZK-IRD",
+   "category": "RW - Type 2 Medium",
+   "make": "KAWASAKI HEAVY INDUSTRIES, LTD.",
+   "model": "BK117 B-2"
+  },
+  {
+   "callsign": "IRE-(BA)-NO PAX",
+   "registration": "ZK-IRE",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS 350 BA"
+  },
+  {
+   "callsign": "ISR-(A119)",
+   "registration": "ZK-ISR",
+   "category": "RW - Type 3 Light",
+   "make": "AGUSTA AEROSPACE CORPORATION",
+   "model": "A119"
+  },
+  {
+   "callsign": "ITL-(LR)",
+   "registration": "ZK-ITL",
+   "category": "RW - Type 3 Light",
+   "make": "BELL HELICOPTER TEXTRON CANADA LIMITED",
+   "model": "206L-4"
+  },
+  {
+   "callsign": "ITN-(JR)",
+   "registration": "ZK-ITN",
+   "category": "RW - Type 3 Light",
+   "make": "BELL HELICOPTER CO",
+   "model": "206B"
+  },
+  {
+   "callsign": "ITX-(520N)",
+   "registration": "ZK-ITX",
+   "category": "RW - Type 3 Light",
+   "make": "MCDONNELL DOUGLAS HELICOPTER COMPANY",
+   "model": "520N"
+  },
+  {
+   "callsign": "IUP-(EC130)",
+   "registration": "ZK-IUP",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "EC 130 B4"
+  },
+  {
+   "callsign": "IUS-(B3)",
+   "registration": "ZK-IUS",
+   "category": "RW - Type 3 Light",
+   "make": "AIRBUS HELICOPTERS",
+   "model": "AS 350 B3"
+  },
+  {
+   "callsign": "IUU-(B3)",
+   "registration": "ZK-IUU",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS 350 B3"
+  },
+  {
+   "callsign": "IVA-(B2)",
+   "registration": "ZK-IVA",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS 350 B2"
+  },
+  {
+   "callsign": "IWC-(EC120)",
+   "registration": "ZK-IWC",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "EC 120 B"
+  },
+  {
+   "callsign": "IWD-(BK)",
+   "registration": "ZK-IWD",
+   "category": "RW - Type 2 Medium",
+   "make": "EUROCOPTER DEUTSCHLAND GMBH",
+   "model": "MBB-BK 117 C-2"
+  },
+  {
+   "callsign": "IWI-(LR)",
+   "registration": "ZK-IWI",
+   "category": "RW - Type 3 Light",
+   "make": "BELL HELICOPTER TEXTRON",
+   "model": "206L-1"
+  },
+  {
+   "callsign": "IWM-(JR)",
+   "registration": "ZK-IWM",
+   "category": "RW - Type 3 Light",
+   "make": "BELL HELICOPTER CO",
+   "model": "206B (III)"
+  },
+  {
+   "callsign": "IWN-(EC130)",
+   "registration": "ZK-IWN",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "EC 130 B4"
+  },
+  {
+   "callsign": "IWR-(500)",
+   "registration": "ZK-IWR",
+   "category": "RW - Type 3 Light",
+   "make": "MCDONNELL DOUGLAS HELICOPTER COMPANY",
+   "model": "MD530F"
+  },
+  {
+   "callsign": "IWS-(EC130)",
+   "registration": "ZK-IWS",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "EC 130 B4"
+  },
+  {
+   "callsign": "IWX-(500)",
+   "registration": "ZK-IWX",
+   "category": "RW - Type 3 Light",
+   "make": "HUGHES HELICOPTERS",
+   "model": "369D"
+  },
+  {
+   "callsign": "IWY-(LR)",
+   "registration": "ZK-IWY",
+   "category": "RW - Type 3 Light",
+   "make": "BELL HELICOPTER TEXTRON CANADA LIMITED",
+   "model": "206L-4"
+  },
+  {
+   "callsign": "IXX-(520N)",
+   "registration": "ZK-IXX",
+   "category": "RW - Type 3 Light",
+   "make": "MCDONNELL DOUGLAS HELICOPTER COMPANY",
+   "model": "500N"
+  },
+  {
+   "callsign": "IYN-(MD900)",
+   "registration": "ZK-IYN",
+   "category": "RW - Type 3 Light",
+   "make": "MCDONNELL DOUGLAS HELICOPTER COMPANY",
+   "model": "902N"
+  },
+  {
+   "callsign": "IYW-(B2)",
+   "registration": "ZK-IYW",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS 350 B2"
+  },
+  {
+   "callsign": "IZW-(BA)",
+   "registration": "ZK-IZW",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS 350 BA"
+  },
+  {
+   "callsign": "IZY-(LR)",
+   "registration": "ZK-IZY",
+   "category": "RW - Type 3 Light",
+   "make": "BELL HELICOPTER TEXTRON",
+   "model": "206L-1"
+  },
+  {
+   "callsign": "IZZ-(BA)",
+   "registration": "ZK-IZZ",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "AS 350 BA"
+  },
+  {
+   "callsign": "JBC-(F/W)",
+   "registration": "ZK-JBC",
+   "category": "FW - Type 5 SEAT",
+   "make": "PACIFIC AEROSPACE CORPORATION",
+   "model": "750XL"
+  },
+  {
+   "callsign": "JCJ-(F/W) JET",
+   "registration": "ZK-JCJ",
+   "category": "FW - Other",
+   "make": "BOMBARDIER INC",
+   "model": "CL-600-2B16"
+  },
+  {
+   "callsign": "JCW-(F/W-180)",
+   "registration": "ZK-JCW",
+   "category": "FW - AAS / Recce",
+   "make": "CESSNA AIRCRAFT COMPANY",
+   "model": "180K"
+  },
+  {
+   "callsign": "JMP-(F/W 208)",
+   "registration": "ZK-JMP",
+   "category": "FW - AAS / Recce",
+   "make": "CESSNA AIRCRAFT COMPANY",
+   "model": "208B"
+  },
+  {
+   "callsign": "KBZ-(F/W)",
+   "registration": "ZK-KBZ",
+   "category": "FW - AAS / Recce",
+   "make": "GIPPSLAND AERONAUTICS PTY. LTD.",
+   "model": "GA8"
+  },
+  {
+   "callsign": "LIFESAVER 21",
+   "registration": "VH-SRF",
+   "category": "RW - Type 2 Medium",
+   "make": "KAWASAKI HEAVY INDUSTRIES, LTD.",
+   "model": "BK117 C-1"
+  },
+  {
+   "callsign": "LIFESAVER 23",
+   "registration": "VH-SHF",
+   "category": "RW - Type 2 Medium",
+   "make": "KAWASAKI HEAVY INDUSTRIES, LTD.",
+   "model": "BK117 C-1"
+  },
+  {
+   "callsign": "LIFESAVER 30",
+   "registration": "VH-VJB",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER DEUTSCHLAND GMBH",
+   "model": "EC135 P2+"
+  },
+  {
+   "callsign": "LIFESAVER 31",
+   "registration": "VH-XXR",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER",
+   "model": "EC120B"
+  },
+  {
+   "callsign": "LTB-(F/W PAC)",
+   "registration": "ZK-LTB",
+   "category": "FW - Type 5 SEAT",
+   "make": "PACIFIC AEROSPACE CORPORATION",
+   "model": "08-600"
+  },
+  {
+   "callsign": "LTW-(F/W PAC)",
+   "registration": "ZK-LTW",
+   "category": "FW - Type 5 SEAT",
+   "make": "PACIFIC AEROSPACE CORPORATION",
+   "model": "08-600"
+  },
+  {
+   "callsign": "MAE-(F/W 502)",
+   "registration": "ZK-MAE",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR INC",
+   "model": "AT-502B"
+  },
+  {
+   "callsign": "MCK-(F/W)",
+   "registration": "ZK-MCK",
+   "category": "FW - AAS / Recce",
+   "make": "PILATUS AIRCRAFT LTD",
+   "model": "PC-6"
+  },
+  {
+   "callsign": "MCN-(F/W)",
+   "registration": "ZK-MCN",
+   "category": "FW - AAS / Recce",
+   "make": "PILATUS AIRCRAFT LTD",
+   "model": "PC-6"
+  },
+  {
+   "callsign": "MCT-(F/W)",
+   "registration": "ZK-MCT",
+   "category": "FW - AAS / Recce",
+   "make": "PILATUS AIRCRAFT LTD",
+   "model": "PC-6"
+  },
+  {
+   "callsign": "MGR-(F/W PAX)",
+   "registration": "ZK-MGR",
+   "category": "Unspecified",
+   "make": "CESSNA AIRCRAFT COMPANY",
+   "model": "172"
+  },
+  {
+   "callsign": "MOT-(F/W 402)",
+   "registration": "ZK-MOT",
+   "category": "FW - Type 5 SEAT",
+   "make": "AIR TRACTOR INC",
+   "model": "AT-402B"
+  },
+  {
+   "callsign": "NFD-(F/W) AIR AMB",
+   "registration": "ZK-NFD",
+   "category": "FW - Other",
+   "make": "CESSNA AIRCRAFT COMPANY",
+   "model": "441"
+  },
+  {
+   "callsign": "NPR-(F/W 31)PAX",
+   "registration": "ZK-NPR",
+   "category": "FW - Other",
+   "make": "PIPER AIRCRAFT CORP",
+   "model": "PA-31"
+  },
+  {
+   "callsign": "OAL-(F/W)",
+   "registration": "ZK-OAL",
+   "category": "FW - Type 5 SEAT",
+   "make": "PACIFIC AEROSPACE CORPORATION",
+   "model": "08-600"
+  },
+  {
+   "callsign": "OAS-(F/W 600)",
+   "registration": "ZK-OAS",
+   "category": "FW - Type 5 SEAT",
+   "make": "PACIFIC AEROSPACE CORPORATION",
+   "model": "08-600"
+  },
+  {
+   "callsign": "OAS-(FW)",
+   "registration": "ZK-OAS - COPY",
+   "category": "FW - Type 5 SEAT",
+   "make": "PACIFIC AEROSPACE CORPORATION",
+   "model": "08-600"
+  },
+  {
+   "callsign": "PARKAIR 1",
+   "registration": "VH-PAG",
+   "category": "RW - Type 3 Light",
+   "make": "AIRBUS HELICOPTERS",
+   "model": "AS 350 B3E"
+  },
+  {
+   "callsign": "PARKAIR 2",
+   "registration": "VH-NPD",
+   "category": "RW - Type 3 Light",
+   "make": "AIRBUS HELICOPTERS",
+   "model": "AS 350 B3E"
+  },
+  {
+   "callsign": "PARKAIR 3",
+   "registration": "VH-WDS",
+   "category": "RW - Type 3 Light",
+   "make": "AIRBUS HELICOPTERS",
+   "model": "AS 350 B3E"
+  },
+  {
+   "callsign": "PARKAIR 30",
+   "registration": "VH-XXU",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER FRANCE",
+   "model": "AS.350B3"
+  },
+  {
+   "callsign": "PARKAIR 4",
+   "registration": "VH-UAH",
+   "category": "RW - Type 3 Light",
+   "make": "AIRBUS HELICOPTERS",
+   "model": "AS 350 B3"
+  },
+  {
+   "callsign": "PARKAIR 5",
+   "registration": "VH-ZHG",
+   "category": "RW - Type 3 Light",
+   "make": "AIRBUS HELICOPTERS",
+   "model": "AS 350 B3"
+  },
+  {
+   "callsign": "PARKAIR 6",
+   "registration": "VH-TFV",
+   "category": "FW - AAS / Recce",
+   "make": "TEXTRON AVIATION INC.",
+   "model": "208B"
+  },
+  {
+   "callsign": "PEL-(F/W PAX)",
+   "registration": "ZK-PEL",
+   "category": "FW - AAS / Recce",
+   "make": "GIPPSLAND AERONAUTICS PTY LTD",
+   "model": "GA8"
+  },
+  {
+   "callsign": "PRM-(F/W-FLOAT)",
+   "registration": "ZK-PRM",
+   "category": "FW - AAS / Recce",
+   "make": "CESSNA AIRCRAFT COMPANY",
+   "model": "185"
+  },
+  {
+   "callsign": "RESCUE 22",
+   "registration": "VH-SYZ",
+   "category": "Unspecified",
+   "make": "AGUSTA, SPA, CONSTRUZIONI AERONAUTICHE",
+   "model": "AW139"
+  },
+  {
+   "callsign": "RESCUE 26",
+   "registration": "VH-NVE",
+   "category": "Unspecified",
+   "make": "AGUSTAWESTLAND S.P.A.",
+   "model": "AW139"
+  },
+  {
+   "callsign": "RESCUE 41",
+   "registration": "VH-RQY",
+   "category": "Unspecified",
+   "make": "AGUSTA S.P.A.",
+   "model": "AW 139"
+  },
+  {
+   "callsign": "RESCUE 651",
+   "registration": "VH-EWA",
+   "category": "RW - Type 2 Medium",
+   "make": "BELL HELICOPTER CO",
+   "model": "412EP"
+  },
+  {
+   "callsign": "RESCUE 652",
+   "registration": "VH-EPK",
+   "category": "RW - Type 2 Medium",
+   "make": "BELL HELICOPTER CO",
+   "model": "412EP"
+  },
+  {
+   "callsign": "SAT-(F/W 402)",
+   "registration": "ZK-SAT",
+   "category": "FW - Type 5 SEAT",
+   "make": "AIR TRACTOR INC",
+   "model": "AT-402"
+  },
+  {
+   "callsign": "SUZ-(F/W PAC)",
+   "registration": "ZK-SUZ",
+   "category": "FW - Type 5 SEAT",
+   "make": "PACIFIC AEROSPACE CORPORATION",
+   "model": "08-600"
+  },
+  {
+   "callsign": "SWA-(F/W)",
+   "registration": "ZK-SWA",
+   "category": "FW - Type 5 SEAT",
+   "make": "PACIFIC AEROSPACE CORPORATION",
+   "model": "750XL"
+  },
+  {
+   "callsign": "SXG-(F/W 502)",
+   "registration": "ZK-SXG",
+   "category": "Unspecified",
+   "make": "AIR TRACTOR, INC.",
+   "model": "AT-502A"
+  },
+  {
+   "callsign": "SXN-(F/W 502)",
+   "registration": "ZK-SXN",
+   "category": "Unspecified",
+   "make": "AIR TRACTOR, INC.",
+   "model": "AT-502B"
+  },
+  {
+   "callsign": "SXP-(F/W 502)",
+   "registration": "ZK-SXP",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR INC",
+   "model": "AT-502"
+  },
+  {
+   "callsign": "TBA",
+   "registration": "VH-KXX",
+   "category": "RW - Type 3 Light",
+   "make": "EUROCOPTER FRANCE",
+   "model": "EC120B"
+  },
+  {
+   "callsign": "TPW-(F/W PAC)",
+   "registration": "ZK-TPW",
+   "category": "FW - Type 5 SEAT",
+   "make": "PACIFIC AEROSPACE CORPORATION",
+   "model": "08-600"
+  },
+  {
+   "callsign": "TTS-(F/W 208)",
+   "registration": "ZK-TTS",
+   "category": "FW - AAS / Recce",
+   "make": "CESSNA AIRCRAFT COMPANY",
+   "model": "208"
+  },
+  {
+   "callsign": "UAS 200",
+   "registration": "RPA DJI001",
+   "category": "Unmanned Aerial Vehicle",
+   "make": "OTHER",
+   "model": "RW RPAS"
+  },
+  {
+   "callsign": "VH-TEST1",
+   "registration": "VH111",
+   "category": "RW - Type 2 Medium",
+   "make": "BELL HELICOPTER CO",
+   "model": "204B"
+  },
+  {
+   "callsign": "VH-TEST2",
+   "registration": "VH1234",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR INC",
+   "model": "AT-802A"
+  },
+  {
+   "callsign": "VH-TEST3",
+   "registration": "VH333",
+   "category": "FW - AAS / Recce",
+   "make": "CESSNA AIRCRAFT COMPANY",
+   "model": "337G"
+  },
+  {
+   "callsign": "VH-TEST4",
+   "registration": "VH222",
+   "category": "Unspecified",
+   "make": "BELL HELICOPTER CO",
+   "model": "206A"
+  },
+  {
+   "callsign": "VH-TEST5",
+   "registration": "VH123",
+   "category": "RW - Type 2 Medium",
+   "make": "BELL HELICOPTER CO",
+   "model": "205 A1"
+  },
+  {
+   "callsign": "VH-TEST6",
+   "registration": "VH124",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR INC",
+   "model": "AT-502B"
+  },
+  {
+   "callsign": "VH-TEST7",
+   "registration": "VH125",
+   "category": "Unspecified",
+   "make": "BELL HELICOPTER CO",
+   "model": "222-U"
+  },
+  {
+   "callsign": "VH-TEST8",
+   "registration": "VH126",
+   "category": "FW - AAS / Recce",
+   "make": "CESSNA AIRCRAFT COMPANY",
+   "model": "337H"
+  },
+  {
+   "callsign": "XLC-(F/W)",
+   "registration": "ZK-XLC",
+   "category": "FW - Type 5 SEAT",
+   "make": "PACIFIC AEROSPACE CORPORATION",
+   "model": "750XL"
+  },
+  {
+   "callsign": "XLR-(F/W XL)",
+   "registration": "ZK-XLR",
+   "category": "FW - Type 5 SEAT",
+   "make": "PACIFIC AEROSPACE CORPORATION",
+   "model": "750XL"
+  },
+  {
+   "callsign": "YUG-(F/W GA-8)PAX",
+   "registration": "ZK-YUG",
+   "category": "FW - AAS / Recce",
+   "make": "GIPPSLAND AERONAUTICS PTY LTD",
+   "model": "GA-8"
+  }
+ ]
+}
