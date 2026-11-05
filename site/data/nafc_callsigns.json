@@ -3480,13 +3480,6 @@
    "model": "EH-60A"
   },
   {
-   "callsign": "HELITAK 291",
-   "registration": "P2-CHI",
-   "category": "RW - Type 1 Heavy",
-   "make": "BOEING - VERTOL",
-   "model": "234UT"
-  },
-  {
    "callsign": "HELITAK 294",
    "registration": "VH-TNG",
    "category": "RW - Type 2 Medium",
@@ -3725,13 +3718,6 @@
    "model": "UH-60A"
   },
   {
-   "callsign": "HELITAK 404",
-   "registration": "P2-MLJ",
-   "category": "RW - Type 2 Medium",
-   "make": "BELL HELICOPTER CO",
-   "model": "214B-1"
-  },
-  {
    "callsign": "HELITAK 416",
    "registration": "N725HT",
    "category": "RW - Type 1 Heavy",
@@ -3758,13 +3744,6 @@
    "category": "RW - Type 2 Medium",
    "make": "AGUSTAWESTLAND PHILADELPHIA CORPORATION",
    "model": "AW119MKII"
-  },
-  {
-   "callsign": "HELITAK 419",
-   "registration": "VH-XRH - COPY",
-   "category": "Unspecified",
-   "make": "AGUSTA S.P.A.",
-   "model": "A119"
   },
   {
    "callsign": "HELITAK 420",
@@ -5951,13 +5930,6 @@
    "model": "08-600"
   },
   {
-   "callsign": "OAS-(FW)",
-   "registration": "ZK-OAS - COPY",
-   "category": "FW - Type 5 SEAT",
-   "make": "PACIFIC AEROSPACE CORPORATION",
-   "model": "08-600"
-  },
-  {
    "callsign": "PARKAIR 1",
    "registration": "VH-PAG",
    "category": "RW - Type 3 Light",
@@ -6117,69 +6089,6 @@
    "category": "FW - AAS / Recce",
    "make": "CESSNA AIRCRAFT COMPANY",
    "model": "208"
-  },
-  {
-   "callsign": "UAS 200",
-   "registration": "RPA DJI001",
-   "category": "Unmanned Aerial Vehicle",
-   "make": "OTHER",
-   "model": "RW RPAS"
-  },
-  {
-   "callsign": "VH-TEST1",
-   "registration": "VH111",
-   "category": "RW - Type 2 Medium",
-   "make": "BELL HELICOPTER CO",
-   "model": "204B"
-  },
-  {
-   "callsign": "VH-TEST2",
-   "registration": "VH1234",
-   "category": "FW - Type 4 SEAT",
-   "make": "AIR TRACTOR INC",
-   "model": "AT-802A"
-  },
-  {
-   "callsign": "VH-TEST3",
-   "registration": "VH333",
-   "category": "FW - AAS / Recce",
-   "make": "CESSNA AIRCRAFT COMPANY",
-   "model": "337G"
-  },
-  {
-   "callsign": "VH-TEST4",
-   "registration": "VH222",
-   "category": "Unspecified",
-   "make": "BELL HELICOPTER CO",
-   "model": "206A"
-  },
-  {
-   "callsign": "VH-TEST5",
-   "registration": "VH123",
-   "category": "RW - Type 2 Medium",
-   "make": "BELL HELICOPTER CO",
-   "model": "205 A1"
-  },
-  {
-   "callsign": "VH-TEST6",
-   "registration": "VH124",
-   "category": "FW - Type 4 SEAT",
-   "make": "AIR TRACTOR INC",
-   "model": "AT-502B"
-  },
-  {
-   "callsign": "VH-TEST7",
-   "registration": "VH125",
-   "category": "Unspecified",
-   "make": "BELL HELICOPTER CO",
-   "model": "222-U"
-  },
-  {
-   "callsign": "VH-TEST8",
-   "registration": "VH126",
-   "category": "FW - AAS / Recce",
-   "make": "CESSNA AIRCRAFT COMPANY",
-   "model": "337H"
   },
   {
    "callsign": "XLC-(F/W)",
