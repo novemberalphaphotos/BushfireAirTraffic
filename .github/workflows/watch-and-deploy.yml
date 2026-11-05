@@ -1,26 +1,36 @@
-name: Watch NAFC call signs and publish site
+name: Update data and watch NAFC call signs
+
+# Rebuilds site/data/aircraft.json from the spreadsheet (resolving the Google Maps pins),
+# checks the NAFC call sign list, and saves the results back to the repository.
+# Cloudflare Pages publishes the site whenever the repository changes.
 
 on:
   push:
     branches: [main]
+    paths: ["data/**", "site/photos/**", "scripts/**", ".github/workflows/**"]
   schedule:
-    - cron: "17 */2 * * *"
-  workflow_dispatch:
+    - cron: "17 */2 * * *"   # every 2 hours at 17 past (UTC)
+  workflow_dispatch:          # lets you run it by hand from the Actions tab
 
 permissions:
   contents: write
-  pages: write
-  id-token: write
 
 concurrency:
-  group: site
+  group: update
   cancel-in-progress: false
 
 jobs:
-  watch:
+  update:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
+      - name: Install spreadsheet reader
+        run: pip install openpyxl
+
+      - name: Rebuild aircraft data from the spreadsheet
+        continue-on-error: true
+        run: python3 scripts/build_data.py
 
       - name: Check NAFC call sign list
         continue-on-error: true
@@ -29,24 +39,9 @@ jobs:
           SITE_URL: ${{ vars.SITE_URL }}
         run: python3 scripts/check_callsigns.py
 
-      - name: Save updated call sign data
+      - name: Save results
         run: |
-          git config user.name "callsign-watcher"
+          git config user.name "data-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add site/data/nafc_callsigns.json
-          git diff --cached --quiet || (git commit -m "Update NAFC call sign snapshot" && git pull --rebase && git push)
-
-      - uses: actions/configure-pages@v5
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: site
-
-  deploy:
-    needs: watch
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - id: deployment
-        uses: actions/deploy-pages@v4
+          git add site/data data/maps_cache.json
+          git diff --cached --quiet || (git commit -m "Update aircraft data and NAFC snapshot" && git pull --rebase && git push)
