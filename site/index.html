@@ -207,6 +207,7 @@ dl.info dd { margin: 0; min-width: 0; overflow-wrap: anywhere; }
 <script>
 "use strict";
 /* ---------- settings you may want to change ---------- */
+const PROXY = "https://adsb-proxy.novemberalphaphotos.workers.dev/";                 // paste your Cloudflare Worker address here (see README), e.g. "https://adsb-proxy.yourname.workers.dev/"
 const REFRESH_SECONDS = 20;       // live feed refresh
 const CHUNK = 100;                // registrations per feed request
 const STALE_AFTER = 120;          // seconds since last position before a marker fades
@@ -337,7 +338,8 @@ async function fetchChunk(regs) {
     const pv = PROVIDERS[(providerIdx + i) % PROVIDERS.length];
     try {
       const ctl = new AbortController(); const to = setTimeout(() => ctl.abort(), 12000);
-      const r = await fetch(pv.url(regs.join(",")), { signal: ctl.signal, cache: "no-store" });
+      const target = pv.url(regs.join(","));
+      const r = await fetch(PROXY ? `${PROXY}?u=${encodeURIComponent(target)}` : target, { signal: ctl.signal, cache: "no-store" });
       clearTimeout(to);
       if (!r.ok) throw new Error(`${pv.name} HTTP ${r.status}`);
       const j = await r.json();
