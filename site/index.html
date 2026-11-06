@@ -102,8 +102,8 @@ main { flex: 1; min-height: 0; display: grid; grid-template-columns: minmax(340p
 .empty { padding: 28px 16px; color: var(--muted); text-align: center; }
 
 /* detail */
-#detail { position: absolute; inset: 0; background: var(--panel); overflow-y: auto; display: none; }
-#detail.open { display: block; }
+#detail, #history { position: absolute; inset: 0; background: var(--panel); overflow-y: auto; display: none; }
+#detail.open, #history.open { display: block; }
 .dhead { padding: 10px 12px; display: flex; align-items: center; gap: 10px; border-bottom: 1px solid var(--line); position: sticky; top: 0; background: var(--panel); z-index: 2; }
 .dbody { padding: 14px 14px 28px; display: grid; gap: 14px; }
 .photo { aspect-ratio: 3 / 2; background: var(--panel-2); border: 1px solid var(--line); border-radius: 6px; overflow: hidden; display: grid; place-items: center; text-align: center; color: var(--muted); }
@@ -187,6 +187,12 @@ dl.info dd { margin: 0; min-width: 0; overflow-wrap: anywhere; }
 .firepop .lvl { display: inline-block; padding: 0 7px; border-radius: 999px; font-size: 11px; font-weight: 600; color: #111; margin-bottom: 4px; }
 .firepop .more { color: var(--muted); font-size: 12px; }
 #installBtn { display: none; }
+.hrow { padding: 8px 0; border-top: 1px solid var(--line); font-size: 13.5px; }
+.hrow .what { font-weight: 600; font-size: 11px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); }
+.hrow .chg { font-family: var(--f-mono); font-size: 13px; overflow-wrap: anywhere; }
+.hrow .btn { margin-top: 4px; }
+#recStat { color: var(--muted); }
+#recStat.bad { color: var(--warn); font-weight: 600; }
 </style>
 </head>
 <body data-view="list">
@@ -198,6 +204,7 @@ dl.info dd { margin: 0; min-width: 0; overflow-wrap: anywhere; }
     <div class="stat live"><b id="sAir">0</b><small>Airborne</small></div>
     <div class="stat"><b id="sLive">0</b><small>Transmitting</small></div>
   </div>
+  <button class="iconbtn" id="histBtn" type="button" hidden>Callsign changes</button>
   <button class="iconbtn" id="installBtn" type="button">Install app</button>
   <button class="iconbtn" id="themeBtn" type="button" aria-label="Switch light or dark theme">Theme</button>
 </header>
@@ -227,6 +234,7 @@ dl.info dd { margin: 0; min-width: 0; overflow-wrap: anywhere; }
     </div>
     <div id="list" role="list"></div>
     <article id="detail" aria-label="Aircraft detail"></article>
+    <article id="history" aria-label="NAFC call sign changes"></article>
   </section>
   <section id="mapwrap" aria-label="Map">
     <div id="map"></div>
@@ -236,7 +244,7 @@ dl.info dd { margin: 0; min-width: 0; overflow-wrap: anywhere; }
       <button class="btn" id="trailBtn" type="button" hidden>Trails: 3h</button>
       <button class="btn" id="fireBtn" type="button">Fires</button>
     </div>
-    <div class="feed"><i class="dot" id="feedDot"></i><span id="feedText">Starting live feed…</span></div>
+    <div class="feed"><i class="dot" id="feedDot"></i><span id="feedText">Starting live feed…</span><span id="recStat"></span></div>
   </section>
 </main>
 <nav id="tabs" role="tablist">
@@ -408,9 +416,20 @@ function drawTrails() {
     const a = shown.get(reg); if (!a) continue;
     const sel = selected && selected.rego === reg;
     const color = resolveColor(a.group);
-    let seg = [], last = 0;
-    const flush = () => { if (seg.length > 1) L.polyline(seg, { color, weight: sel ? 4 : 2, opacity: sel ? .95 : .6 }).addTo(trailLayer); seg = []; };
-    for (const p of pts) { if (last && p[0] - last > 600) flush(); seg.push([p[1], p[2]]); last = p[0]; }
+    let seg = [], last = 0, t0 = 0;
+    const hm = t => new Date(t * 1000).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit", hour12: false });
+    const flush = () => {
+      if (seg.length > 1) {
+        const w = sel ? 4 : 2, o = sel ? .95 : .6;
+        const line = L.polyline(seg, { color, weight: w, opacity: o, bubblingMouseEvents: false }).addTo(trailLayer);
+        line.bindTooltip(`<b>${esc(a.callsign)}</b> · ${esc(a.rego)}<br>${esc(a.type)}<br>${hm(t0)}–${hm(last)}`, { sticky: true });
+        line.on("mouseover", () => line.setStyle({ weight: 5, opacity: 1 }));
+        line.on("mouseout", () => line.setStyle({ weight: w, opacity: o }));
+        line.on("click", () => openDetail(a));
+      }
+      seg = [];
+    };
+    for (const p of pts) { if (last && p[0] - last > 600) flush(); if (!seg.length) t0 = p[0]; seg.push([p[1], p[2]]); last = p[0]; }
     const l = live.get(reg); if (l && seg.length) seg.push([l.lat, l.lon]);
     flush();
   }
@@ -436,6 +455,18 @@ async function loadFlights() {
       if (mode === "active") render(false);
     }
   } catch (e) { console.warn("Flights fetch failed", e); }
+  try {
+    const r = await fetch(`${PROXY}?health`, { cache: "no-store" });
+    if (r.ok) {
+      const h = await r.json(), el = $("recStat");
+      if (h.last_run == null) { el.textContent = " · recorder: waiting for first run"; el.className = ""; }
+      else {
+        const ago = h.now - h.last_run;
+        if (ago > 900) { el.textContent = ` · recorder stopped ${Math.round(ago / 60)} min ago`; el.className = "bad"; }
+        else { el.textContent = " · recorder OK"; el.className = ""; }
+      }
+    }
+  } catch { /* leave as is */ }
   flightTimer = setTimeout(loadFlights, 60000);
 }
 
@@ -697,7 +728,7 @@ bindFilter("tLive", "live", "change"); bindFilter("tBase", "base", "change"); bi
 /* ---------- detail ---------- */
 let photoIdx = 0;
 function openDetail(a) {
-  selected = a; photoIdx = 0; renderDetail(); drawTrails();
+  closeHistory(); selected = a; photoIdx = 0; renderDetail(); drawTrails();
   $("detail").classList.add("open"); $("detail").scrollTop = 0;
   document.body.dataset.view = "list"; syncTabs();
   document.querySelectorAll(".item.sel").forEach(n => n.classList.remove("sel"));
@@ -705,7 +736,47 @@ function openDetail(a) {
   if (l) map.flyTo([l.lat, l.lon], Math.max(map.getZoom(), 9), { duration: .6 });
   else if (a.base) map.flyTo([a.base.lat, a.base.lon], Math.max(map.getZoom(), 8), { duration: .6 });
 }
+function closeHistory() { $("history").classList.remove("open"); }
 function closeDetail() { selected = null; drawTrails(); $("detail").classList.remove("open"); }
+
+/* ---------- NAFC call sign change history ---------- */
+let nafcHist = null, histFleetOnly = false;
+const fleetRegs = () => new Set(fleet.map(a => norm(a.rego)));
+function nafcHistHtml(a) {
+  if (!nafcHist) return "";
+  const mine = nafcHist.entries.filter(e => norm(e.reg) === norm(a.rego)).slice(0, 5);
+  if (!mine.length) return "";
+  return `<div class="box"><h3>NAFC call sign history</h3>${mine.map(e => `<div class="hrow" style="padding:4px 0"><span class="chg">${esc(histText(e))}</span> <small>· ${esc(new Date(hT(e)).toLocaleDateString([], { day: "numeric", month: "short", year: "numeric" }))}</small></div>`).join("")}</div>`;
+}
+const hT = e => Date.parse(e.t) || 0;
+const hKind = e => (e.old || []).length && (e.new || []).length ? "Changed" : (e.new || []).length ? "Added" : "Removed";
+function histText(e) { const o = (e.old || []).join(", "), n = (e.new || []).join(", "); return o && n ? `${o} → ${n}` : n ? `Added: ${n}` : `Removed: ${o}`; }
+function openHistory() {
+  closeDetail(); selected = null;
+  renderHistory(); $("history").classList.add("open"); $("history").scrollTop = 0;
+  document.body.dataset.view = "list"; syncTabs();
+}
+function renderHistory() {
+  const h = nafcHist, regs = fleetRegs();
+  let list = h.entries.slice().sort((x, y) => hT(y) - hT(x));
+  if (histFleetOnly) list = list.filter(e => regs.has(norm(e.reg)));
+  const since = h.since ? new Date(Date.parse(h.since)).toLocaleDateString([], { day: "numeric", month: "short", year: "numeric" }) : "";
+  let body = "", lastDay = "";
+  for (const e of list) {
+    const d = new Date(hT(e)).toLocaleDateString([], { weekday: "short", day: "numeric", month: "short" });
+    if (d !== lastDay) { body += `<div class="fday">${esc(d)}</div>`; lastDay = d; }
+    const kind = hKind(e);
+    const a = fleet.find(x => norm(x.rego) === norm(e.reg));
+    body += `<div class="hrow"><div class="what">${kind}${a ? " · in your fleet" : ""}</div><div><span class="reg">${esc(e.reg)}</span></div><div class="chg">${esc(histText(e))}</div>${a ? `<button class="btn" type="button" data-reg="${esc(a.rego)}">Open ${esc(a.callsign)}</button>` : ""}</div>`;
+  }
+  if (!list.length) body = `<div class="box">No call sign changes recorded${since ? " since " + esc(since) : " yet"}${histFleetOnly ? " for your aircraft" : ""}. Changes appear here after the next check finds one.</div>`;
+  $("history").innerHTML = `<div class="dhead"><button class="btn" type="button" id="hBack">&larr; List</button><b>NAFC call sign changes</b></div>
+    <div class="dbody"><label class="tog"><input type="checkbox" id="hFleet" ${histFleetOnly ? "checked" : ""}> My fleet only</label><div>${body}</div></div>`;
+  $("hBack").onclick = closeHistory;
+  $("hFleet").onchange = ev => { histFleetOnly = ev.target.checked; renderHistory(); };
+  $("history").querySelectorAll("button[data-reg]").forEach(b => b.onclick = () => { const a = fleet.find(x => x.rego === b.dataset.reg); if (a) openDetail(a); });
+}
+$("histBtn").onclick = openHistory;
 
 function flightsHtml(a) {
   if (!PROXY) return "";
@@ -758,6 +829,7 @@ function renderDetail() {
         <p style="margin:8px 0 0"><button class="btn primary" type="button" id="goLive">Show on map</button></p></div>`
         : `<div class="box"><h3>Live position</h3>No ADS-B position right now. Many fire helicopters only transmit while flying, and some have no ADS-B at all.</div>`}
       ${nafcMsg}
+      ${nafcHistHtml(a)}
       ${flightsHtml(a)}
       <dl class="info">
         <dt>Type</dt><dd>${esc(a.type)} <span class="badge">${esc(a.family)}</span></dd>
@@ -805,6 +877,7 @@ async function loadJson(path) { const r = await fetch(path, { cache: "no-cache" 
     for (const e of n.entries) nafc.set(norm(e.registration), [...(nafc.get(norm(e.registration)) || []), e.callsign]);
     $("tDiffWrap").hidden = false;
   } catch { /* the alert job has not produced it yet */ }
+  try { nafcHist = await loadJson("data/nafc_history.json"); if (!Array.isArray(nafcHist.entries)) nafcHist = null; else $("histBtn").hidden = false; } catch { nafcHist = null; }
   fillSelect("fGroup", uniq("group"), "All callsigns");
   fillSelect("fFamily", uniq("family"), "All types");
   fillSelect("fOp", uniq("operator"), "All operators");
@@ -826,6 +899,15 @@ async function loadJson(path) { const r = await fetch(path, { cache: "no-cache" 
 let installEvt = null;
 addEventListener("beforeinstallprompt", e => { e.preventDefault(); installEvt = e; $("installBtn").style.display = "inline-block"; });
 $("installBtn").onclick = async () => { if (!installEvt) return; installEvt.prompt(); await installEvt.userChoice.catch(() => {}); installEvt = null; $("installBtn").style.display = "none"; };
+/* iPhone/iPad have no install prompt: show the manual steps instead */
+{
+  const ios = /iphone|ipad|ipod/i.test(navigator.userAgent) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+  const standalone = navigator.standalone === true || matchMedia("(display-mode: standalone)").matches;
+  if (ios && !standalone) {
+    const b = $("installBtn"); b.textContent = "Add to Home Screen"; b.style.display = "inline-block";
+    b.onclick = () => alert("In Safari: tap the Share button (square with an arrow), scroll down and tap Add to Home Screen, then Add.\n\nIf you do not see it, open this page in Safari rather than Chrome or an in-app browser.");
+  }
+}
 if ("serviceWorker" in navigator && location.protocol.startsWith("http")) navigator.serviceWorker.register("sw.js").catch(() => {});
 </script>
 </body>
