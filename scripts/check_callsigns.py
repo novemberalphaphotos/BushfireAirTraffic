@@ -67,7 +67,8 @@ def parse_table(html):
     return entries
 
 
-REG_RX = re.compile(r"^(?:[A-Z]{1,2}-[A-Z0-9]{2,5}|N\d{1,5}[A-Z]{0,2})$")
+REG_RX = re.compile(r"^(?:[A-Z0-9]{1,2}-[A-Z0-9]{2,5}|N\d{1,5}[A-Z]{0,2})$")   # VH-ABC, P2-MLJ, C-FXEC, ZK-ABC, N123AB
+STATE_VERSION = 2   # bump when the parser changes, so the saved list is re-read quietly instead of alerting
 
 
 def parse_text(html):
@@ -169,7 +170,13 @@ def main():
     except Exception as e:
         notify("NAFC watcher error", f"Could not read the call sign list: {e}")
         print("fetch failed:", e); return 1
-    old = json.loads(STATE.read_text())["entries"] if STATE.exists() else None
+    old = None
+    if STATE.exists():
+        saved = json.loads(STATE.read_text())
+        if saved.get("version") == STATE_VERSION:
+            old = saved["entries"]
+        else:
+            print("saved list was made by an older version of this script: re-reading it as a new baseline")
 
     if len(new) < 20 or (old and len(new) < 0.5 * len(old)):
         info = describe(html)
@@ -179,7 +186,7 @@ def main():
     new = sorted({key(e): e for e in new}.values(), key=key)
     if old is None:
         STATE.parent.mkdir(parents=True, exist_ok=True)
-        STATE.write_text(json.dumps({"entries": new}, indent=1))
+        STATE.write_text(json.dumps({"version": STATE_VERSION, "entries": new}, indent=1))
         notify("NAFC watcher started", f"Baseline saved: {len(new)} call signs. You will be told when any change.")
         print("baseline saved"); return 0
 
@@ -188,7 +195,7 @@ def main():
     if not changes and old == new:
         print("no change"); return 0
 
-    STATE.write_text(json.dumps({"entries": new}, indent=1))
+    STATE.write_text(json.dumps({"version": STATE_VERSION, "entries": new}, indent=1))
     mine = {e["rego"] for e in json.loads(FLEET.read_text())} if FLEET.exists() else set()
     tracked = [t for r, t in changes if r in mine]
     other = [t for r, t in changes if r not in mine]
