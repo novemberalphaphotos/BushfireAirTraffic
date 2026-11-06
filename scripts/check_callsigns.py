@@ -11,6 +11,7 @@ Environment:
   NTFY_DRY_RUN    optional, print the notification instead of sending it.
 """
 import json, os, re, sys, urllib.request
+from datetime import datetime, timezone
 from html.parser import HTMLParser
 from pathlib import Path
 
@@ -18,6 +19,7 @@ ROOT = Path(__file__).resolve().parent.parent
 URL = "https://www.nafc.org.au/call-signs/"
 STATE = ROOT / "site" / "data" / "nafc_callsigns.json"
 FLEET = ROOT / "site" / "data" / "aircraft.json"
+HISTORY = ROOT / "site" / "data" / "nafc_history.json"   # shown on the site as "Callsign changes"
 FIELDS = ["callsign", "registration", "category", "make", "model"]
 
 
@@ -122,24 +124,36 @@ def key(e):
 
 
 def diff(old, new):
-    """Return human-readable change lines as (registration, text)."""
-    o_reg, n_reg, o_cs, n_cs = {}, {}, {}, {}
+    """Return one dict per registration whose call signs changed: {reg, old: [...], new: [...]}."""
+    o_reg, n_reg = {}, {}
     for e in old:
-        o_reg.setdefault(e["registration"], set()).add(e["callsign"]); o_cs.setdefault(e["callsign"], set()).add(e["registration"])
+        o_reg.setdefault(e["registration"], set()).add(e["callsign"])
     for e in new:
-        n_reg.setdefault(e["registration"], set()).add(e["callsign"]); n_cs.setdefault(e["callsign"], set()).add(e["registration"])
+        n_reg.setdefault(e["registration"], set()).add(e["callsign"])
     out = []
     for reg in sorted(set(o_reg) | set(n_reg)):
         a, b = o_reg.get(reg, set()), n_reg.get(reg, set())
-        if a == b:
-            continue
-        if a and b:
-            out.append((reg, f"{reg}: {', '.join(sorted(a))} -> {', '.join(sorted(b))}"))
-        elif b:
-            out.append((reg, f"{reg}: added as {', '.join(sorted(b))}"))
-        else:
-            out.append((reg, f"{reg}: removed (was {', '.join(sorted(a))})"))
+        if a != b:
+            out.append({"reg": reg, "old": sorted(a), "new": sorted(b)})
     return out
+
+
+def describe_change(c):
+    if c["old"] and c["new"]:
+        return f"{c['reg']}: {', '.join(c['old'])} -> {', '.join(c['new'])}"
+    if c["new"]:
+        return f"{c['reg']}: added as {', '.join(c['new'])}"
+    return f"{c['reg']}: removed (was {', '.join(c['old'])})"
+
+
+def save_history(changes, mine):
+    now = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+    hist = json.loads(HISTORY.read_text()) if HISTORY.exists() else {"since": now, "entries": []}
+    for c in changes:
+        hist["entries"].insert(0, {"t": now, "reg": c["reg"], "old": c["old"], "new": c["new"], "fleet": c["reg"] in mine})
+    hist["entries"] = hist["entries"][:500]
+    HISTORY.parent.mkdir(parents=True, exist_ok=True)
+    HISTORY.write_text(json.dumps(hist, indent=1))
 
 
 def notify(title, body, high=False):
@@ -187,18 +201,23 @@ def main():
     if old is None:
         STATE.parent.mkdir(parents=True, exist_ok=True)
         STATE.write_text(json.dumps({"version": STATE_VERSION, "entries": new}, indent=1))
+        if not HISTORY.exists():
+            save_history([], set())
         notify("NAFC watcher started", f"Baseline saved: {len(new)} call signs. You will be told when any change.")
         print("baseline saved"); return 0
 
     old = sorted({key(e): e for e in old}.values(), key=key)
     changes = diff(old, new)
     if not changes and old == new:
+        if not HISTORY.exists():
+            save_history([], set())     # so the site shows the history button from the first run
         print("no change"); return 0
 
     STATE.write_text(json.dumps({"version": STATE_VERSION, "entries": new}, indent=1))
     mine = {e["rego"] for e in json.loads(FLEET.read_text())} if FLEET.exists() else set()
-    tracked = [t for r, t in changes if r in mine]
-    other = [t for r, t in changes if r not in mine]
+    save_history(changes, mine)
+    tracked = [describe_change(c) for c in changes if c["reg"] in mine]
+    other = [describe_change(c) for c in changes if c["reg"] not in mine]
     lines = [f"YOUR FLEET ({len(tracked)})"] + tracked[:25] if tracked else []
     if len(tracked) > 25:
         lines.append(f"+{len(tracked) - 25} more")

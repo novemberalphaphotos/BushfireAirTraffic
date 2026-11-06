@@ -247,7 +247,7 @@ def main():
         print(f"{len(unresolved)} map links could not be read; those aircraft use the approximate base position.")
     if missing:
         print("Bases with no coordinates (add a map link in the sheet, or add them to BASES):", sorted(missing))
-        sys.exit(1)
+        print("Those aircraft are listed without a map position; the site still publishes.")
 
 
 if __name__ == "__main__":
