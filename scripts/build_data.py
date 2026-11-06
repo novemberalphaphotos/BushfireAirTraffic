@@ -257,6 +257,11 @@ def main():
     based = sum(1 for e in out if e["base"])
     print(f"{xlsx.name}: {len(out)} aircraft, {based} with a mapped base ({exact} from exact pins), "
           f"{sum(1 for e in out if e['photos'])} with photos -> {OUT.relative_to(ROOT)}")
+    approx = [e for e in out if e["base"] and not e["base"].get("exact")]
+    if approx:
+        print(f"{len(approx)} aircraft use an approximate base position (no usable pin in the sheet):")
+        for e in approx:
+            print(f"  {e['rego']} ({e['callsign']}) - {e['base']['name']}, {e['base']['state']}")
     if unresolved:
         print(f"{len(unresolved)} map links could not be read; those aircraft use the approximate base position.")
     if missing:
