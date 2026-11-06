@@ -1,4 +1,5 @@
 {
+ "version": 2,
  "entries": [
   {
    "callsign": "BIRDDOG 100",
@@ -3480,6 +3481,13 @@
    "model": "EH-60A"
   },
   {
+   "callsign": "HELITAK 291",
+   "registration": "P2-CHI",
+   "category": "RW - Type 1 Heavy",
+   "make": "BOEING - VERTOL",
+   "model": "234UT"
+  },
+  {
    "callsign": "HELITAK 294",
    "registration": "VH-TNG",
    "category": "RW - Type 2 Medium",
@@ -3716,6 +3724,13 @@
    "category": "RW - Type 1 Heavy",
    "make": "SIKORSKY AIRCRAFT",
    "model": "UH-60A"
+  },
+  {
+   "callsign": "HELITAK 404",
+   "registration": "P2-MLJ",
+   "category": "RW - Type 2 Medium",
+   "make": "BELL HELICOPTER CO",
+   "model": "214B-1"
   },
   {
    "callsign": "HELITAK 416",
