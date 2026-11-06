@@ -9,7 +9,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="Fire Air">
-<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
 <link rel="icon" href="icons/icon-192.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -54,7 +54,7 @@
 }
 [hidden] { display: none !important; }
 * { box-sizing: border-box; }
-html { height: 100%; background: var(--bg); overscroll-behavior: none; }
+html { height: 100%; background: var(--bg); }
 body { position: fixed; inset: 0; margin: 0; background: var(--bg); color: var(--fg); font: 14px/1.4 var(--f-body); display: flex; flex-direction: column; }
 button, input, select { font: inherit; color: inherit; }
 a { color: var(--accent); }
@@ -195,6 +195,14 @@ dl.info dd { margin: 0; min-width: 0; overflow-wrap: anywhere; }
 .hrow .btn { margin-top: 4px; }
 #recStat { color: var(--muted); }
 #recStat.bad { color: var(--warn); font-weight: 600; }
+/* iOS home-screen apps (WebKit bug 301108): with a translucent status bar the page is measured one status-bar
+   shorter than the screen, which leaves a strip at the bottom. lvh is the full screen height. */
+@media (display-mode: standalone) {
+  @supports (height: 100lvh) {
+    html, body { height: 100lvh; }
+    body { bottom: auto; }
+  }
+}
 </style>
 </head>
 <body data-view="list">
