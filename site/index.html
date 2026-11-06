@@ -901,20 +901,6 @@ async function loadJson(path) { const r = await fetch(path, { cache: "no-cache" 
 let installEvt = null;
 addEventListener("beforeinstallprompt", e => { e.preventDefault(); installEvt = e; $("installBtn").style.display = "inline-block"; });
 $("installBtn").onclick = async () => { if (!installEvt) return; installEvt.prompt(); await installEvt.userChoice.catch(() => {}); installEvt = null; $("installBtn").style.display = "none"; };
-/* iPhone home-screen app: the page can come up shorter than the screen, leaving a strip at the bottom. Stretch it to the full screen. */
-function fitStandalone() {
-  const standalone = navigator.standalone === true || matchMedia("(display-mode: standalone)").matches;
-  const b = document.body;
-  if (!standalone) return;
-  const portrait = innerHeight >= innerWidth;
-  const full = portrait ? Math.max(screen.width, screen.height) : Math.min(screen.width, screen.height);
-  if (full > innerHeight + 4 && full < innerHeight + 140) { b.style.bottom = "auto"; b.style.height = full + "px"; }
-  else { b.style.bottom = ""; b.style.height = ""; }
-  if (typeof map !== "undefined") setTimeout(() => map.invalidateSize(), 100);
-}
-addEventListener("resize", fitStandalone); addEventListener("orientationchange", () => setTimeout(fitStandalone, 300));
-fitStandalone(); setTimeout(fitStandalone, 500);
-
 /* iPhone/iPad have no install prompt: show the manual steps instead */
 {
   const ios = /iphone|ipad|ipod/i.test(navigator.userAgent) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
