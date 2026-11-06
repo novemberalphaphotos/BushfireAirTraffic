@@ -366,6 +366,7 @@ function drawLive() {
   }
 }
 const fmtAlt = p => p.alt === "ground" ? "on ground" : (typeof p.alt === "number" ? p.alt.toLocaleString("en-AU") + " ft" : "alt unknown");
+const norm = x => String(x || "").toUpperCase().replace(/[^A-Z0-9]/g, "");
 const statusOf = l => l && l.alt !== "ground" && (l.gs ?? 0) >= 30 ? "air" : "gnd";
 const fmtDur = s => { const m = Math.max(0, Math.round(s / 60)); return m < 60 ? `${m} min` : `${Math.floor(m / 60)}h ${String(m % 60).padStart(2, "0")}m`; };
 function kmBetween(a, b, c, d) { const r = Math.PI / 180, x = Math.sin((c - a) * r / 2) ** 2 + Math.cos(a * r) * Math.cos(c * r) * Math.sin((d - b) * r / 2) ** 2; return 12742 * Math.asin(Math.sqrt(x)); }
@@ -598,8 +599,8 @@ function visible() {
 }
 function differs(a) {
   if (!nafc) return false;
-  const cs = nafc.get(a.rego);
-  return !cs || !cs.includes(a.callsign);
+  const cs = nafc.get(norm(a.rego));
+  return !cs || !cs.some(c => norm(c) === norm(a.callsign));
 }
 
 function bars(counts) {
@@ -734,11 +735,11 @@ function renderDetail() {
   const l = live.get(a.rego);
   const ph = a.photos[photoIdx];
   const reg = encodeURIComponent(a.rego);
-  const nafcCs = nafc?.get(a.rego);
+  const nafcCs = nafc?.get(norm(a.rego));
   let nafcMsg = "";
   if (nafc) {
     if (!nafcCs) nafcMsg = `<div class="box warn">${esc(a.rego)} is not on the current NAFC call sign list.</div>`;
-    else if (!nafcCs.includes(a.callsign)) nafcMsg = `<div class="box warn">NAFC list shows <b>${esc(nafcCs.join(", "))}</b> for ${esc(a.rego)}. Your spreadsheet has ${esc(a.callsign)}.</div>`;
+    else if (!nafcCs.some(c => norm(c) === norm(a.callsign))) nafcMsg = `<div class="box warn">NAFC list shows <b>${esc(nafcCs.join(", "))}</b> for ${esc(a.rego)}. Your spreadsheet has ${esc(a.callsign)}.</div>`;
   }
   $("detail").innerHTML = `
     <div class="dhead"><button class="btn" type="button" id="back">&larr; List</button><span class="badge">${esc(a.group)}</span></div>
@@ -801,7 +802,7 @@ async function loadJson(path) { const r = await fetch(path, { cache: "no-cache" 
   try {
     const n = await loadJson("data/nafc_callsigns.json");
     nafc = new Map();
-    for (const e of n.entries) nafc.set(e.registration, [...(nafc.get(e.registration) || []), e.callsign]);
+    for (const e of n.entries) nafc.set(norm(e.registration), [...(nafc.get(norm(e.registration)) || []), e.callsign]);
     $("tDiffWrap").hidden = false;
   } catch { /* the alert job has not produced it yet */ }
   fillSelect("fGroup", uniq("group"), "All callsigns");
