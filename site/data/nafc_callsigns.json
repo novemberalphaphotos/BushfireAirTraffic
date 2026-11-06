@@ -654,10 +654,10 @@
   },
   {
    "callsign": "BOMBER 364",
-   "registration": "VH-8PM",
+   "registration": "VH-RFM",
    "category": "FW - Type 4 SEAT",
-   "make": "AIR TRACTOR, INC.",
-   "model": "AT-802"
+   "make": "AIR TRACTOR INC",
+   "model": "AT-802A"
   },
   {
    "callsign": "BOMBER 391",
@@ -1144,10 +1144,10 @@
   },
   {
    "callsign": "BOMBER 751",
-   "registration": "VH-RFM",
+   "registration": "VH-8PM",
    "category": "FW - Type 4 SEAT",
-   "make": "AIR TRACTOR INC",
-   "model": "AT-802A"
+   "make": "AIR TRACTOR, INC.",
+   "model": "AT-802"
   },
   {
    "callsign": "BOMBER 799",
