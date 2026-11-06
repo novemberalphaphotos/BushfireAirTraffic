@@ -1,0 +1,83 @@
+name: Update data, watch NAFC call signs and publish site
+
+on:
+  push:
+    branches: [main]
+    paths: ["site/**", "data/**", "scripts/**", ".github/workflows/**", "index.html", "config.js", "sw.js", "manifest.webmanifest", "*.png"]
+  schedule:
+    - cron: "17 */2 * * *"   # every 2 hours at 17 past (UTC)
+  workflow_dispatch:          # lets you run it by hand from the Actions tab
+    inputs:
+      test_notification:
+        description: "Also send a test notification to your phone"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: site
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: File site files that were uploaded to the wrong folder
+        run: |
+          mkdir -p site/icons
+          for f in index.html config.js sw.js manifest.webmanifest; do
+            if [ -f "$f" ]; then mv -f "$f" "site/$f"; echo "moved $f into site/"; fi
+          done
+          for f in *.png; do
+            if [ -f "$f" ]; then mv -f "$f" "site/icons/$f"; echo "moved $f into site/icons/"; fi
+          done
+
+      - name: Install spreadsheet reader
+        run: pip install openpyxl
+
+      - name: Rebuild aircraft data from the spreadsheet
+        continue-on-error: true
+        run: python3 scripts/build_data.py
+
+      - name: Check NAFC call sign list
+        continue-on-error: true
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          SITE_URL: ${{ vars.SITE_URL }}
+          NTFY_TEST: ${{ inputs.test_notification && '1' || '' }}
+        run: python3 scripts/check_callsigns.py
+
+      - name: Check the recorder is working
+        continue-on-error: true
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          SITE_URL: ${{ vars.SITE_URL }}
+        run: python3 scripts/check_health.py
+
+      - name: Save results
+        run: |
+          git config user.name "data-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A
+          git diff --cached --quiet || (git commit -m "Update aircraft data and NAFC snapshot" && git pull --rebase && git push)
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  deploy:
+    needs: update
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
