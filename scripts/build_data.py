@@ -15,7 +15,7 @@ Photos: save a file named after the registration into site/photos/, e.g.
 Several shots per aircraft: VH-EPH.jpg, VH-EPH-2.jpg, VH-EPH-3.jpg ...
 A value in the sheet's "Photo URL" column is used when there is no local file.
 """
-import json, re, sys, urllib.parse, urllib.request
+import json, time, re, sys, urllib.parse, urllib.request
 from pathlib import Path
 import openpyxl
 
@@ -145,14 +145,20 @@ COORD_PATTERNS = [
     r"[?&](?:q|ll|query|destination)=(-?\d+\.\d+)(?:,|%2C)(-?\d+\.\d+)",
     r"@(-?\d+\.\d+),(-?\d+\.\d+)",                                       # map centre
     r"center=(-?\d+\.\d+)(?:,|%2C)(-?\d+\.\d+)",
+    r"/(?:place|search|dir|maps)/[^@?]*?/?(-?\d{1,2}\.\d+)(?:,|%2C)\+?(-?\d{2,3}\.\d+)",   # coordinates written into the path
+    r"!1d(-?\d{2,3}\.\d+)!2d(-?\d{1,2}\.\d+)",                           # place data: longitude first
+    r"\[null,null,(-?\d+\.\d+),(-?\d+\.\d+)\]",                          # coordinates inside the page data
 ]
 
 
 def coords_from_text(text):
     for rx in COORD_PATTERNS:
-        m = re.search(rx, text)
-        if m and in_australia(float(m[1]), float(m[2])):
-            return float(m[1]), float(m[2])
+        for m in re.finditer(rx, text):
+            a, b = float(m[1]), float(m[2])
+            if in_australia(a, b):
+                return a, b
+            if in_australia(b, a):      # longitude was written first
+                return b, a
     return None
 
 
@@ -161,7 +167,10 @@ def resolve_map_link(url):
     req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (compatible; bushfire-air-tracker)"})
     with urllib.request.urlopen(req, timeout=30) as r:
         final, body = r.geturl(), r.read(600000).decode("utf-8", "ignore")
-    return coords_from_text(urllib.parse.unquote(final)) or coords_from_text(final) or coords_from_text(body)
+    got = coords_from_text(urllib.parse.unquote(final)) or coords_from_text(final) or coords_from_text(body)
+    if not got:
+        print(f"  opened {url} but found no coordinates. It ended at: {final[:220]}")
+    return got
 
 
 def main():
@@ -211,11 +220,16 @@ def main():
                 pin = (float(m[1]), float(m[2]))
             elif link and "goo" in link:
                 if link not in cache:
-                    if fails >= 3:            # the network is blocked or Google is refusing: stop trying this run
+                    if fails >= 8:            # the network is blocked or Google is refusing: stop trying this run
                         cache[link] = None
                     else:
                         try:
-                            cache[link] = resolve_map_link(link)
+                            try:
+                                cache[link] = resolve_map_link(link)
+                            except Exception:
+                                time.sleep(2)               # one polite retry
+                                cache[link] = resolve_map_link(link)
+                            time.sleep(0.4)
                         except Exception as e:
                             fails += 1
                             print(f"  could not open {link}: {e}")
