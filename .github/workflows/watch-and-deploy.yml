@@ -3,7 +3,7 @@ name: Update data, watch NAFC call signs and publish site
 on:
   push:
     branches: [main]
-    paths: ["site/**", "data/**", "scripts/**", ".github/workflows/**"]
+    paths: ["site/**", "data/**", "scripts/**", ".github/workflows/**", "index.html", "config.js", "sw.js", "manifest.webmanifest", "*.png"]
   schedule:
     - cron: "17 */2 * * *"   # every 2 hours at 17 past (UTC)
   workflow_dispatch:          # lets you run it by hand from the Actions tab
@@ -28,6 +28,16 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: File site files that were uploaded to the wrong folder
+        run: |
+          mkdir -p site/icons
+          for f in index.html config.js sw.js manifest.webmanifest; do
+            if [ -f "$f" ]; then mv -f "$f" "site/$f"; echo "moved $f into site/"; fi
+          done
+          for f in *.png; do
+            if [ -f "$f" ]; then mv -f "$f" "site/icons/$f"; echo "moved $f into site/icons/"; fi
+          done
+
       - name: Install spreadsheet reader
         run: pip install openpyxl
 
@@ -47,7 +57,7 @@ jobs:
         run: |
           git config user.name "data-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add site/data data/maps_cache.json
+          git add -A
           git diff --cached --quiet || (git commit -m "Update aircraft data and NAFC snapshot" && git pull --rebase && git push)
 
       - uses: actions/configure-pages@v5
@@ -64,3 +74,4 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
+      
