@@ -232,7 +232,6 @@ dl.info dd { margin: 0; min-width: 0; overflow-wrap: anywhere; }
   </div>
   <button class="iconbtn" id="disclBtn" type="button">Disclaimer</button>
   <button class="iconbtn" id="outBtn" type="button" hidden>Sign out</button>
-  <button class="iconbtn" id="histBtn" type="button" hidden>Callsign changes</button>
   <button class="iconbtn" id="installBtn" type="button">Install app</button>
   <button class="iconbtn" id="themeBtn" type="button" aria-label="Switch light or dark theme">Theme</button>
 </header>
@@ -798,7 +797,8 @@ function openDetail(a) {
   document.body.dataset.view = "list"; syncTabs();
   document.querySelectorAll(".item.sel").forEach(n => n.classList.remove("sel"));
   const l = live.get(a.rego);
-  if (l) map.flyTo([l.lat, l.lon], Math.max(map.getZoom(), 9), { duration: .6 });
+  if (map.getSize().x < 50) { /* map is hidden (phone list view): nothing to move */ }
+  else if (l) map.flyTo([l.lat, l.lon], Math.max(map.getZoom(), 9), { duration: .6 });
   else if (a.base) map.flyTo([a.base.lat, a.base.lon], Math.max(map.getZoom(), 8), { duration: .6 });
 }
 function closeHistory() { $("history").classList.remove("open"); }
@@ -841,7 +841,6 @@ function renderHistory() {
   $("hFleet").onchange = ev => { histFleetOnly = ev.target.checked; renderHistory(); };
   $("history").querySelectorAll("button[data-reg]").forEach(b => b.onclick = () => { const a = fleet.find(x => x.rego === b.dataset.reg); if (a) openDetail(a); });
 }
-$("histBtn").onclick = openHistory;
 
 function flightsHtml(a) {
   if (!PROXY) return "";
@@ -957,7 +956,7 @@ async function gate() {
 }
 function showSignedIn(name) {
   const b = $("outBtn"); if (!name) return;
-  b.hidden = false; b.textContent = `Sign out (${name})`;
+  b.hidden = false; b.textContent = `Sign out (${name.charAt(0).toUpperCase() + name.slice(1)})`;
   b.onclick = () => { store.set("fa_token", ""); location.reload(); };
 }
 (async function init() {
@@ -971,7 +970,7 @@ function showSignedIn(name) {
     for (const e of n.entries) nafc.set(norm(e.registration), [...(nafc.get(norm(e.registration)) || []), e.callsign]);
     $("tDiffWrap").hidden = false;
   } catch { /* the alert job has not produced it yet */ }
-  try { nafcHist = await loadJson("data/nafc_history.json"); if (!Array.isArray(nafcHist.entries)) nafcHist = null; else $("histBtn").hidden = false; } catch { nafcHist = null; }
+  try { nafcHist = await loadJson("data/nafc_history.json"); if (!Array.isArray(nafcHist.entries)) nafcHist = null; } catch { nafcHist = null; }
   fillSelect("fGroup", uniq("group"), "All callsigns");
   fillSelect("fFamily", uniq("family"), "All types");
   fillSelect("fOp", uniq("operator"), "All operators");
