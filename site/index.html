@@ -194,6 +194,14 @@ dl.info dd { margin: 0; min-width: 0; overflow-wrap: anywhere; }
 .hrow .chg { font-family: var(--f-mono); font-size: 13px; overflow-wrap: anywhere; }
 .hrow .btn { margin-top: 4px; }
 #recStat { color: var(--muted); }
+#login { position: fixed; inset: 0; z-index: 5000; background: var(--bg); display: none; align-items: center; justify-content: center; padding: 20px; }
+#login.open { display: flex; }
+#login form { width: 100%; max-width: 340px; display: grid; gap: 10px; text-align: center; }
+#login h2 { margin: 0 0 4px; font: 700 26px var(--f-display); letter-spacing: .03em; text-transform: uppercase; }
+#login h2 span { color: var(--accent); }
+#login input { font: inherit; font-size: 16px; padding: 12px; border-radius: 8px; border: 1px solid var(--line); background: var(--panel); color: var(--fg); }
+#login .err { color: var(--warn); min-height: 1.3em; font-size: 14px; }
+#login small { color: var(--muted); }
 #notice { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 4px 10px; padding: 6px 12px; background: var(--warn-bg); color: var(--warn); font-size: 12.5px; text-align: center; border-bottom: 1px solid var(--line); }
 #notice button { border: 0; background: none; color: inherit; font: inherit; text-decoration: underline; cursor: pointer; padding: 2px 4px; }
 #discl { position: fixed; inset: 0; z-index: 3000; background: rgba(0,0,0,.55); display: none; align-items: center; justify-content: center; padding: 16px; }
@@ -218,11 +226,12 @@ dl.info dd { margin: 0; min-width: 0; overflow-wrap: anywhere; }
   <h1>Bushfire <span>Air</span> Tracker</h1>
   <div class="stats" aria-live="polite">
     <div class="stat"><b id="sTotal">0</b><small>Aircraft</small></div>
-    <div class="stat"><b id="sBased">0</b><small>Base known</small></div>
+    <div class="stat"><b id="sBased">0</b><small>Bases known</small></div>
     <div class="stat live"><b id="sAir">0</b><small>Airborne</small></div>
     <div class="stat"><b id="sLive">0</b><small>Transmitting</small></div>
   </div>
   <button class="iconbtn" id="disclBtn" type="button">Disclaimer</button>
+  <button class="iconbtn" id="outBtn" type="button" hidden>Sign out</button>
   <button class="iconbtn" id="histBtn" type="button" hidden>Callsign changes</button>
   <button class="iconbtn" id="installBtn" type="button">Install app</button>
   <button class="iconbtn" id="themeBtn" type="button" aria-label="Switch light or dark theme">Theme</button>
@@ -276,6 +285,18 @@ dl.info dd { margin: 0; min-width: 0; overflow-wrap: anywhere; }
   <button role="tab" aria-selected="false" data-v="map" type="button">Map</button>
 </nav>
 
+<div id="login" role="dialog" aria-modal="true" aria-labelledby="loginTitle">
+  <form id="loginForm" autocomplete="on">
+    <h2 id="loginTitle">Bushfire <span>Air</span> Tracker</h2>
+    <small>Private site. Sign in with the name and password you were given.</small>
+    <input id="loginName" name="username" autocomplete="username" autocapitalize="none" autocorrect="off" spellcheck="false" placeholder="Name" required>
+    <input id="loginPass" name="password" type="password" autocomplete="current-password" placeholder="Password" required>
+    <button class="btn primary" type="submit" id="loginGo">Sign in</button>
+    <div class="err" id="loginErr" role="alert"></div>
+    <small>Sign-ins are logged: your name, the time and your rough location.</small>
+  </form>
+</div>
+
 <div id="discl" role="dialog" aria-modal="true" aria-labelledby="disclTitle">
   <div class="card">
     <h2 id="disclTitle">Disclaimer</h2>
@@ -308,6 +329,14 @@ const PROVIDERS = [               // tried in order; each is a community ADS-B A
 const $ = id => document.getElementById(id);
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 const store = { get(k) { try { return localStorage.getItem(k); } catch { return null; } }, set(k, v) { try { localStorage.setItem(k, v); } catch {} } };
+/* ---------- sign-in: every request to the worker carries the signed-in token ---------- */
+let TOKEN = store.get("fa_token") || "";
+const px = q => `${PROXY}?${q}${TOKEN ? "&k=" + encodeURIComponent(TOKEN) : ""}`;
+async function pf(url, opts) {          // fetch via the worker; an expired sign-in sends you back to the sign-in screen
+  const r = await fetch(url, opts);
+  if (r.status === 401 && PROXY) { store.set("fa_token", ""); location.reload(); }
+  return r;
+}
 const natural = (a, b) => a.localeCompare(b, "en", { numeric: true });
 const groupColor = g => g === "FIREBIRD" ? "var(--firebird)" : "var(--helitak)";
 
@@ -437,7 +466,7 @@ async function loadTrails() {
   clearTimeout(trailTimer);
   if (!PROXY || !trailHours) { trails = {}; drawTrails(); return; }
   try {
-    const r = await fetch(`${PROXY}?trails=${trailHours}`, { cache: "no-store" });
+    const r = await pf(px(`trails=${trailHours}`), { cache: "no-store" });
     if (r.ok) trails = await r.json();
   } catch (e) { console.warn("Trail fetch failed", e); }
   drawTrails();
@@ -482,7 +511,7 @@ async function loadFlights() {
   clearTimeout(flightTimer);
   if (!PROXY) return;
   try {
-    const r = await fetch(`${PROXY}?flights=${FLIGHT_DAYS}`, { cache: "no-store" });
+    const r = await pf(px(`flights=${FLIGHT_DAYS}`), { cache: "no-store" });
     if (r.ok) {
       const rows = await r.json(); flights = {};
       for (const x of rows) (flights[x.reg] ||= []).push(x);      // newest first
@@ -577,7 +606,7 @@ async function loadFires() {
   const all = [];
   await Promise.all(FIRE_SOURCES.map(async s => {
     try {
-      const r = await fetch(PROXY ? `${PROXY}?u=${encodeURIComponent(s.url)}` : s.url, { cache: "no-store" });
+      const r = await (PROXY ? pf(px("u=" + encodeURIComponent(s.url)), { cache: "no-store" }) : fetch(s.url, { cache: "no-store" }));
       if (!r.ok) throw new Error("HTTP " + r.status);
       const j = await r.json();
       const items = (j.features || (Array.isArray(j) ? j : [])).map(ft => fireFromFeature(s, ft)).filter(Boolean);
@@ -600,7 +629,7 @@ async function fetchChunk(regs) {
     try {
       const ctl = new AbortController(); const to = setTimeout(() => ctl.abort(), 12000);
       const target = pv.url(regs.join(","));
-      const r = await fetch(PROXY ? `${PROXY}?u=${encodeURIComponent(target)}` : target, { signal: ctl.signal, cache: "no-store" });
+      const r = await (PROXY ? pf(px("u=" + encodeURIComponent(target)), { signal: ctl.signal, cache: "no-store" }) : fetch(target, { signal: ctl.signal, cache: "no-store" }));
       clearTimeout(to);
       if (!r.ok) throw new Error(`${pv.name} HTTP ${r.status}`);
       const j = await r.json();
@@ -903,7 +932,36 @@ function fitBases() {
   fitted = true;
 }
 async function loadJson(path) { const r = await fetch(path, { cache: "no-cache" }); if (!r.ok) throw new Error(path + " " + r.status); return r.json(); }
+async function gate() {
+  if (!PROXY) return true;
+  let st;
+  try { const r = await fetch(px("whoami"), { cache: "no-store" }); st = await r.json(); }
+  catch { return true; }                          // worker unreachable: show the site, live data just will not load
+  if (!st.required) return true;
+  if (st.name) { showSignedIn(st.name); return true; }
+  return new Promise(done => {
+    const box = $("login"), form = $("loginForm"), err = $("loginErr");
+    box.classList.add("open"); $("loginName").focus();
+    form.onsubmit = async ev => {
+      ev.preventDefault(); err.textContent = ""; $("loginGo").disabled = true;
+      try {
+        const r = await fetch(`${PROXY}?login`, { method: "POST", headers: { "Content-Type": "text/plain" },
+          body: JSON.stringify({ name: $("loginName").value, password: $("loginPass").value }) });
+        if (r.status === 429) err.textContent = "Too many attempts. Wait a few minutes and try again.";
+        else if (!r.ok) err.textContent = "Wrong name or password.";
+        else { const j = await r.json(); TOKEN = j.token || ""; store.set("fa_token", TOKEN); box.classList.remove("open"); showSignedIn(j.name); $("loginPass").value = ""; return done(true); }
+      } catch { err.textContent = "Could not reach the server. Check your connection."; }
+      $("loginGo").disabled = false;
+    };
+  });
+}
+function showSignedIn(name) {
+  const b = $("outBtn"); if (!name) return;
+  b.hidden = false; b.textContent = `Sign out (${name})`;
+  b.onclick = () => { store.set("fa_token", ""); location.reload(); };
+}
 (async function init() {
+  if (!(await gate())) return;
   try { fleet = await loadJson("data/aircraft.json"); }
   catch (e) { $("list").innerHTML = `<div class="empty">Could not load data/aircraft.json.<br>If you opened index.html straight from disk, serve the folder instead: <span class="reg">python3 -m http.server</span></div>`; return; }
   for (const a of fleet) a._hay = [a.rego, a.callsign, a.type, a.family, a.operator, a.base?.name, a.base?.state, a.baseText, a.note].join(" ").toLowerCase();
