@@ -194,6 +194,14 @@ dl.info dd { margin: 0; min-width: 0; overflow-wrap: anywhere; }
 .hrow .chg { font-family: var(--f-mono); font-size: 13px; overflow-wrap: anywhere; }
 .hrow .btn { margin-top: 4px; }
 #recStat { color: var(--muted); }
+#notice { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 4px 10px; padding: 6px 12px; background: var(--warn-bg); color: var(--warn); font-size: 12.5px; text-align: center; border-bottom: 1px solid var(--line); }
+#notice button { border: 0; background: none; color: inherit; font: inherit; text-decoration: underline; cursor: pointer; padding: 2px 4px; }
+#discl { position: fixed; inset: 0; z-index: 3000; background: rgba(0,0,0,.55); display: none; align-items: center; justify-content: center; padding: 16px; }
+#discl.open { display: flex; }
+#discl .card { background: var(--panel); color: var(--fg); border: 1px solid var(--line); border-radius: 10px; max-width: 560px; max-height: 86vh; overflow-y: auto; padding: 18px 18px 14px; }
+#discl h2 { margin: 0 0 8px; font: 700 20px var(--f-display); letter-spacing: .03em; text-transform: uppercase; }
+#discl p { margin: 0 0 10px; }
+#discl .close { margin-top: 4px; }
 #recStat.bad { color: var(--warn); font-weight: 600; }
 /* iOS home-screen apps (WebKit bug 301108): with a translucent status bar the page is measured one status-bar
    shorter than the screen, which leaves a strip at the bottom. lvh is the full screen height. */
@@ -214,10 +222,16 @@ dl.info dd { margin: 0; min-width: 0; overflow-wrap: anywhere; }
     <div class="stat live"><b id="sAir">0</b><small>Airborne</small></div>
     <div class="stat"><b id="sLive">0</b><small>Transmitting</small></div>
   </div>
+  <button class="iconbtn" id="disclBtn" type="button">Disclaimer</button>
   <button class="iconbtn" id="histBtn" type="button" hidden>Callsign changes</button>
   <button class="iconbtn" id="installBtn" type="button">Install app</button>
   <button class="iconbtn" id="themeBtn" type="button" aria-label="Switch light or dark theme">Theme</button>
 </header>
+
+<div id="notice" role="note" hidden>
+  <span>Not part of or affiliated with the NAFC or any fire service. Not for operational or official use.</span>
+  <span><button type="button" id="noticeMore">Read more</button><button type="button" id="noticeHide">Dismiss</button></span>
+</div>
 
 <main>
   <section id="side" aria-label="Fleet list">
@@ -261,6 +275,18 @@ dl.info dd { margin: 0; min-width: 0; overflow-wrap: anywhere; }
   <button role="tab" aria-selected="true" data-v="list" type="button">Fleet</button>
   <button role="tab" aria-selected="false" data-v="map" type="button">Map</button>
 </nav>
+
+<div id="discl" role="dialog" aria-modal="true" aria-labelledby="disclTitle">
+  <div class="card">
+    <h2 id="disclTitle">Disclaimer</h2>
+    <p><b>This is an unofficial, independent hobby project.</b> It is not part of, endorsed by, or affiliated with the National Aerial Firefighting Centre (NAFC), any fire or emergency service, aircraft operator, or government agency.</p>
+    <p><b>Do not use it for official, operational, safety or emergency purposes.</b> It is for personal interest only. For warnings and emergency information use your state fire service (for example NSW RFS, VicEmergency, QFD, SA CFS, DFES, Tas Fire Service, NT Emergency) or call 000.</p>
+    <p>Call signs, registrations, operators and bases come from the public NAFC call sign list and a personal spreadsheet. They may be incomplete, out of date or wrong, and bases shown are where an aircraft is believed to be based, not where it is now.</p>
+    <p>Aircraft positions come from volunteer ADS-B networks. They can be delayed, missing or inaccurate, and many firefighting aircraft do not transmit at all. Flights, trails and alerts are recorded automatically and can contain errors. Fire incident information comes from public state feeds and is shown as published.</p>
+    <p>Provided as is, with no warranty of any kind. Use is at your own risk.</p>
+    <button class="btn primary close" type="button" id="disclClose">Close</button>
+  </div>
+</div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
 <script src="config.js"></script>
@@ -909,6 +935,18 @@ async function loadJson(path) { const r = await fetch(path, { cache: "no-cache" 
 let installEvt = null;
 addEventListener("beforeinstallprompt", e => { e.preventDefault(); installEvt = e; $("installBtn").style.display = "inline-block"; });
 $("installBtn").onclick = async () => { if (!installEvt) return; installEvt.prompt(); await installEvt.userChoice.catch(() => {}); installEvt = null; $("installBtn").style.display = "none"; };
+/* ---------- disclaimer ---------- */
+{
+  const dlg = $("discl"), note = $("notice");
+  const open = () => { dlg.classList.add("open"); dlg.querySelector(".card").scrollTop = 0; $("disclClose").focus({ preventScroll: true }); };
+  const close = () => dlg.classList.remove("open");
+  $("disclBtn").onclick = open; $("noticeMore").onclick = open; $("disclClose").onclick = close;
+  dlg.addEventListener("click", e => { if (e.target === dlg) close(); });
+  addEventListener("keydown", e => { if (e.key === "Escape") close(); });
+  $("noticeHide").onclick = () => { note.hidden = true; store.set("noticeSeen", "1"); setTimeout(() => map.invalidateSize(), 50); };
+  if (store.get("noticeSeen") !== "1") note.hidden = false;
+}
+
 /* iPhone/iPad have no install prompt: show the manual steps instead */
 {
   const ios = /iphone|ipad|ipod/i.test(navigator.userAgent) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
