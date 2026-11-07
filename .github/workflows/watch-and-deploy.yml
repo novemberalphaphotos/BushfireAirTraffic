@@ -53,6 +53,13 @@ jobs:
           NTFY_TEST: ${{ inputs.test_notification && '1' || '' }}
         run: python3 scripts/check_callsigns.py
 
+      - name: Check the recorder is working
+        continue-on-error: true
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          SITE_URL: ${{ vars.SITE_URL }}
+        run: python3 scripts/check_health.py
+
       - name: Save results
         run: |
           git config user.name "data-bot"
@@ -74,4 +81,3 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
-      
