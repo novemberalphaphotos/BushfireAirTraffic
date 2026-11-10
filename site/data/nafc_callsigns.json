@@ -261,13 +261,6 @@
    "model": "208B"
   },
   {
-   "callsign": "BOMBER",
-   "registration": "VH-ODA",
-   "category": "FW - Type 4 SEAT",
-   "make": "AIR TRACTOR, INC.",
-   "model": "AT-802"
-  },
-  {
    "callsign": "BOMBER 102",
    "registration": "N292EA",
    "category": "FW - Type 1 MEAT",
@@ -1001,6 +994,13 @@
    "category": "FW - Type 4 SEAT",
    "make": "AIR TRACTOR INC",
    "model": "AT-802A"
+  },
+  {
+   "callsign": "BOMBER 599",
+   "registration": "VH-ODA",
+   "category": "FW - Type 4 SEAT",
+   "make": "AIR TRACTOR, INC.",
+   "model": "AT-802"
   },
   {
    "callsign": "BOMBER 601",
