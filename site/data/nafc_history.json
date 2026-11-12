@@ -2,6 +2,42 @@
  "since": "2026-11-06T06:10:01Z",
  "entries": [
   {
+   "t": "2026-11-12T01:24:35Z",
+   "reg": "ZK-INL",
+   "old": [],
+   "new": [
+    "INL-(B3)"
+   ],
+   "fleet": false
+  },
+  {
+   "t": "2026-11-12T01:24:35Z",
+   "reg": "ZK-IEH",
+   "old": [],
+   "new": [
+    "IEH-(130)"
+   ],
+   "fleet": false
+  },
+  {
+   "t": "2026-11-12T01:24:35Z",
+   "reg": "ZK-HNF",
+   "old": [],
+   "new": [
+    "HNF-(B2)"
+   ],
+   "fleet": false
+  },
+  {
+   "t": "2026-11-12T01:24:35Z",
+   "reg": "ZK-HND",
+   "old": [],
+   "new": [
+    "HND-(B2)"
+   ],
+   "fleet": false
+  },
+  {
    "t": "2026-11-10T02:58:26Z",
    "reg": "VH-ODA",
    "old": [

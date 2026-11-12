@@ -4363,11 +4363,25 @@
    "model": "AS 350 B2"
   },
   {
+   "callsign": "HND-(B2)",
+   "registration": "ZK-HND",
+   "category": "RW - Type 3 Light",
+   "make": "AIRBUS HELICOPTERS",
+   "model": "AS 350 B2"
+  },
+  {
    "callsign": "HNE-(500)",
    "registration": "ZK-HNE",
    "category": "RW - Type 3 Light",
    "make": "MCDONNELL DOUGLAS HELICOPTER COMPANY",
    "model": "369E"
+  },
+  {
+   "callsign": "HNF-(B2)",
+   "registration": "ZK-HNF",
+   "category": "RW - Type 3 Light",
+   "make": "AIRBUS HELICOPTERS",
+   "model": "AS 350 B2"
   },
   {
    "callsign": "HNL-(B2)",
@@ -5147,6 +5161,13 @@
    "model": "520N"
   },
   {
+   "callsign": "IEH-(130)",
+   "registration": "ZK-IEH",
+   "category": "RW - Type 3 Light",
+   "make": "AIRBUS HELICOPTERS",
+   "model": "EC 130 T2"
+  },
+  {
    "callsign": "IEJ-(355)",
    "registration": "ZK-IEJ",
    "category": "RW - Type 3 Light",
@@ -5516,6 +5537,13 @@
    "category": "RW - Type 3 Light",
    "make": "BELL HELICOPTER CO",
    "model": "206L-1"
+  },
+  {
+   "callsign": "INL-(B3)",
+   "registration": "ZK-INL",
+   "category": "RW - Type 3 Light",
+   "make": "AIRBUS HELICOPTERS",
+   "model": "AS 350 B3"
   },
   {
    "callsign": "INT-(B3)",
