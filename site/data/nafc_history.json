@@ -2,6 +2,15 @@
  "since": "2026-11-06T06:10:01Z",
  "entries": [
   {
+   "t": "2026-11-13T05:09:05Z",
+   "reg": "VH-YAM",
+   "old": [
+    "FIREBIRD 291"
+   ],
+   "new": [],
+   "fleet": false
+  },
+  {
    "t": "2026-11-12T01:24:35Z",
    "reg": "ZK-INL",
    "old": [],
