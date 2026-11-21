@@ -16,7 +16,7 @@ from html.parser import HTMLParser
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-URLS = ["https://nafc.org.au/call-signs/", "https://www.nafc.org.au/call-signs/"]   # NAFC moved to a new site; try both
+URLS = ["https://nafc.org.au/call-signs", "https://nafc.org.au/call-signs/", "https://www.nafc.org.au/call-signs"]   # NAFC moved to a new site (no trailing slash is the real address)
 STATE = ROOT / "site" / "data" / "nafc_callsigns.json"
 STATUS = ROOT / "site" / "data" / "nafc_status.json"   # remembers if we are already in a failing state (so errors alert once, not every run)
 FLEET = ROOT / "site" / "data" / "aircraft.json"
@@ -171,7 +171,7 @@ def fetch():
     if local:
         return Path(local).read_text(encoding="utf-8")
     last_err, best = None, ""
-    for url in URLS:
+    for url in URLS[:2]:
         req = urllib.request.Request(url, headers={
             "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36",
             "Accept": "text/html,application/xhtml+xml",
