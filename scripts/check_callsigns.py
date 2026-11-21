@@ -16,8 +16,9 @@ from html.parser import HTMLParser
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-URL = "https://www.nafc.org.au/call-signs/"
+URLS = ["https://nafc.org.au/call-signs/", "https://www.nafc.org.au/call-signs/"]   # NAFC moved to a new site; try both
 STATE = ROOT / "site" / "data" / "nafc_callsigns.json"
+STATUS = ROOT / "site" / "data" / "nafc_status.json"   # remembers if we are already in a failing state (so errors alert once, not every run)
 FLEET = ROOT / "site" / "data" / "aircraft.json"
 HISTORY = ROOT / "site" / "data" / "nafc_history.json"   # shown on the site as "Callsign changes"
 FIELDS = ["callsign", "registration", "category", "make", "model"]
@@ -89,8 +90,20 @@ def parse_text(html):
     return entries
 
 
+def parse_rows_by_shape(html):
+    """Fallback when table headers were renamed/removed: any row whose 2nd cell looks like a registration."""
+    p = TableParser()
+    p.feed(html)
+    out = []
+    for row in p.rows:
+        if len(row) >= 2 and REG_RX.match(row[1].strip().upper()) and re.search(r"\d", row[0]):
+            row = row + ["", "", ""]
+            out.append({"callsign": row[0], "registration": row[1], "category": row[2], "make": row[3], "model": row[4]})
+    return out
+
+
 def parse(html):
-    entries = parse_table(html) or parse_text(html)
+    entries = parse_table(html) or parse_rows_by_shape(html) or parse_text(html)
     out = []
     for e in entries:
         e["callsign"] = re.sub(r"\s+", " ", e["callsign"]).strip().upper()
@@ -105,18 +118,63 @@ def describe(html):
             f"starts: {re.sub(chr(10), ' ', html[:200])!r}")
 
 
+def render_with_browser(url):
+    """The new NAFC site loads its tables with JavaScript, so a plain download is an empty shell.
+    Open the page in headless Chromium (installed by the workflow) and return the finished HTML."""
+    from playwright.sync_api import sync_playwright
+    with sync_playwright() as p:
+        b = p.chromium.launch()
+        try:
+            pg = b.new_page(user_agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36",
+                            locale="en-AU")
+            pg.goto(url, wait_until="domcontentloaded", timeout=60000)
+            try:
+                pg.wait_for_selector("table tbody tr", timeout=45000)
+            except Exception:
+                pass                      # report whatever did render
+            pg.wait_for_timeout(1500)     # let the remaining tables finish loading
+            html = pg.content()
+            print(f"NAFC page rendered in browser: {len(html)} bytes")
+            return html
+        finally:
+            b.close()
+
+
 def fetch():
     local = os.environ.get("NAFC_HTML_FILE")
     if local:
         return Path(local).read_text(encoding="utf-8")
-    req = urllib.request.Request(URL, headers={
-        "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36",
-        "Accept": "text/html,application/xhtml+xml",
-        "Accept-Language": "en-AU,en;q=0.9",
-    })
-    with urllib.request.urlopen(req, timeout=60) as r:
-        print("NAFC page: HTTP", r.status)
-        return r.read().decode("utf-8", "replace")
+    last_err, best = None, ""
+    for url in URLS:
+        req = urllib.request.Request(url, headers={
+            "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36",
+            "Accept": "text/html,application/xhtml+xml",
+            "Accept-Language": "en-AU,en;q=0.9",
+        })
+        try:
+            with urllib.request.urlopen(req, timeout=60) as r:
+                body = r.read().decode("utf-8", "replace")
+                print(f"NAFC page {url}: HTTP {r.status}, final {r.geturl()}, {len(body)} bytes")
+        except Exception as e:
+            last_err = f"{url}: {e}"
+            print("NAFC fetch failed:", last_err)
+            continue
+        if len(parse(body)) >= 20:
+            return body
+        best = best or body
+    # plain download gave no data: the page is probably JavaScript-driven, so render it in a browser
+    try:
+        for url in URLS:
+            html = render_with_browser(url)
+            if len(parse(html)) >= 20:
+                return html
+            best = html if len(html) > len(best) else best
+    except Exception as e:
+        print("browser render failed:", type(e).__name__, str(e)[:200])
+        last_err = f"browser render: {type(e).__name__}"
+    if best:
+        return best          # fetched, but nothing parsable: the caller reports what the page looked like
+    raise RuntimeError(last_err or "no response")
 
 
 def key(e):
@@ -174,6 +232,23 @@ def notify(title, body, high=False):
         print("ntfy: FAILED to send:", e)
 
 
+def problem(detail, run_msg):
+    """Alert about a problem ONCE; stay quiet while it continues; say so when it clears."""
+    st = json.loads(STATUS.read_text()) if STATUS.exists() else {}
+    if not st.get("failing"):
+        notify("NAFC watcher error", detail[:900] + " (You will not be alerted again until it recovers.)")
+        STATUS.parent.mkdir(parents=True, exist_ok=True)
+        STATUS.write_text(json.dumps({"failing": True, "detail": detail[:300]}, indent=1))
+    else:
+        print("still failing, already alerted:", run_msg)
+
+
+def recovered():
+    if STATUS.exists() and json.loads(STATUS.read_text()).get("failing"):
+        notify("NAFC watcher recovered", "The call sign list can be read again.")
+        STATUS.write_text(json.dumps({"failing": False}, indent=1))
+
+
 def main():
     if os.environ.get("NTFY_TEST"):
         notify("NAFC watcher test", "If you can read this, notifications from GitHub reach your phone.")
@@ -182,7 +257,7 @@ def main():
         html = fetch()
         new = parse(html)
     except Exception as e:
-        notify("NAFC watcher error", f"Could not read the call sign list: {e}")
+        problem(f"Could not read the call sign list: {e}", str(e))
         print("fetch failed:", e); return 1
     old = None
     if STATE.exists():
@@ -194,8 +269,9 @@ def main():
 
     if len(new) < 20 or (old and len(new) < 0.5 * len(old)):
         info = describe(html)
-        notify("NAFC watcher error", f"Parsed only {len(new)} rows (had {len(old or [])}). Nothing was updated. Page: {info}"[:900])
+        problem(f"Parsed only {len(new)} rows (had {len(old or [])}). Nothing was updated. Page: {info}", info)
         print("parse looks wrong:", len(new), "rows.", info); return 1
+    recovered()
 
     new = sorted({key(e): e for e in new}.values(), key=key)
     if old is None:
