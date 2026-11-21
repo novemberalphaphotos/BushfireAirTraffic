@@ -120,21 +120,47 @@ def describe(html):
 
 def render_with_browser(url):
     """The new NAFC site loads its tables with JavaScript, so a plain download is an empty shell.
-    Open the page in headless Chromium (installed by the workflow) and return the finished HTML."""
+    Open the page in headless Chromium (installed by the workflow) and return the finished HTML.
+    Prints 'diag:' lines describing what the page did, to help if the list still cannot be read."""
     from playwright.sync_api import sync_playwright
     with sync_playwright() as p:
         b = p.chromium.launch()
         try:
             pg = b.new_page(user_agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36",
-                            locale="en-AU")
+                            locale="en-AU", viewport={"width": 1280, "height": 1600})
+            seen, failed = [], []
+            pg.on("response", lambda r: seen.append((r.status, r.request.resource_type, r.url[:150], (r.headers.get("content-type") or "")[:30])))
+            pg.on("requestfailed", lambda r: failed.append(f"{r.url[:120]} {r.failure}"))
             pg.goto(url, wait_until="domcontentloaded", timeout=60000)
             try:
-                pg.wait_for_selector("table tbody tr", timeout=45000)
+                pg.wait_for_load_state("networkidle", timeout=30000)
             except Exception:
-                pass                      # report whatever did render
-            pg.wait_for_timeout(1500)     # let the remaining tables finish loading
+                print("diag: network never went idle within 30s")
+            try:
+                pg.wait_for_selector("table tbody tr, [role=row]", timeout=30000)
+            except Exception:
+                print("diag: no table rows or role=row elements appeared")
+            for _ in range(6):                      # in case the list loads as you scroll
+                pg.mouse.wheel(0, 4000)
+                pg.wait_for_timeout(500)
+            pg.wait_for_timeout(1500)
             html = pg.content()
             print(f"NAFC page rendered in browser: {len(html)} bytes")
+            for st, kind, u, ct in [x for x in seen if x[1] in ("xhr", "fetch", "document")][:25]:
+                print(f"diag: {st} {kind} {ct} {u}")
+            for f in failed[:8]:
+                print("diag: request failed:", f)
+            try:
+                text = re.sub(r"\s+", " ", pg.inner_text("body"))
+                print(f"diag: visible text ({len(text)} chars): {text[:700]!r}")
+                n = pg.evaluate("""() => ({tables: document.querySelectorAll('table').length, tr: document.querySelectorAll('tr').length,
+                    role_row: document.querySelectorAll('[role=row]').length, li: document.querySelectorAll('li').length,
+                    iframes: document.querySelectorAll('iframe').length, shadow: [...document.querySelectorAll('*')].filter(e => e.shadowRoot).length})""")
+                print("diag: element counts:", n)
+            except Exception as e:
+                print("diag: could not read page text:", type(e).__name__)
+            i = html.find("BIRDDOG")
+            print("diag: 'BIRDDOG' in html:", i >= 0, (html[max(0, i - 200):i + 300].replace(chr(10), " ") if i >= 0 else ""))
             return html
         finally:
             b.close()
