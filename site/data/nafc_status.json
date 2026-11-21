@@ -1,0 +1,4 @@
+{
+ "failing": true,
+ "detail": "Parsed only 0 rows (had 879). Nothing was updated. Page: 3459 bytes, 0 tables, 0 rows; starts: '<!doctype html>\\r <html lang=\"en\">\\r     <head>\\r         <meta charset=\"UTF-8\" />\\r         <meta\\r             name=\"viewport\"\\r             content=\"width=device-width, initial-scale=1.0, interactive-w"
+}
