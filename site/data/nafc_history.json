@@ -2,6 +2,604 @@
  "since": "2026-11-06T06:10:01Z",
  "entries": [
   {
+   "t": "2026-11-21T13:47:54Z",
+   "reg": "ZK-SXN",
+   "old": [
+    "SXN-(F/W 502)"
+   ],
+   "new": [],
+   "fleet": false
+  },
+  {
+   "t": "2026-11-21T13:47:54Z",
+   "reg": "ZK-SXG",
+   "old": [
+    "SXG-(F/W 502)"
+   ],
+   "new": [],
+   "fleet": false
+  },
+  {
+   "t": "2026-11-21T13:47:54Z",
+   "reg": "ZK-PEL",
+   "old": [
+    "PEL-(F/W PAX)"
+   ],
+   "new": [
+    "PEL-(F/W)"
+   ],
+   "fleet": false
+  },
+  {
+   "t": "2026-11-21T13:47:54Z",
+   "reg": "ZK-MGR",
+   "old": [
+    "MGR-(F/W PAX)"
+   ],
+   "new": [
+    "MGR-(F/W)"
+   ],
+   "fleet": false
+  },
+  {
+   "t": "2026-11-21T13:47:54Z",
+   "reg": "ZK-MAA",
+   "old": [],
+   "new": [
+    "MAA-(F/W 502)"
+   ],
+   "fleet": false
+  },
+  {
+   "t": "2026-11-21T13:47:54Z",
+   "reg": "ZK-INY",
+   "old": [
+    "INY-(407)"
+   ],
+   "new": [],
+   "fleet": false
+  },
+  {
+   "t": "2026-11-21T13:47:54Z",
+   "reg": "ZK-INL",
+   "old": [
+    "INL-(B3)"
+   ],
+   "new": [],
+   "fleet": false
+  },
+  {
+   "t": "2026-11-21T13:47:54Z",
+   "reg": "ZK-ILO",
+   "old": [],
+   "new": [
+    "ILO-(B3)"
+   ],
+   "fleet": false
+  },
+  {
+   "t": "2026-11-21T13:47:54Z",
+   "reg": "ZK-IHS",
+   "old": [
+    "IHS-(B3)"
+   ],
+   "new": [],
+   "fleet": false
+  },
+  {
+   "t": "2026-11-21T13:47:54Z",
+   "reg": "ZK-IGO",
+   "old": [
+    "IGO-(BA-PAX ONLY)"
+   ],
+   "new": [
+    "IGO-(BA)"
+   ],
+   "fleet": false
+  },
+  {
+   "t": "2026-11-21T13:47:54Z",
+   "reg": "ZK-IEH",
+   "old": [
+    "IEH-(130)"
+   ],
+   "new": [],
+   "fleet": false
+  },
+  {
+   "t": "2026-11-21T13:47:54Z",
+   "reg": "ZK-HSF",
+   "old": [
+    "HSF-(B3)"
+   ],
+   "new": [],
+   "fleet": false
+  },
+  {
+   "t": "2026-11-21T13:47:54Z",
+   "reg": "ZK-HNF",
+   "old": [
+    "HNF-(B2)"
+   ],
+   "new": [],
+   "fleet": false
+  },
+  {
+   "t": "2026-11-21T13:47:54Z",
+   "reg": "ZK-HND",
+   "old": [
+    "HND-(B2)"
+   ],
+   "new": [],
+   "fleet": false
+  },
+  {
+   "t": "2026-11-21T13:47:54Z",
+   "reg": "ZK-HKU",
+   "old": [
+    "HELITAK 285"
+   ],
+   "new": [
+    "HKU-(UH60)"
+   ],
+   "fleet": true
+  },
+  {
+   "t": "2026-11-21T13:47:54Z",
+   "reg": "ZK-HIA",
+   "old": [
+    "HIA-(500)"
+   ],
+   "new": [],
+   "fleet": false
+  },
+  {
+   "t": "2026-11-21T13:47:54Z",
+   "reg": "ZK-HEV",
+   "old": [
+    "HEV-(BK)"
+   ],
+   "new": [],
+   "fleet": false
+  },
+  {
+   "t": "2026-11-21T13:47:54Z",
+   "reg": "ZK-ENT",
+   "old": [
+    "ENT-(F/W PAX)"
+   ],
+   "new": [
+    "ENT-(F/W)"
+   ],
+   "fleet": false
+  },
+  {
+   "t": "2026-11-21T13:47:54Z",
+   "reg": "VH-ZDT",
+   "old": [],
+   "new": [
+    "FIREBIRD 728"
+   ],
+   "fleet": false
+  },
+  {
+   "t": "2026-11-21T13:47:54Z",
+   "reg": "VH-YAM",
+   "old": [],
+   "new": [
+    "FIREBIRD 291"
+   ],
+   "fleet": false
+  },
+  {
+   "t": "2026-11-21T13:47:54Z",
+   "reg": "VH-XPB",
+   "old": [
+    "BOMBER 588"
+   ],
+   "new": [
+    "BOMBER 881"
+   ],
+   "fleet": true
+  },
+  {
+   "t": "2026-11-21T13:47:54Z",
+   "reg": "VH-VVX",
+   "old": [
+    "FIREBIRD 628"
+   ],
+   "new": [],
+   "fleet": true
+  },
+  {
+   "t": "2026-11-21T13:47:54Z",
+   "reg": "VH-TXS",
+   "old": [
+    "BIRDDOG 691"
+   ],
+   "new": [],
+   "fleet": true
+  },
+  {
+   "t": "2026-11-21T13:47:54Z",
+   "reg": "VH-T2C",
+   "old": [
+    "FIREBIRD 788"
+   ],
+   "new": [
+    "HELITAK 788"
+   ],
+   "fleet": true
+  },
+  {
+   "t": "2026-11-21T13:47:54Z",
+   "reg": "VH-SRN",
+   "old": [],
+   "new": [
+    "FIREBIRD 712"
+   ],
+   "fleet": false
+  },
+  {
+   "t": "2026-11-21T13:47:54Z",
+   "reg": "VH-SHD",
+   "old": [
+    "FIREBIRD 508"
+   ],
+   "new": [
+    "FIREBIRD 811"
+   ],
+   "fleet": true
+  },
+  {
+   "t": "2026-11-21T13:47:54Z",
+   "reg": "VH-RMB",
+   "old": [],
+   "new": [
+    "BIRDDOG 123"
+   ],
+   "fleet": false
+  },
+  {
+   "t": "2026-11-21T13:47:54Z",
+   "reg": "VH-RFM",
+   "old": [
+    "BOMBER 364"
+   ],
+   "new": [
+    "BOMBER 751"
+   ],
+   "fleet": true
+  },
+  {
+   "t": "2026-11-21T13:47:54Z",
+   "reg": "VH-OUJ",
+   "old": [
+    "BOMBER 597"
+   ],
+   "new": [
+    "BOMBER 587"
+   ],
+   "fleet": true
+  },
+  {
+   "t": "2026-11-21T13:47:54Z",
+   "reg": "VH-OUF",
+   "old": [
+    "BOMBER 581"
+   ],
+   "new": [
+    "BOMBER 597"
+   ],
+   "fleet": true
+  },
+  {
+   "t": "2026-11-21T13:47:54Z",
+   "reg": "VH-ODW",
+   "old": [
+    "BOMBER 583"
+   ],
+   "new": [
+    "BOMBER 581"
+   ],
+   "fleet": true
+  },
+  {
+   "t": "2026-11-21T13:47:54Z",
+   "reg": "VH-ODA",
+   "old": [
+    "BOMBER 599"
+   ],
+   "new": [
+    "BOMBER 583"
+   ],
+   "fleet": false
+  },
+  {
+   "t": "2026-11-21T13:47:54Z",
+   "reg": "VH-LYQ",
+   "old": [
+    "FIRESPOTTER 255"
+   ],
+   "new": [],
+   "fleet": true
+  },
+  {
+   "t": "2026-11-21T13:47:54Z",
+   "reg": "VH-LWA",
+   "old": [
+    "BIRDDOG 692"
+   ],
+   "new": [
+    "BIRDDOG 895"
+   ],
+   "fleet": true
+  },
+  {
+   "t": "2026-11-21T13:47:54Z",
+   "reg": "VH-LCL",
+   "old": [],
+   "new": [
+    "BIRDDOG 273"
+   ],
+   "fleet": false
+  },
+  {
+   "t": "2026-11-21T13:47:54Z",
+   "reg": "VH-JTQ",
+   "old": [
+    "FIREBIRD 625"
+   ],
+   "new": [],
+   "fleet": true
+  },
+  {
+   "t": "2026-11-21T13:47:54Z",
+   "reg": "VH-JRI",
+   "old": [
+    "FIREBIRD 624"
+   ],
+   "new": [],
+   "fleet": true
+  },
+  {
+   "t": "2026-11-21T13:47:54Z",
+   "reg": "VH-HFY",
+   "old": [
+    "FIREBIRD 622"
+   ],
+   "new": [],
+   "fleet": true
+  },
+  {
+   "t": "2026-11-21T13:47:54Z",
+   "reg": "VH-HBB",
+   "old": [
+    "FIREBIRD 503"
+   ],
+   "new": [
+    "FIREBIRD 803"
+   ],
+   "fleet": true
+  },
+  {
+   "t": "2026-11-21T13:47:54Z",
+   "reg": "VH-EGU",
+   "old": [
+    "FIREBIRD 620"
+   ],
+   "new": [],
+   "fleet": true
+  },
+  {
+   "t": "2026-11-21T13:47:54Z",
+   "reg": "VH-CGX",
+   "old": [
+    "BIRDDOG 681"
+   ],
+   "new": [],
+   "fleet": true
+  },
+  {
+   "t": "2026-11-21T13:47:54Z",
+   "reg": "VH-BBW",
+   "old": [
+    "FIREBIRD 629"
+   ],
+   "new": [],
+   "fleet": true
+  },
+  {
+   "t": "2026-11-21T13:47:54Z",
+   "reg": "VH-AVP",
+   "old": [
+    "BIRDDOG 685"
+   ],
+   "new": [],
+   "fleet": true
+  },
+  {
+   "t": "2026-11-21T13:47:54Z",
+   "reg": "VH-AQL",
+   "old": [
+    "BIRDDOG 682"
+   ],
+   "new": [],
+   "fleet": true
+  },
+  {
+   "t": "2026-11-21T13:47:54Z",
+   "reg": "VH-8XO",
+   "old": [
+    "BOMBER 587"
+   ],
+   "new": [
+    "BOMBER 882"
+   ],
+   "fleet": true
+  },
+  {
+   "t": "2026-11-21T13:47:54Z",
+   "reg": "VH-8PM",
+   "old": [
+    "BOMBER 751"
+   ],
+   "new": [
+    "BOMBER 364"
+   ],
+   "fleet": true
+  },
+  {
+   "t": "2026-11-21T13:47:54Z",
+   "reg": "VH-8FB",
+   "old": [
+    "BOMBER 750"
+   ],
+   "new": [],
+   "fleet": true
+  },
+  {
+   "t": "2026-11-21T13:47:54Z",
+   "reg": "VH-82G",
+   "old": [
+    "BIRDDOG 687"
+   ],
+   "new": [],
+   "fleet": true
+  },
+  {
+   "t": "2026-11-21T13:47:54Z",
+   "reg": "N726HT",
+   "old": [
+    "HELITAK 435"
+   ],
+   "new": [
+    "HELITAK 675"
+   ],
+   "fleet": true
+  },
+  {
+   "t": "2026-11-21T13:47:54Z",
+   "reg": "N660UH",
+   "old": [
+    "HELITAK 348"
+   ],
+   "new": [],
+   "fleet": true
+  },
+  {
+   "t": "2026-11-21T13:47:54Z",
+   "reg": "N561CG",
+   "old": [],
+   "new": [
+    "BIRDDOG 100"
+   ],
+   "fleet": false
+  },
+  {
+   "t": "2026-11-21T13:47:54Z",
+   "reg": "N560UH",
+   "old": [
+    "HELITAK 668"
+   ],
+   "new": [
+    "HELITAK 669"
+   ],
+   "fleet": true
+  },
+  {
+   "t": "2026-11-21T13:47:54Z",
+   "reg": "N552CG",
+   "old": [],
+   "new": [
+    "FIRESCAN 208"
+   ],
+   "fleet": false
+  },
+  {
+   "t": "2026-11-21T13:47:54Z",
+   "reg": "N550CG",
+   "old": [],
+   "new": [
+    "FIRESCAN 207"
+   ],
+   "fleet": false
+  },
+  {
+   "t": "2026-11-21T13:47:54Z",
+   "reg": "N548CG",
+   "old": [
+    "BIRDDOG 100"
+   ],
+   "new": [],
+   "fleet": true
+  },
+  {
+   "t": "2026-11-21T13:47:54Z",
+   "reg": "N534VG",
+   "old": [],
+   "new": [
+    "HELITAK 348"
+   ],
+   "fleet": false
+  },
+  {
+   "t": "2026-11-21T13:47:54Z",
+   "reg": "N470NA",
+   "old": [
+    "BOMBER 626"
+   ],
+   "new": [
+    "BOMBER 622"
+   ],
+   "fleet": true
+  },
+  {
+   "t": "2026-11-21T13:47:54Z",
+   "reg": "N460UH",
+   "old": [
+    "HELITAK 678"
+   ],
+   "new": [],
+   "fleet": true
+  },
+  {
+   "t": "2026-11-21T13:47:54Z",
+   "reg": "N234PH",
+   "old": [
+    "HELITAK 677"
+   ],
+   "new": [],
+   "fleet": true
+  },
+  {
+   "t": "2026-11-21T13:47:54Z",
+   "reg": "N137CG",
+   "old": [],
+   "new": [
+    "BOMBER 137"
+   ],
+   "fleet": false
+  },
+  {
+   "t": "2026-11-21T13:47:54Z",
+   "reg": "N1073W",
+   "old": [
+    "HELITAK 676"
+   ],
+   "new": [],
+   "fleet": true
+  },
+  {
+   "t": "2026-11-21T13:47:54Z",
+   "reg": "C-GDSQ",
+   "old": [
+    "FIREBIRD 256"
+   ],
+   "new": [],
+   "fleet": true
+  },
+  {
    "t": "2026-11-17T02:57:55Z",
    "reg": "ZK-INY",
    "old": [],
