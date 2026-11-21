@@ -45,6 +45,12 @@ jobs:
         continue-on-error: true
         run: python3 scripts/build_data.py
 
+      - name: Install headless browser (the new NAFC site loads its list with JavaScript)
+        continue-on-error: true
+        run: |
+          pip install playwright
+          playwright install --with-deps chromium
+
       - name: Check NAFC call sign list
         continue-on-error: true
         env:
