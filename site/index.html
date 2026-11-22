@@ -341,7 +341,8 @@ const groupColor = g => g === "FIREBIRD" ? "var(--firebird)" : "var(--helitak)";
 
 let fleet = [];            // all aircraft
 let live = new Map();      // REGO -> live record
-let nafc = null;           // Map REGO -> [callsigns], when data/nafc_callsigns.json exists
+let nafcEntries = null;    // full NAFC list (for entries missing from the spreadsheet)
+let nafc = null;          // Map REGO -> [callsigns], when data/nafc_callsigns.json exists
 let selected = null;       // aircraft entry shown in detail
 const f = { q: "", group: "", family: "", op: "", state: "", live: false, base: false, diff: false };
 let mode = "all";          // "all" fleet or "active" (transmitting now)
@@ -692,6 +693,37 @@ function visible() {
     return true;
   });
 }
+/* aircraft that are on the NAFC list but missing from the spreadsheet (e.g. newly added call signs) */
+function nafcOnly() {
+  if (!nafcEntries) return [];
+  const mine = new Set(fleet.map(a => norm(a.rego)));
+  const by = new Map();
+  for (const e of nafcEntries) {
+    const r = norm(e.registration);
+    if (mine.has(r)) continue;
+    if (!by.has(r)) by.set(r, []);
+    by.get(r).push(e);
+  }
+  return [...by.values()].map(es => ({ reg: es[0].registration, callsigns: [...new Set(es.map(e => e.callsign))], e: es[0] }))
+    .sort((x, y) => natural(x.callsigns[0], y.callsigns[0]));
+}
+function nafcOnlyHtml() {
+  if (!nafcEntries) return "";
+  const x = nafcOnly();
+  const q = f.q.trim().toLowerCase();
+  const rows = x.filter(o => !q || [o.reg, o.callsigns.join(" "), o.e.category, o.e.make, o.e.model].join(" ").toLowerCase().includes(q));
+  const head = `<h3 style="padding:12px 12px 4px;margin:0">On the NAFC list but not in your spreadsheet (${rows.length})</h3>`;
+  if (!rows.length) return head + `<div class="empty" style="padding:8px 12px">${x.length ? "None match the search." : "Every aircraft on the NAFC list is in your spreadsheet."}</div>`;
+  return head + rows.map(o => {
+    const added = nafcHist?.entries.find(h => norm(h.reg) === norm(o.reg) && !(h.old || []).length);
+    const when = added ? new Date(added.t).toLocaleDateString([], { day: "numeric", month: "short" }) : "";
+    return `<div class="item" role="listitem" style="cursor:default">
+      <div><div class="cs">${esc(o.callsigns.join(", "))}</div></div>
+      <div class="right"><span class="badge warn">${added ? "ADDED " + esc(when) : "NOT IN SPREADSHEET"}</span></div>
+      <div class="sub"><span class="reg">${esc(o.reg)}</span><span class="sep">${esc(o.e.category || "")}</span><span class="sep">${esc([o.e.make, o.e.model].filter(Boolean).join(" "))}</span></div>
+    </div>`;
+  }).join("");
+}
 function differs(a) {
   if (!nafc) return false;
   const cs = nafc.get(norm(a.rego));
@@ -760,6 +792,7 @@ function render(redrawMap = true) {
       </button>`;
     }).join("");
   }
+  if (f.diff) list.insertAdjacentHTML("beforeend", nafcOnlyHtml());
   if (redrawMap) { drawBases(rows); drawLive(); drawTrails(); }
 }
 function setMode(m) {
@@ -966,7 +999,7 @@ function showSignedIn(name) {
   for (const a of fleet) a._hay = [a.rego, a.callsign, a.type, a.family, a.operator, a.base?.name, a.base?.state, a.baseText, a.note].join(" ").toLowerCase();
   try {
     const n = await loadJson("data/nafc_callsigns.json");
-    nafc = new Map();
+    nafc = new Map(); nafcEntries = n.entries;
     for (const e of n.entries) nafc.set(norm(e.registration), [...(nafc.get(norm(e.registration)) || []), e.callsign]);
     $("tDiffWrap").hidden = false;
   } catch { /* the alert job has not produced it yet */ }
